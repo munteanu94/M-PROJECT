@@ -4,6 +4,7 @@
     height: 1000px;
     background-color: beige;
     display: grid;
+    
     grid-template-columns: repeat(5, 160px);
     grid-template-rows: 375px 500px 125px;
     grid-template-areas: 
@@ -230,3 +231,313 @@ h4 {
     left: 250px;
     bottom: 55px;
 }
+@media screen and (max-width: 800px) {
+    .container {
+      
+      width: 600px;
+      height: 750px;
+      background-color: beige;
+      display: grid;
+      grid-template-columns: repeat(5, 120px);
+      grid-template-rows: 281.25px 375px 93.75px;
+      grid-template-areas: 
+      "image image profil profil profil"
+      "name name education education education"
+      "transparent transparent skills skills skills"
+      ;
+  }
+  
+    .image {
+      width: 240px;
+    }
+    .myimage{
+      width: 225px;
+      height: 262.5px;
+      position: relative;
+      top: 12px;
+      left: 7px;
+  }
+  .line {
+      border: 3px white solid;
+      width: 220px;
+      position: relative;
+      left: 9px;
+      top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+  }
+  .firstname {
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center;
+      width: 100px;
+      position: relative;
+     
+  }
+  .profession {
+      position: relative;
+      top: 70px;
+      left: 35px;
+      width: 187.5px;
+      font-size: 10px;
+      text-align: center;
+      color: white;
+  }
+  .number::before {
+      content: "📱";
+  }
+  .number {
+      padding-bottom: 10px;
+  }
+  .email::before {
+      content: "📧";
+  }
+  .email {
+      padding-bottom: 10px;
+  }
+  .linkedin::before {
+      content: "🌐";
+  }
+  .contact {
+      width: 230px;
+      position: relative;
+      left: 40px;
+      top: 130px;
+      color: white;
+      font-size: 10px;
+  } 
+  .instagram {
+    font-size: 10px;
+      position: relative;
+      top: 230px;
+      left: 10px;
+  }
+  .facebook {
+    font-size: 10px;
+      position: relative;
+      top: 230px;
+      left: 150px;
+  }
+  .transparent {
+      grid-area: transparent;
+      background-color: gainsboro;
+  }
+  .profil {
+      grid-area: profil;
+      background-color:whitesmoke;
+  }
+  .li1 {
+      font-weight: 700;
+      letter-spacing: 5px;
+      text-shadow: 2px 2px 1px silver;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      width: 150px;
+      background-color: rgb(234, 222, 199);
+      border-top: 7.5px grey solid;
+      border-right: 22.5px silver solid ;
+      padding: 4px;
+      border-bottom: 7.5px grey solid;
+  }
+  .text1 {
+      line-height: 10px;
+      font-size: 14px;
+  }
+  .languagesTitle {
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 1px silver;
+      margin-top: 7.5px;
+      width: 150px;
+      background-color: rgb(234, 222, 199);
+      border-top: 7.5px grey solid;
+      border-right: 22.5px silver solid ;
+      padding: 4px;
+      border-bottom: 7.5px grey solid;
+  }
+  .languages {
+    font-size: 15px;
+      letter-spacing: 2px;
+  }
+  .size {
+      width: 75px;
+  }
+  .english {
+      position: relative;
+      top: 15px;
+  }
+  .romana {
+      position: relative;
+      left: 200px;
+      top: -22px;
+  }
+  .russian {
+      position: relative;
+      top: -10px;
+  }
+  .french {
+      position: relative;
+      left: 200px;
+      top: -50px;
+  }
+  .circle {
+      width: 6px;
+      height: 6px;
+      border: 0.75px black solid;
+      border-radius: 50%;
+      display: inline-block;
+  }
+  .full {
+      background-color: black;
+  }
+  .lineblack {
+      border: 3px gray solid;
+      width: 300px;
+      border-radius: 10px;
+      position: relative;
+      top: -55px;
+      left: 28px;
+      box-shadow: 3px 3px 3px silver;
+  }
+  .education {
+      grid-area: education;
+      background-color: gainsboro;
+  }
+  .University {
+      width: 150px;
+      background-color: rgb(234, 222, 199);
+      border-top: 7.5px grey solid;
+      border-right: 22.5px silver solid ;
+      padding: 4px;
+      border-bottom: 7.5px grey solid;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 1px silver;
+  }
+  .courses {
+      width: 150px;
+      background-color: rgb(234, 222, 199);
+      border-top: 7.5px grey solid;
+      border-right: 22.5px silver solid ;
+      padding: 4px;
+      border-bottom: 7.5px grey solid;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 1px silver;
+  }
+  .two {
+      position: relative;
+      top: -7px;
+      box-shadow: 3px 3px 3px silver;
+  }
+  h4 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      box-shadow: 1px 1px 1px white;
+  }
+  .skills {
+      grid-area: skills;
+      background-color:whitesmoke;
+  }
+  .first {
+      width: 150px;
+      background-color: rgb(234, 222, 199);
+      border-top: 7.5px grey solid;
+      border-right: 22.5px silver solid ;
+      padding: 4px;
+      border-bottom: 7.5px grey solid;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 1px silver;
+      position: relative;
+      top: -10px;
+  }
+  .flex1 {
+      position: relative;
+      left: 12px;
+      font-size: 14px;
+      bottom: 12px;
+      
+  }
+  .flex2 {
+      position: relative;
+      left: 190px;
+      bottom: 55px;
+      font-size: 14px;
+   }
+    }
+    @media screen and (max-width: 600px) {
+        .container {
+          
+          width: 400px;
+          height: 750px;
+          background-color: beige;
+          display: grid;
+          grid-template-columns: repeat(4, 100px);
+          grid-template-rows: 1fr;
+          grid-template-areas: 
+          "image image profil profil profil"
+          "name name education education education"
+          "transparent transparent skills skills skills"
+          ;
+      }
+      
+        .image {
+          width: 240px;
+        }
+        .myimage{
+          width: 185px;
+          height: 262.5px;
+          position: relative;
+          top: 12px;
+          left: 7px;
+      }
+      .line {
+         width: 175px;
+        
+    }
+    .firstname {
+         position: relative;
+         left: 50px;
+       
+    }
+    .profession {
+        position:relative;
+        left: 5px;
+    } 
+    .instagram {
+      font-size: 10px;
+        position: relative;
+        top: 230px;
+        left: 10px;
+    }
+    .facebook {
+    position: relative;
+    left: 110px;
+    }
+    .romana {
+        position: relative;
+        left: 150px;
+    }
+   .french {
+        position: relative;
+        left: 150px;
+    }
+    .lineblack {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    }
+    .two {
+        position: relative;
+        left: 0px;
+        top: 3px;
+       
+    }
+}    
+  
+  
