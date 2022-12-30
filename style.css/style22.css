@@ -1,10 +1,8 @@
 .container {
-    
     width: 800px;
     height: 1000px;
     background-color: beige;
     display: grid;
-    
     grid-template-columns: repeat(5, 160px);
     grid-template-rows: 375px 500px 125px;
     grid-template-areas: 
@@ -224,7 +222,6 @@ h4 {
 .flex1 {
     position: relative;
     left:12px ;
-    
 }
 .flex2 {
     position: relative;
@@ -233,7 +230,6 @@ h4 {
 }
 @media screen and (max-width: 800px) {
     .container {
-      
       width: 600px;
       height: 750px;
       background-color: beige;
@@ -246,8 +242,7 @@ h4 {
       "transparent transparent skills skills skills"
       ;
   }
-  
-    .image {
+  .image {
       width: 240px;
     }
     .myimage{
@@ -272,8 +267,7 @@ h4 {
       text-align: center;
       width: 100px;
       position: relative;
-     
-  }
+}
   .profession {
       position: relative;
       top: 70px;
@@ -485,8 +479,7 @@ h4 {
           "transparent transparent skills skills skills"
           ;
       }
-      
-        .image {
+       .image {
           width: 240px;
         }
         .myimage{
