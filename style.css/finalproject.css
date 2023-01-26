@@ -1,0 +1,696 @@
+.container {
+    width: 800px;
+    height: 1400px;
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    grid-template-rows: 350px 950px 100px;
+    grid-template-areas: 
+    "header header header header header"
+    "aside aside article article article"
+    "footer footer footer footer footer";
+}
+/* below is the styling search*/
+.containerSearch {
+    position:relative;
+    left: 320px;
+    bottom: 314px;
+    width: 250px;
+}
+.margin {
+    margin: 0;
+}
+.search-icon {
+    width: 40px;
+    height: 40px;
+}
+.span-search {
+    margin: 0;
+}
+.input-search {
+    position: relative;
+    height: 50px;
+    max-width: 40px;
+    margin-left: 0;
+    width: 100%;
+    margin: 0 30px;
+    background-color: rgb(230, 230, 242);;
+    border-radius: 6px;
+    transition: 1s;
+}
+.input-search.start {
+    max-width: 300px; 
+}
+.input-search input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: none;
+    outline: none;
+    
+    padding: 0 5px ;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 300;
+    color: blue;
+}
+.input-search.start input{
+    padding: 0 15px 0 50px;
+}
+.input-search .span-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    border-radius: 6px;
+    background-color: rgb(154, 154, 246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-search.start .span-search {
+    border-radius: 6px 0 0 6px;  
+}
+.input-search .close-icon {
+   position: absolute; 
+   right: -70px;
+   top: 50%;
+   transform:translateY(-50%);
+   padding: 5px;
+   opacity: 0;
+   pointer-events: none;
+}
+.input-search.start .close-icon{
+   opacity: 1;
+   pointer-events: auto;
+}
+/* below is the styling header*/
+.header {
+    grid-area: header;
+    background-color: slategrey;
+    background: linear-gradient(173deg, slategrey 87%, whitesmoke 20% );
+}
+.images {
+    width: 320px;
+    height: 350px;
+    background-color: silver;
+    background: linear-gradient(173.2deg, silver 90%, slategrey 20% );
+}
+ .img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 30px;
+    box-shadow: 0px 0px 0px 4px rgb(121, 118, 134),
+                0px 0px 0px 8px rgb(147, 145, 160),
+                0px 0px 0px 12px rgb(246, 246, 249);
+ }   
+.name {
+    width:300px ;
+    font-size: 40px;
+    position: relative;
+    left: 350px;
+    bottom: 250px;
+    color: white;
+}
+.button {
+    position: relative;
+    left: 765px;
+    bottom: 420px;
+    border-radius: 50%;
+}
+.ceas {
+    width: 150px;
+    height: 40px;
+    position: relative;
+    bottom: 440px;
+    left: 600px;
+    box-shadow: 0px 0px 5px 2px white;
+    border-radius: 10px;
+}
+.ceass {
+    margin: 0px;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    color: white;
+}
+.job {
+    width: 300px;
+    position: relative;
+    left: 350px;
+    bottom: 250px;
+    font-size: 30px;
+    color: white;
+} 
+.rsocial {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 560px;
+    bottom: 260px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+                /* below is the styling article*/
+.article {
+    grid-area: article;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.aroow {
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:rgb(110, 109, 116) ;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 7% 50%);
+    padding: 10px 0px 10px 60px;
+    color: white;
+    margin: 10px 50px 10px 0px;
+    text-align: center;
+    transition: 0.5s;
+    letter-spacing: 5px;
+}
+.aroow:hover {
+    clip-path: polygon(0% 0%, 75% 0%, 92% 50%, 75% 100%, 0% 100%);
+    letter-spacing: 7px;
+    padding: 10px 60px 10px 5px;
+    border: 4px black solid;
+    text-shadow: 2px 2px 2px black ;
+}
+span {
+    text-align: left;
+    margin: 0px 25px 0px 25px ;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+h4 {
+    padding: 10px 25px 5px 25px ;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.courses {
+    padding-left: 25px;
+    text-decoration: none;
+}
+                 /* below is the styling aside*/
+.aside {
+    grid-area: aside;
+    background-color:rgb(110, 109, 116) ;
+}
+             /* below is the styling contactes*/
+.contacte {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+.sameaside {
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+.icons {
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 0px 2px rgb(246, 246, 249);
+}
+                /* below is the styling slide*/
+h2 {
+    text-align: center;
+}
+.slide {
+    width: 100%;
+    height: 300px;
+}
+.sliderDiv {
+    width: 100%;
+    height: 100%;
+    background-color: blacks;
+    border: 10px solid white;
+    margin: 15px 15px;
+    box-shadow: 0px 0px 5px 2px rgb(110, 109, 116);
+}
+.sliderDivBox {
+    width: 430px;
+    height: 300px;
+    position: relative;
+}
+.right {
+    border-radius: 10px 0px 0px 10px;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    background-color: white;
+    position: absolute;
+    bottom: 100px;
+    right: -10px;
+    border: none;
+}
+.right:hover {
+    background-color: red;   
+}
+.left {
+    border-radius: 0px 10px 10px 0px;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 100px;
+    left: 35px;
+}
+.left:hover {
+    background-color: red;
+}
+.buttonss {
+    padding: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+                /* below is the styling skills*/
+.skil {
+    position: relative;
+    right: 60px;
+    top: 30px;
+}
+.level {
+     width: 8px;
+    height: 8px;
+    border: 2px white solid;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.know {
+    background-color: white;
+}
+.lavels {
+    display: flex;
+    flex-direction: row;
+    margin: 2px 0px 5px 20px;
+}
+.list {
+    position: relative;
+    bottom: 50px;
+    margin-left: 60px;
+    font-size: 20px;
+    color: white;
+} 
+             /* below is the styling language*/
+.bara {
+    width: 260px;
+    height: 5px;
+    background-color: white;
+    margin-top: 4px;
+}
+.containerlang {
+    margin-left: 30px;
+    margin-top: -30px;
+}
+.baraFirst {
+    width: 90%;
+    height: 100%;
+    background-color: blue;   
+}
+.baraSecond {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+.baraFird {
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+}
+.language {
+    margin-left: -10px;
+    margin-top: 10px;
+    color: white;
+}
+.languageP {
+    margin-right: 30px;
+}
+                     /* below is the styling form*/
+.fieldset {
+    text-align: center;
+    color: white;
+    border: 2px white solid;
+}
+legend {
+    font-size: 40px;
+}
+.firstform {
+    display: table;
+}
+.firstform div{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+.git {
+    margin-right: 10px;
+}
+.jsCss {
+    margin-left: -37px;
+    margin-right: 39px;
+}
+.secondform label {
+    margin-left: 10px;
+}
+hr {
+    margin-top: 0;
+}
+.Requirements {
+    margin-top: 10px;
+}
+label:hover {
+    color: blue;
+    cursor: pointer;
+}
+input:hover {
+    color: blue;
+    cursor: pointer;
+}
+label:focus {
+    color: yellow;
+    border: none;
+}
+.buttons {
+   position: relative;
+   top: 5px;
+   width: 100px;
+   color: white;
+   background: rgb(110, 109, 116);
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.8s;
+   overflow: hidden;
+   box-shadow: 0px 0px 0px 2px white;
+   border: none;
+}
+.buttons:hover {
+    color: blue;
+    background: white;
+    box-shadow: 0px 0px 0px 2px blue;
+}
+            /* below is the styling footer*/
+.footer {
+    grid-area: footer;
+    background-color: rgb(72, 71, 76);
+}
+.logoImg {
+    width: 100px;
+    border-radius: 10px;
+    border: 3px white solid;
+    box-shadow: 0px 0px 5px 2px blue;
+    margin: 10px 0px 0px 15px;
+} 
+.adres {
+    position: relative;
+    width: 200px;
+    left: 200px;
+    bottom: 30px;
+    word-spacing: 30px;
+}           
+.adres a {
+    color: white;
+    border: none;
+}
+.navRetele .rsocial {
+    position: relative;
+    bottom: 60px;
+    left: 540px;
+    box-shadow: 0px 0px 5px 2px white;
+}
+            /* below is the styling popup*/
+#places {
+    color: white;
+    position: relative;
+    bottom: 30px;
+    left: 100px;
+}           
+.containerPopap {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup {
+    width:100%;
+    height: 100%;
+    background: rgb(159, 155, 181);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    bottom: 1100px;
+    left: 200px;
+    transition: 1s;
+}
+.open {
+   visibility: hidden;
+}
+.popap h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 30px 0px 10px;
+}
+.buttonPopap {
+    width: 80%;
+    margin-top: 30px;
+    padding: 10px 0px;
+    background-color: goldenrod;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px white;
+}   
+.iconspopap {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px white;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+       }
+    .header {
+        background: slategrey;
+        height: 350px;
+    }
+    .images {
+        background: slategrey;
+    }
+    .ceas {
+        left: 500px;
+    }
+    .button {
+        left: 670px;
+    }
+    .rsocial {
+        left: 460px;
+      
+    }
+    .containerSearch {
+        bottom: 260px;
+    }
+    .navRetele .rsocial {
+        bottom: 40px;
+        left: 460px;
+    }
+    .popup {
+        bottom: 2000px;
+        left: 150px;
+        height: 300px;
+    }
+    .sliderDivBox {
+        margin-bottom: 70px;
+        margin-left: 100px;
+   }
+   form {
+    display: flex;
+    justify-content: center;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .container{
+        display: flex;
+        width: 600px;
+    }
+    .ceas {
+        left: 400px;
+    }
+    .button {
+        left: 570px;
+    }
+    .rsocial {
+        left: 360px;
+    }
+    .containerSearch {
+        bottom: 260px;
+        left: 220px;
+    }
+    .navRetele .rsocial {
+        bottom: 40px;
+        left: 360px;
+    }
+    .popup {
+    left: 100px;
+    }
+    .sliderDivBox {
+    margin-left: 50px;
+   }   
+}
+@media screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        width: 500px;
+    }
+    .header {
+        height: 300px;
+    }
+    .images {
+        width: 200px;
+    }
+     .img {
+        width: 150px;
+        height: 200px;
+        border-radius: 0;
+    }   
+    .name {
+        width:250px ;
+        font-size: 35px;
+        left: 240px;
+    }
+    .button {
+        bottom: 415px;
+        left: 470px;
+    }
+    .ceas {
+        width: 100px;
+        bottom: 430px;
+        left: 330px;
+        height: 30px;
+        text-align: center;
+    }
+    .ceass {
+        font-size: 15px;
+    }
+    .job {
+        width: 250px;
+        position: relative;
+        left: 240px;
+        font-size: 25px;
+    } 
+    .rsocial {
+        width: 40px;
+        height: 40px;
+        bottom: 270px;
+        left: 290px;
+    }
+    .containerSearch {
+        bottom: 270px;
+        left: 150px;
+    }
+    .sliderDivBox {
+        margin-left: 10px;
+   }
+   .popup {
+    left: 50px;
+    }
+    .navRetele .rsocial {
+        bottom: 20px;
+        left: 280px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container{
+        display: flex;
+        width: 400px;
+    }
+    .header {
+        height: 350px;
+    }
+    .images {
+        width: 200px;
+    }
+     .img {
+        width: 150px;
+        height: 200px;
+        border-radius: 0;
+    }   
+    .name {
+        width:250px ;
+        font-size: 25px;
+        left: 200px;
+        bottom: 240px;
+    }
+    .button {
+        bottom: 400px;
+        left: 370px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+    .ceas {
+        width: 100px;
+        bottom: 420px;
+        left: 230px;
+        height: 30px;
+        text-align: center;
+    }
+    .ceass {
+        font-size: 15px;
+    }
+    .job {
+        width: 250px;
+        position: relative;
+        left: 200px;
+        bottom: 240px;
+        font-size: 20px;
+    } 
+    .rsocial {
+        width: 40px;
+        height: 40px;
+        bottom: 250px;
+        left: 190px;
+    }
+    .containerSearch {
+        bottom: 220px;
+        left: 50px;
+    }
+    .sliderDivBox {
+        margin-left: 10px;
+        width: 330px;
+        height: 250px;
+   }
+   .containerPopap {
+    width: 300px;
+    }
+   .popup {
+    left: 50px;
+    }
+    .navRetele .rsocial {
+        bottom: 10px;
+        left: 180px;
+    }
+    .slide {
+    height: 250px;
+    }
+}
