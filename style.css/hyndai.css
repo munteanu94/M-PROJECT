@@ -1,0 +1,443 @@
+.containerprincipal {
+    display: flex;
+    flex-direction: column;
+}
+.container1{
+    height: 80px;
+    background-color: whitesmoke;
+}
+.number {
+    font-size: 25px;
+    position: relative;
+    top: 25px;
+    left: 100px;
+}
+.list1 {
+    display: flex;
+    float:right;
+    column-gap: 15px;
+    font-size: 25px;
+    margin-right: 100px;
+}
+.lis {
+    background-color: rgba(202, 202, 202, 0.835);
+    border-radius: 5px;
+}
+.lisText {
+    text-decoration: none;
+}
+.logo {
+    width: 200px;
+    height: 50px;
+}
+.container2 {
+    height: 120px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo {
+    position: absolute;
+    left: 100px;
+}
+.list2 {
+    margin-top: 0px;
+    column-gap: 15px;
+    font-size: 25px;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+.lis2 {
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    background-color: rgb(191, 210, 244);
+    height: 30px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+/* style for servis and Info*/
+.lisServis:hover ul, .lisServis:focus ul {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+.lisServis {
+    cursor: pointer;
+    text-align: center;
+}
+.lisServis::before {
+    content:"▼";
+    position: relative;
+    left: 100px;
+} 
+.afterIcons::before {
+    left: 150px;
+}
+.items {
+    background-color: white;
+    color: black;
+    list-style: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    padding:0px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    opacity: 0;
+    visibility: hidden;
+    transition:opacity 200ms ease-in-out;
+}
+.listItemes {
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+.listItemes:hover, .listItemes:focus{
+    background-color: grey;
+} 
+/* style slideshow */
+.contSlide {
+     background-color: whitesmoke;
+     height: 710px;
+}
+.slide {
+    width: 100%;
+    height: 700px;
+    clear: both;
+}
+.spancircle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 100px;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px white solid;
+    margin: 10px;
+    cursor: pointer;
+}
+.circle:hover {
+    background-color: rgb(18, 18, 99);
+}
+.imgfirst {
+    border: 2px blue solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    bottom: 300px;
+    left: 200px;
+    background-color: blue;
+    text-decoration: none;
+}
+.imgfirst::after {
+    content:" ➡️";
+}
+/* style for model auto*/
+.contAuto {
+    width: 100%;
+    height: 900px;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slideContent {
+    width: 1520px;
+    height: 450px; 
+    display: flex;
+    column-gap: 10px;
+}
+.modelCar {
+    width: 500px;
+    height:100% ;
+}
+.contAuto .slideContent  {
+    display: flex;
+    overflow: hidden;
+}
+.imgCar {
+    position: relative;
+    width: 500px;
+    height: 250px;
+}
+.imgCar .imgPalisade {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+h2 {
+    margin: 0;
+    font-size: 60px;
+}
+.price {
+    font-size: 25px;
+    opacity: 0.5;
+    margin-left: 50px;
+}
+.buttonCar {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.btn {
+    background-color: blue;
+    font-size: 25px;
+    color: white;
+    padding: 5px 10px;
+}
+.button {
+    height: 30px;
+    background-color: blue;
+    color: white;
+    font-size: px;
+    position: relative;
+    top: 270px;
+    cursor: pointer;
+}
+.rightBut {
+    position: relative;
+    right: 100px;
+}
+.leftBut {
+    position: relative;
+    left: 100px;
+}
+              /* special offert*/
+.containerOferte {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}              
+.nameOferte {
+    text-align: center;
+    font-size: 30px;
+}
+.row {
+    font-size: 20px;
+    opacity: 0.5;
+}
+                 /* offerte leasing*/
+.containerLeasing {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(245, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerGrid {
+    width: 80%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 150px ;
+    grid-template-areas: 
+    " first  second second"
+    "fird fird fird"
+    ;
+}
+.gridFirst{
+    grid-area: first;
+    cursor: pointer;
+    box-shadow: 0 0 20px 4px white;
+    background-color: white;
+    transition: 1s;
+}
+.gridFirst:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+.forHref {
+    width: 100%;
+    height: 100%;
+}
+.imgLesing {
+    width: 100%;
+    height: 150px;
+}
+.ofertaLesing{
+    width: 85%;
+    margin: 15px auto;
+    background-color: white;
+}
+.gridSecond{
+    grid-area: second;
+}
+.gridFird{
+    grid-area: fird;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+            /* container NEW*/
+.containerNew {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(211, 204, 204);
+    display: flex;
+    justify-content: center;
+}
+.contNew {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 335px 165px ;
+    grid-template-areas: 
+    "first second fird fourth"
+    "fiveth fiveth fiveth fiveth";
+}
+.newFirst {
+    grid-area: first;
+    background-color: white;
+    margin: 30px 15px 0 15px;
+    box-shadow: 0 0 20px 4px white;
+}
+.newFirst:hover {
+    box-shadow: 0 0 20px 4px black;
+}
+.newSecont {
+    grid-area: second;
+    background-color: white;
+    margin: 30px 15px 0 15px;
+    box-shadow: 0 0 20px 4px white;
+}
+.newSecont:hover {
+    box-shadow: 0 0 20px 4px black; 
+}
+.newFird {
+    grid-area: fird;
+    background-color: white;
+    margin: 30px 15px 0 15px;
+    box-shadow: 0 0 20px 4px white;
+}
+.newFird:hover {
+    box-shadow: 0 0 20px 4px black;
+}
+.newFourth {
+    grid-area: fourth;
+    background-color: white;
+    margin: 30px 15px 0 15px;
+    box-shadow: 0 0 20px 4px white;
+}
+.newFourth:hover {
+    box-shadow: 0 0 20px 4px black;
+}
+.newFiveth {
+    grid-area: fiveth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* style configurator, stock, test drive, calculator lesing*/
+.cantainer8 {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+.cantainerSecond {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+.incons {
+    width: 90%;
+    height: 80%;
+    background-color: rgb(211, 204, 204);
+    margin: auto ;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.incons:hover {
+    transition: 1s;
+    background-color: rgb(127, 123, 123);
+    color: white;
+}
+.inconsStor {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+        /*footer container style*/
+.footerr {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(105, 105, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.footerUl {
+    padding-left: 0px;
+} 
+.footerInerr li {
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: black;
+}  
+.footerInerr li:hover {
+   color: aliceblue;
+    opacity: 0.5;
+}   
+.footerInerr {
+    width: 80%;
+    height: 80%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerNav1 {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerNav2 {
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerNav3 {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerNav4 {
+    width: 255px;
+}
+.imgSociale {
+    width: 40px;
+    height: 40px;
+}
+.lastFooter {
+    background-color: rgb(59, 59, 223);
+    display: flex;
+    justify-content: center;
+}
+h4 {
+    color: white;
+}
+.writeLast {
+    padding: 20px;
+}
+
