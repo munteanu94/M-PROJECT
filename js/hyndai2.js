@@ -1,5 +1,5 @@
 const slideContent = document.querySelector(".slideContent");
-buttonArrow = document.querySelectorAll("button");
+buttonArrow = document.querySelectorAll(".button");
 firstImg = slideContent.querySelectorAll("img")[0];
 let isStartSlide = false, prevPageX, prevScrollLeft;
 let firstImgWidth = firstImg.clientWidth +10;

@@ -5,12 +5,19 @@
 .container1{
     height: 80px;
     background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
 }
 .number {
     font-size: 25px;
     position: relative;
     top: 25px;
     left: 100px;
+    align-self: flex-start;
+    flex: 1;
+}
+.number::before {
+    content: "📞";
 }
 .list1 {
     display: flex;
@@ -26,27 +33,28 @@
 .lisText {
     text-decoration: none;
 }
-.logo {
-    width: 200px;
-    height: 50px;
-}
 .container2 {
     height: 120px;
     background-color: aquamarine;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
 }
 .logo {
-    position: absolute;
-    left: 100px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-self: flex-start;
+    flex: 1;
+    margin-left: 100px;
 }
 .list2 {
+    width: 100%;
     margin-top: 0px;
     column-gap: 15px;
     font-size: 25px;
-    display: flex;
-    margin-top: 30px;
     margin-right: 150px;
+    display: flex;
+    justify-content: flex-end;
 }
 .lis2 {
     padding: 10px 5px 10px 5px;
@@ -151,10 +159,11 @@ a {
     justify-content: center;
 }
 .slideContent {
-    width: 1520px;
+    max-width: 1520px;
     height: 450px; 
     display: flex;
-    column-gap: 10px;
+    gap: 10px;
+    position: relative;
 }
 .modelCar {
     width: 500px;
@@ -440,4 +449,59 @@ h4 {
 .writeLast {
     padding: 20px;
 }
-
+            /* responsiv*/
+@media screen and (max-width: 1400px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .list2 {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        margin-left: 150px;
+        row-gap: 5px;
+    }
+    .listItemes {
+     background-color: white;
+    }
+   .lis2 {
+        display: flex;
+        justify-content: center;
+    }
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container2 {
+       background-color: white;
+    }
+    .number {
+        display: flex;
+        align-self: center;
+    }
+    .contSlide {
+       position: relative;
+       top: 210px;
+    }
+}
+    @media screen and (max-width: 1000px) {
+        .ofertaLesing {
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .list1 {
+            margin-right: 0px;
+        }
+        .ofertaLesing {
+            font-size: 10px;
+        }
+        .nameH3 {
+            font-size: 12px;
+        }
+    }
