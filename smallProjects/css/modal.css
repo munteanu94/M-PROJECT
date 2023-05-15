@@ -1,0 +1,63 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image:url(/smallProjects/img/books.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 500px;
+    height: 350px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: absolute;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.btn {
+    background-color: rgb(175, 175, 244);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    color: white;
+}
+/* style modal content*/
+
+.modalOverly {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.showModal {
+    visibility: visible;
+}
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    font-size: 30px;
+}
+.closeBtn {
+    padding: 10px 30px 10px 30px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
