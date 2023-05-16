@@ -1,0 +1,71 @@
+.menu {
+    width: 100%;
+}   
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.underline {
+    width: 100px;
+    height: 2px;
+    background-color: blueviolet;
+}
+.containeBtn {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+.sectionCenter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.photo {
+    width: 250px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px 4px red;
+}
+h4 {
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px silver solid;
+}
+.menuItem {
+    padding: 10px 30px 10px 30px;
+    height: 200px;
+}
+.filterBtn {
+    background-color: rgb(188, 188, 248);
+    border-radius: 5px;
+    color: white;
+    border: 2px rgb(228, 37, 37) solid;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+.filterBtn:hover {
+    background-color: blueviolet;
+}
+@media screen and (max-width: 2000px){
+    .menu {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .menu {
+        width: 100%;
+    }
+}
