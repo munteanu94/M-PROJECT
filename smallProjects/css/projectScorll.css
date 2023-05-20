@@ -1,0 +1,217 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+html {
+    scroll-behavior: smooth;
+}
+#home {
+    width: 100%;
+    height:100vh;
+    background-image: url(/smallProjects/img/img\ fundal.jpeg);
+}
+.navCenter {
+    display: flex;
+    justify-content: space-around;
+}
+.navHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navToggle {
+    visibility: hidden;
+}
+.logo {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+.btnNav {
+    width: 50px;
+}
+/* style links*/
+.links {
+    display: flex;
+    column-gap: 30px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+li:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+a {
+    text-decoration: none;
+}
+.scrollLink {
+    color: white;
+    transform: scale(1.2);
+    z-index: 2;
+}
+.scrollLink:hover {
+    color: rgb(181, 181, 249);
+}
+.scrollLink:active {
+    color: yellowgreen;
+}
+/* style banner */
+.banner {
+    height: 78vh;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.container p {
+    width: 600px;
+    color: white;
+    line-height: 25px;
+}
+.btnWhite {
+    border: 3px white solid;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+}
+.btnWhite:active {
+    background-color: rgb(114, 83, 144);
+}
+.section {
+    height: 600px;
+    background-color: rgb(249, 248, 248);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border-bottom:5px silver solid ;
+}
+.footer {
+    height: 200px;
+    background-color: rgb(168, 168, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.title {
+    text-transform: uppercase;
+    color: rgb(103, 95, 95)
+}
+span{
+    opacity: 0.5;
+}
+/* nav fixed when do scroll*/
+.navFixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+}
+.navFixed .links a{
+    color: black;
+}
+@keyframes name{
+    25% {
+        transform: scale(1.2);
+        box-shadow: 0px 2px 0px 2px white;
+        transform: rotate();
+    }
+}
+.imgTop {
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 0px 2px black;
+    transition: 1s;
+    animation: name 2000ms infinite;
+}
+.imgTop:hover {
+    transform: rotateY(45deg);
+}
+.topLink {
+    display: flex;
+    align-self: flex-end;
+    width: 50px;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    visibility: hidden;
+    z-index: -100;
+}
+.showLink {
+    visibility: visible;
+    z-index: 100;
+}
+/* style navbar reponsive*/
+@media screen and (max-width: 1100px){
+    .navCenter {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    .navToggle {
+        visibility: visible;
+        margin-right: 50px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .navToggle:hover{
+        animation: button 2000ms infinite;
+    }
+    @keyframes button {
+        50% {
+            transform: rotateX(45deg);
+            box-shadow: 5px 5px 5px 5px black;
+        }
+    }
+    .navHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        margin-left: 50px;
+        border-radius: 10px;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+    .linksContainer {
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+    }
+    .showContainer {
+        height: 214px;
+        visibility: visible;
+    }
+    .showContainer:active{
+        transition: 3s;
+    }
+    li {
+        padding-left: 50px;
+    }
+    .links li:hover {
+        background-color: aqua;
+    }
+    .links a {
+        color: black;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+}
