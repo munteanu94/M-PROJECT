@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    column-gap: 20px;
+    
+}
+.imgFund {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.img {
+    width: 40%;
+    height: 40%;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+}
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 0;
+}
+.way {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+}
+.daysOffert {
+    display: flex;
+    column-gap: 30px;
+}
+.daysOffert-format {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(16, 16, 97);
+    text-transform: uppercase;
+    color: white;
+    margin: 0px 5px 0px 5px;
+}
+.h4 {
+    margin: 0;
+    font-size: 35px;
+}
+.expired {
+    text-transform: uppercase;
+    color: blueviolet;
+    text-shadow: 2px 2px 2px rgb(173, 108, 234);
+}
+@media screen and (max-width: 1100px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .info{
+        width: 80%;
+    }
+    .img {
+        width: 80%;
+    }
+}
