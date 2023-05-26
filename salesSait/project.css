@@ -1,0 +1,157 @@
+/*style header*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+.containerPrincipal {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/salesSait/imagine/fundalpro.jpeg);
+}
+.logo{
+    width: 150px;
+    border-radius: 10px;
+    animation: logo 5s infinite;
+}
+@keyframes logo {
+    50% {
+        box-shadow: 0px 0px 50px black;
+        transform: scale(1.1);
+    }
+}
+.navButton {
+    visibility: hidden;
+}
+.navHeader {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerFixted {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(178, 245, 245);
+    box-shadow: 5px 5px 5px black;
+    z-index: 1;
+}
+.navContainer, .links, .socialMedia {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.links a {
+    text-decoration: none;
+    color: rgb(6, 6, 126);
+}
+.links a:hover, .socialMedia a:hover{
+    color: rgb(190, 190, 244);
+}
+.containerName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 200px;
+}
+.containerName p {
+    width: 70%;
+    font-size: 25px;
+    color: rgb(6, 6, 126);
+    text-shadow: 0 0 5px white;
+}
+.containerName h1 {
+    text-transform: uppercase;
+    color:rgb(6, 6, 126);
+    text-shadow: 0 0 5px white;
+}
+.containerName button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: rgb(6, 6, 126);
+    background-color: rgb(179, 179, 247);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.containerName button:hover{
+    color: white;
+}
+@media screen and (max-width: 1000px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .navHeader {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navButton{
+        visibility: visible;
+        margin-right: 50px;
+        height: 50px;
+        color: blue;
+        border: 4px blue solid;
+        border-radius: 5px;
+        animation: button 5s infinite;
+    }
+    @keyframes button {
+        25%{
+            transform: rotate(90deg);
+            box-shadow: 0px 0px 50px black;
+            background-color: blueviolet;
+            color: white;
+        }
+        50% {
+            transform: rotate(90deg);
+            box-shadow: 0px 0px 50px black;
+        }
+    }
+    .logo {
+        margin-left: 50px;
+        
+    }
+    .navContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .navContainer .links ,li {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    li a{
+        margin-left: 50px;
+    }
+    .navContainer {
+        height: 0;
+        overflow: hidden;
+    }
+    .showNavContainer {
+        height: 263px;
+        background-color: rgb(178, 245, 245);
+    }
+    .showNavContainer .links li:hover {
+        background-color: white;
+    }
+}   
+/*container section style*/
+.sectionContainer {
+    height: 2000px;
+    width: 100%;
+    background-color: aqua;
+}
