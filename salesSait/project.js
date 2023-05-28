@@ -150,4 +150,23 @@ function displayProductsKind (productskind){
     containerProducts.innerHTML = displayProducts;
 
 }
-   
+
+/*btn page */
+const btnNext = document.querySelector(".nextBtn");
+const btnPrev = document.querySelector(".prevBtn");
+const btnPage = document.querySelector(".pageBtn");
+const containerItems = document.querySelector(".containerProducts").children;
+
+const maxItem = 6;
+let index = 1;
+  
+function showItems(){
+    for(let i = 0; i < containerItems.length; i++){
+        containerItems[i].classList.add("hide");
+        if(i >= (index * maxItem) - maxItem && i < index *maxItem){
+            containerItems[i].classList.add("show")
+        }
+    }
+}
+
+window.onload = showItems();
