@@ -58,7 +58,7 @@
                         of all the things you need for a new house, especially as a lot will depend on
                          what you already have and what comes with your new home.
                 </p>
-                <button>all stores</button>
+                <button class="btnFilter" data-id="all">all products</button>
             </div>
             
             
@@ -66,31 +66,27 @@
         </div>
         <section class="sectionContainer">
             <div class="containerFilter">
-                <form>
-                    <input type="text" class="search" placeholder="search...">
-                </form>
-                <h4>Products</h4>
+                <div class="searchContainer">
+                    <input type="search" id="search-input" class="search" placeholder="search...">
+                    <button class="btn" id="search">Search</button>
+                </div>
+                <h4>Products:</h4>
                 <article class="productsFilter">
-                    <button class="btnFilter">tools</button>
-                    <button class="btnFilter">terrace</button>
-                    <button class="btnFilter">lights</button>
+                    <button class="btnFilter btn" data-id="tools">tools</button>
+                    <button class="btnFilter btn" data-id="terrace">terrace</button>
+                    <button class="btnFilter btn" data-id="lights">lights</button>
                 </article>
             </div>
             <div class="containerProducts">
                 <article class="productsAll">
                     <img src="/salesSait/imagine/fundalpro.jpeg" class="imgProducts img" alt="product">
-                    <footer>
+                    <div>
                         <h5 class="nameProducts">terrace</h5>
-                        <span class="priceProducts">$399.99</span>
-                    </footer>
+                        <div class="priceProducts">$399.99</div>
+                    </div>
                 </article>
             </div>
-            <div class="btnMove">
-                <button class="nextBtn">next</button>
-                <button class="pageBtn">page</button>
-                <button class="prevBtn">prev</button>
-
-            </div>
+           
         </section>
         <script src="/salesSait/project.js"></script>
     </body>

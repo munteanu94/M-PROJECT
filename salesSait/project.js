@@ -20,7 +20,7 @@ window.addEventListener("scroll", function (){
         navFixed.classList.remove("headerFixted")
     }
 })
-
+// array with products
 const products = [
     {
         id: '1',
@@ -142,31 +142,47 @@ function displayProductsKind (productskind){
         <img src=${item.image} class="imgProducts img" alt=${item.title}>
         <footer>
             <h5 class="nameProducts">${item.title}</h5>
-            <span class="priceProducts">${item.price}</span>
+            <div class="priceProducts">${item.price} $</div>
         </footer>
     </article>`
     })
+
     displayProducts = displayProducts.join('');
     containerProducts.innerHTML = displayProducts;
 
 }
+//filter products
+const filterConatiner = document.querySelectorAll(".btnFilter")
 
-/*btn page */
-const btnNext = document.querySelector(".nextBtn");
-const btnPrev = document.querySelector(".prevBtn");
-const btnPage = document.querySelector(".pageBtn");
-const containerItems = document.querySelector(".containerProducts").children;
-
-const maxItem = 6;
-let index = 1;
-  
-function showItems(){
-    for(let i = 0; i < containerItems.length; i++){
-        containerItems[i].classList.add("hide");
-        if(i >= (index * maxItem) - maxItem && i < index *maxItem){
-            containerItems[i].classList.add("show")
+filterConatiner.forEach(function(btn){
+    btn.addEventListener("click", function(e){
+        const company = e.currentTarget.dataset.id;
+        const menuCompany = products.filter(menuItem =>{
+        if (menuItem.company === company) {
+            return menuItem
         }
-    }
-}
+        })
+        if(company === 'all'){
+            displayProductsKind(products)
+        }else{
+            displayProductsKind(menuCompany)
+        }
+    })
+})
 
-window.onload = showItems();
+///search input
+document.getElementById("search").addEventListener("click", ()=> {
+    let searchInput = document.getElementById("search-input").value;
+    let elements = document.querySelectorAll(".nameProducts");
+    let productsAll = document.querySelectorAll(".productsAll");
+   
+    //loop through all elements
+    elements.forEach((elem, index) => {
+        //check if text includes the search value
+        if(elem.innerText.includes(searchInput.toUpperCase())){
+            productsAll[index].classList.remove("hide");
+        }else{
+            productsAll[index].classList.add("hide");
+        }
+    })
+})
