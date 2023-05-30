@@ -138,12 +138,12 @@ window.addEventListener("DOMContentLoaded",() =>{
 
 function displayProductsKind (productskind){
     let displayProducts = productskind.map( (item) => {
-        return `<article class="productsAll">
+        return `<article class="productsAll"><a href="#">
         <img src=${item.image} class="imgProducts img" alt=${item.title}>
         <footer>
             <h5 class="nameProducts">${item.title}</h5>
             <div class="priceProducts">${item.price} $</div>
-        </footer>
+        </footer></a>
     </article>`
     })
 
