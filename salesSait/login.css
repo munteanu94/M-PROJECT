@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+}
+.icon img {
+    width: 20px;
+}
+section {
+    position: relative;
+    min-height: 100vh;
+    background-color:rgb(194, 194, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+section .container{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+section.active {
+    background-color: pink;
+}
+section .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+section .imgBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 500ms;
+}
+section .imgBox img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+section .forBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    transition: 500ms;
+}
+section .forBox .top {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+section .forBox .top p {
+    font-size: 13px;
+}
+section .forBox .top span {
+    color: rgb(56, 56, 228);
+    cursor: pointer;
+}
+section form {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+section .formControl:first-child {
+    text-align: center;
+}
+section .formControl:first-child input {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 204, 204);
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-indent: 16px;
+    color: rgb(56, 56, 228);
+    outline: none;
+    width: 100%;
+}
+section .formControl:first-child input[type="submit"]{
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(159, 159, 247);
+    color: white;
+    transition: 500ms;
+}
+section .formControl:first-child h2{
+    width: 100%;
+    font-weight: 400;
+    font-size: 26px;
+}
+section .formControl:first-child p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+section .formControl:first-child span{
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+}
+section .formControl:first-child div{
+    position: relative;
+
+}
+section .formControl:first-child .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    cursor: pointer;
+}
+section .formControl:last-child{
+    text-align: center;
+}
+section .formControl:last-child p {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+}
+section .formControl:last-child p::after {
+    content: "";
+    position: absolute;
+    right: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: silver;
+}
+section .formControl:last-child p::before {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: silver;
+}
+section .formControl:last-child .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+section .formControl:last-child .icon {
+    cursor: pointer;
+
+}
+section .formControl:last-child .icon:not(:last-child) {
+    margin-right: 15px;
+}
+
+/* Functionality*/
+section .container .signup {
+    pointer-events: none;
+}
+section .container.active .signup {
+    pointer-events: initial;
+}
+section .container .signup .forBox {
+    top: 100%;
+}
+section .container.active .signup .forBox{
+    top: 0;
+}
+section .container .signup .imgBox {
+    top: -100%;
+}
+section .container.active .signup .imgBox {
+    top: 0;
+}
+section .container .login .forBox {
+    top: 0;
+}
+section .container.active .login .forBox{
+    top: 100%;
+}
+section .container .login .imgBox {
+    top: 0;
+}
+section .container.active .login .imgBox{
+    top: 100%;
+}
+
+@media(max-width: 1000px) {
+    section .container {
+        max-width: 400px;
+    }
+    section .container .imgBox {
+        display: none;
+    }
+    section .container .forBox {
+        width: 100%;
+    }
+    section .container.active .login .forBox {
+        top: -100%;
+    }
+}
+@media (max-width: 550px) {
+    section{
+    padding: 0 30px;
+    }
+}
