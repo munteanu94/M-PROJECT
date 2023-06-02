@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+*, *::after, *::before{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6rem;
+    background-color: white;
+    color: #222;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+/* style header*/
+.header {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+.topNav {
+    background-color: rgb(8, 211, 8);
+    font-size: 20px;
+    color: white;
+}
+.topNav div{
+    justify-content: space-between;
+    height: 4.5rem;
+}
+.topNav a{
+    padding: 0 0.5rem;
+    color: white;
+}
+/* style Navigation*/
+.navigation {
+    height: 100px;
+    line-height: 6rem;
+
+}
+.navCenter {
+    justify-content: space-between;
+}
+.navCenter .navItem:not(:last-child){
+    margin-right: 0.5rem;
+}
+.navCenter .navLink {
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+.navCenter .navLink:hover {
+    color: rgb(8, 211, 8);
+}
+/* style icons*/
+.icon{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    position: relative;
+}
+.icon:not(:last-child){
+    margin-right: 0.5rem;
+}
+.icon span{
+    position: absolute;
+    top: 3px;
+    right: -3px;
+    background-color: rgb(8, 211, 8);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 2rem;
+    justify-content: center;
+}
+.navList .icons {
+    display: none;
+}
+.navCenter .menuIcons {
+    display: none;
+    font-size: 2.3rem;
+    color: rgb(41, 40, 40);
+    cursor: pointer;
+}
+@media(max-width: 1000px) {
+    .navList {
+        position: fixed;
+        top:12%;
+        left: -100%;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0.2);
+        background-color: white;
+        height: 100%;
+        max-width: 35rem;
+        width: 0;
+        z-index: 100;
+        transition: all 300ms ease-in-out;
+    }
+    .navList.open {
+        left: 0;
+        width: 100%;
+    }
+    .navList .navItem {
+        margin:0 0 1rem 0;
+        width: 100%;
+
+    }
+    .navList .navLink {
+        font-size: 2rem;
+        color: black;
+    }
+    .navCenter .menuIcons {
+        display: block;
+        font-size: 3rem;
+    }
+    .icons {
+        display: none;
+    }
+    .navList .icons {
+        display: flex;
+    }
+    .topNav ul {
+       display: none;
+    }
+    .topNav div{
+       justify-content: center;
+       height: 3rem;
+    }
+}
+
+/* style slider */
+.containerSlider, .containerSlider .glide__slides {
+    background-color: rgb(213, 237, 213);
+    position: relative;
+    height: calc(100vh - 6rem);
+    margin: 0 4rem;
+    overflow: hidden;
+}
+.containerSlider
