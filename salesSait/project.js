@@ -134,16 +134,23 @@ const btnFilter = document.querySelector(".btnFilter");
 
 window.addEventListener("DOMContentLoaded",() =>{
     displayProductsKind(products)
-})
+});
 
 function displayProductsKind (productskind){
     let displayProducts = productskind.map( (item) => {
-        return `<article class="productsAll"><a href="#">
+        return `<article class="productsAll" data-name=${item.id}>
+       <a href="#" >
         <img src=${item.image} class="imgProducts img" alt=${item.title}>
+        <span class="discount">50%</span>
         <footer>
             <h5 class="nameProducts">${item.title}</h5>
             <div class="priceProducts">${item.price} $</div>
         </footer></a>
+        <ul class="icons" type="none">
+        <li><i class='bx bx-heart'></i></li>
+        <li><i class='bx bx-search'></i></li>
+        <li><i class='bx bx-cart'></i></li>
+</ul>
     </article>`
     })
 
@@ -151,6 +158,7 @@ function displayProductsKind (productskind){
     containerProducts.innerHTML = displayProducts;
 
 }
+
 //filter products
 const filterConatiner = document.querySelectorAll(".btnFilter")
 

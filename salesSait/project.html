@@ -8,6 +8,7 @@
         <meta name="author" content="Munteanu Vitalie">
         <link rel="stylesheet" href="/salesSait/project.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </hea>
     <body>
         <div class="containerPrincipal">
@@ -51,6 +52,33 @@
             </header>
             <div class="containerName">
                 <h1>everything for your home</h1>
+                <h2 class="way">Now you can buy with 50% discount only 15 days,</h2>
+                <div class="daysOffert">
+                    <div class="daysOffert-format">
+                        <div>
+                            <h4 class="days h4">34</h4>
+                            <span>days</span>
+                        </div>    
+                    </div>
+                    <div class="daysOffert-format">
+                        <div>
+                            <h4 class="hours h4">34</h4>
+                            <span>hours</span>
+                        </div>    
+                    </div>
+                    <div class="daysOffert-format">
+                        <div>
+                            <h4 class="minutes h4">34</h4>
+                            <span>minutes</span>
+                        </div>    
+                    </div>
+                    <div class="daysOffert-format">
+                        <div>
+                            <h4 class="secudes h4">34</h4>
+                            <span>secudes</span>
+                        </div>    
+                    </div>
+                </div>
                 <p>Moving to a new house is exciting and stressful in equal measure.
                      Whether you’re a first-time buyer or moving somewhere bigger (or smaller),
                       ensuring you have all the necessary items is essential in helping the process
@@ -60,9 +88,7 @@
                 </p>
                 <button class="btnFilter" data-id="all">all products</button>
             </div>
-            
-            
-            <footer></footer>
+            <script src="/salesSait/dicount.js"></script>
         </div>
         <section class="sectionContainer">
             <div class="containerFilter">
@@ -79,15 +105,22 @@
             </div>
             <div class="containerProducts">
                 <article class="productsAll">
-                    <img src="/salesSait/imagine/fundalpro.jpeg" class="imgProducts img" alt="product">
+                    <a href="#"> 
+                        <img src="/salesSait/imagine/fundalpro.jpeg" class="imgProducts img" alt="product">
+                    </a> 
+                    <span class="discount">50%</span>  
                     <div>
                         <h5 class="nameProducts">terrace</h5>
                         <div class="priceProducts">$399.99</div>
                     </div>
+                    <ul class="icons" type="none">
+                        <li><i class='bx bx-heart'></i></li>
+                        <li><i class='bx bx-search'></i></li>
+                        <li><i class='bx bx-cart'></i></li>
+                    </ul>
                 </article>
             </div>
-           
-        </section>
+         </section>
         <script src="/salesSait/project.js"></script>
     </body>
 </html>
