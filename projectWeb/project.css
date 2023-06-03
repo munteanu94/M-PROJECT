@@ -153,8 +153,115 @@ li {
 .containerSlider, .containerSlider .glide__slides {
     background-color: rgb(213, 237, 213);
     position: relative;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 150px);
     margin: 0 4rem;
     overflow: hidden;
 }
-.containerSlider
+.containerSlider .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    padding-top: 3rem;
+}
+.containerSlider .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+
+}
+.containerSlider .left h1{
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+.containerSlider .left p{
+    font-size: 1.6rem;
+    margin: 0 0 1rem;
+}
+.containerSlider .left .hero-btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    background-color: rgb(8, 211, 8);
+    color: white;
+}
+.containerSlider .right {
+    flex: 0 0 50%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.containerSlider .right img{
+    position: absolute;
+    width: 55rem;
+    height: 100%;
+    
+    transition: all 1000ms ease-in-out;
+}
+/*.containerSlider .right img img1{
+    width: 85%;
+    right: -25%;
+    bottom: -50%;
+}
+.containerSlider .right img img2{
+    width: 90%;
+    right: -40%;
+    bottom: -40%;
+}
+.glide__slide--active .center .right img {
+    bottom: -3%;
+    opacity: 1;
+}
+.glide__slide--active .left {
+    opacity: 1;
+    top: 35%;
+}
+@media (max-width: 1000px){
+    .glide__slide--active .left {
+        top: 15%;
+    }
+    .containerSlider .right img img1{
+        width: 90%;
+    }
+    .containerSlider .right img img2{
+        width: 100%;
+    }
+}
+@media (max-width: 1000px){
+    .glide__slide--active .left {
+        top: 15%;
+    }
+    .containerSlider .left img img1{
+        width: 90%;
+    }
+    .containerSlider .left img img2{
+        width: 100%;
+    }
+}
+@media (max-width: 567px){
+    .center .rigth img .img1 {
+        width: 30rem;
+    }
+    .center .rigth img .img2 {
+        width: 33rem;
+    }
+    .containerSlider, .containerSlider .glide__slides {
+    margin: 0;
+    padding: 0 3rem;
+    }
+    .containerSlider .left h1 {
+        font-size: 3rem;
+    }
+    .containerSlider .left span {
+        font-size: 1.4rem;
+    }
+    .containerSlider .left p {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+    
+}
