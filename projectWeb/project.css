@@ -711,3 +711,256 @@ li {
         row-gap: 3rem;
     }
 }
+/*style popup*/
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    transition: 0.3s;
+    transform: scale(1);
+}
+.popupContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    margin: 0 auto;
+    height: 55rem;
+    transform: translate(-50%, -50%);
+    padding: 1.6rem;
+    display: table;
+    overflow: hidden;
+    background-color: white;
+}
+.popupClose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.5rem;
+    background-color: rgb(8, 211, 8);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+}
+.popupLeft {
+    display: table-cell;
+    width: 50%;
+    height: 100%;
+    vertical-align: middle;
+}
+.popupRight {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+}
+.popupImgContainer{
+    width: 100%;
+    overflow: hidden;
+}
+.popupImgContainer .popupImg {
+    display: block;
+    width: 60rem;
+    height: 45rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+.contentRight {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+.contentRight h1{
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 1.6rem;
+}
+.contentRight h1 span {
+    color: rgb(8, 211, 8);
+}
+.contentRight p {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 1.6rem;
+}
+.popupForm {
+    width: 100%;
+    padding: 1.5rem 0;
+    text-indent: 1rem;
+    margin-bottom: 1.6rem;
+    border-radius: 3rem;
+    background-color: rgb(8, 211, 8);
+    color: white;
+    font-size: 1.8rem;
+    border: none;
+}
+.popupForm::placeholder {
+    color: white;
+}
+.popupForm:focus {
+    outline: none;
+
+}
+.popupRight a:link,
+.popupRight a:visited {
+    display: inline-block;
+    padding: 1.8rem 5rem;
+    border-radius: 3rem;
+    font-weight: 700;
+    color: white;
+    background-color: #222;
+    border: 1px solid rgb(138, 249, 138);
+    transition: 0.3s;
+} 
+.popupRight a:hover {
+    background-color: rgb(8, 211, 8);
+    color: #222;
+}
+.hidePopap {
+    transform: scale(0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+    .contentRight {
+        width: 100%;
+    }
+    .contentRight h1{
+        font-size: 3.5rem;
+        margin-bottom: 1.3rem;
+    }
+}
+@media (max-width: 1000px) {
+    .popupRight {
+        width: 100%;
+    }
+    .popupLeft {
+        display: none;
+    }
+    .popupRight h1{
+        font-size: 5rem;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .contentRight h1 {
+        font-size: 4rem;
+    }
+    .contentRight p {
+        font-size: 1.6rem;
+    }
+    .popupForm {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1.8rem 0;
+        margin-bottom: 1.5rem;
+    }
+    
+}
+@media (max-width: 567px) {
+    .popupRight {
+        padding: 0 1.6rem;
+    }
+    .popupContent {
+        height: 35rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contentRight {
+        width: 100%;
+    }
+    .contentRight h1 {
+        font-size: 3rem;
+    }
+    .contentRight p {
+        font-size: 1.4rem;
+    }
+    .popupForm {
+        width: 100%;
+        padding: 1.5rem 0;
+        margin-bottom: 1.3rem;
+    }
+    .contentRight a:link,
+    .contentRight a:visited {
+        padding: 1.5rem 3rem;
+    }
+    .opupClose {
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem;
+    }
+    
+}
+/* product*/
+.product {
+    margin: 10rem auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.productInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+th {
+    text-align: left;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(8, 211, 8);
+    font-weight: normal;
+}
+td{
+    padding: 1rem 0.5rem; 
+}
+td input {
+    width: 5rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+td a{
+    color: orangered;
+    font-size: 1.4rem;
+}
+td img {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+}
+.totalPrice {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.totalPrice table {
+    border-top: 3px solid rgb(8, 211, 8);
+    width: 100%;
+    max-width: 35rem;
+}
+td:last-child{
+    text-align: right;
+}
+.checkoutBtn {
+    display: inline-block;
+    background-color: rgb(8, 211, 8);
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+@media (max-width: 567px) {
+    .productInfo p {
+        display: none;
+    }
+}
