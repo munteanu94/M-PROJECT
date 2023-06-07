@@ -8,7 +8,7 @@
         <title>Project web</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="/projectWeb/project.css">
-        <title>Product Page</title>
+        <title>Products</title>
     </head>
     <body>
             <!--top nav-->
@@ -72,115 +72,46 @@
                     </div>
                 </div>
             </div>
-        <div class="container product">
-            <table>
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Subtitle</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="productInfo">
-                            <img src="/projectWeb/imagine/pro1.png" alt="product">
-                            <div>
-                                <p>Boy's T-shirt</p>
-                                <span>Price: 25$</span>
-                                <br>
-                                <a href="#">Remove</a>
-                            </div>
+        <!--Products Details-->
+        <section class="section productDetail">
+            <div class="details container">
+                <div class="left imageContainer">
+                    <div class="main">
+                        <img src="./imagine/pro1.png" id="zoom" alt="image">
+                    </div>
+                </div>
+                <div class="right">
+                    <span>Home/T-shirt</span>
+                    <h1>Boy's T-shirt by Handsome</h1>
+                    <div class="price">25$</div>
+                    <form>
+                        <div>
+                            <select>
+                                <option value="Select Size" selected disabled>
+                                    Select Size
+                                </option>
+                                <option value="1">32</option>
+                                <option value="2">42</option>
+                                <option value="3">52</option>
+                                <option value="4">62</option>
+                            </select>
+                            <span><i class="bx bx-chevron-down"></i></span>
                         </div>
-                    </td>
-                    <td>
-                        <input type="number" value="1" min="1">
-                    </td>
-                    <td>25$</td>
-                </tr>
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Subtitle</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="productInfo">
-                            <img src="/projectWeb/imagine/pro3.png" alt="product">
-                            <div>
-                                <p>Boy's T-shirt</p>
-                                <span>Price: 25$</span>
-                                <br>
-                                <a href="#">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <input type="number" value="1" min="1">
-                    </td>
-                    <td>25$</td>
-                </tr>
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Subtitle</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="productInfo">
-                            <img src="/projectWeb/imagine/pro5.png" alt="product">
-                            <div>
-                                <p>Boy's T-shirt</p>
-                                <span>Price: 25$</span>
-                                <br>
-                                <a href="#">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <input type="number" value="1" min="1">
-                    </td>
-                    <td>25$</td>
-                </tr>
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Subtitle</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="productInfo">
-                            <img src="/projectWeb/imagine/pro7.png" alt="product">
-                            <div>
-                                <p>Boy's T-shirt</p>
-                                <span>Price: 25$</span>
-                                <br>
-                                <a href="#">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <input type="number" value="1" min="1">
-                    </td>
-                    <td>25$</td>
-                </tr>
-            </table>
-            <div class="totalPrice">
-                <table>
-                    <tr>
-                        <td>Subtitle</td>
-                        <td>100$</td>
-                    </tr>
-                    <tr>
-                        <td>Tax</td>
-                        <td>20$</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>120$</td>
-                    </tr>
-                </table>
-                <a href="#" class="checkoutBtn">Proceed To Checkout</a>
+                    </form>
+                    <form class="form">
+                        <input type="text" placeholder="1">
+                        <a href="product.html" class="addCart">Add To Cart</a>
+                    </form>
+                    <h3>Product Detail</h3>
+                    <p>A T-shirt (also spelled tee-shirt or tee shirt),
+                        or tee for short, is a style of fabric shirt named
+                         after the T shape of its body and sleeves. 
+                         Traditionally, it has short sleeves and a round neckline, 
+                         known as a crew neck, which lacks a collar</p>
+                </div>
             </div>
-        </div>
+        </section>
+
         <section class="section newArrival">
             <div class="title">
                 <h1>RELATED PRODUCTS</h1>
@@ -189,14 +120,14 @@
             <div class="productCenter">
                 <div class="productItem">
                     <div class="overlay">
-                        <a href="ProductDetails.html" class="productLink">
+                        <a href="#" class="productLink">
                             <img src="/projectWeb/imagine/pro1.png" alt="img">
                         </a>
                         <span class="discount">50%</span>
                     </div>
                     <div class="prodInfo">
                         <span>MENS'S CLOTHES</span>
-                        <a href="#">
+                        <a href="ProductDetails.html">
                             best ecommerce top wear
                         </a>
                         <h4>25$</h4>
@@ -216,7 +147,7 @@
                     </div>
                     <div class="prodInfo">
                         <span>MENS'S CLOTHES</span>
-                        <a href="ProductDetails.html">
+                        <a href="#">
                             best ecommerce top wear
                         </a>
                         <h4>35$</h4>
@@ -267,24 +198,6 @@
                 </div>
             </div>
         </section>
-        <!-- CONTACT-->
-        <section class="section contact">
-            <div class="row">
-                <div class="col">
-                    <h2>EXCELLENT SUPPORT</h2>
-                    <p>For any eventuality ... We are available for our customers</p>
-                    <a class="btn btnFirst">Contact</a>
-                </div>
-                <div class="col">
-                    <form action="">
-                        <div>
-                            <input type="email" placeholder="Email ...">
-                            <a href="">Send</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
         <!--Footer-->
         <footer class="footer">
             <div class="row">
@@ -312,6 +225,17 @@
             </div>
         </footer>
     <script src="/projectWeb/project.js"></script>
-        
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" 
+        integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" 
+        crossorigin="anonymous">
+</script>
+<script src="./zoomsl.min.js"></script> 
+<script>
+    $(function(){
+        $('#zoom').imagezoomsl({
+            zoomrange: [4, 4]
+        })
+    })
+</script>
     </body>
 </html>

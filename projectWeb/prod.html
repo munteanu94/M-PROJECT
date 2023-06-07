@@ -7,14 +7,10 @@
         <meta name="author" content="Munteanu Vitalie">
         <title>Project web</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
         <link rel="stylesheet" href="/projectWeb/project.css">
-
-
+        <title>Products</title>
     </head>
     <body>
-        <header class="header" id="header">
             <!--top nav-->
             <div class="topNav">
                 <div class="container flex">
@@ -76,71 +72,23 @@
                     </div>
                 </div>
             </div>
-            <div class="containerSlider">
-                <div class="glide" id="glide1">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <div class="center">
-                                    <div class="left">
-                                        <span>New 2023</span>
-                                        <h1>NEW COLLECTION</h1>
-                                        <p>All for people</p>
-                                        <a href="" class="hero-btn">SHOW NOW</a>
-                                    </div>
-                                    <div class="right">
-                                        <img src="/projectWeb/imagine/slideerr1.jpg" class="img1" alt="imagine">
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="center">
-                                    <div class="left">
-                                        <span>New 2023</span>
-                                        <h1>NEW COLLECTION</h1>
-                                        <p>All for people</p>
-                                        <a href="" class="hero-btn">SHOW NOW</a>
-                                    </div>
-                                    <div class="right">
-                                        <img src="/projectWeb/imagine/slideerr2.avif" class="img2" alt="imagine">
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <!--All products-->
+        <section class="section productsAll">
+            <div class="top container">
+                <h1>All Products</h1>
+                <form>
+                    <select>
+                        <option value="1">Default Sorting</option>
+                        <option value="2">Sort By Price</option>
+                        <option value="3">Sort By Popularity</option>
+                        <option value="4">Sort By Sale</option>
+                        <option value="5">Sort By Rating</option>
+                    </select>
+                    <span><i class="bx bx-chevron-down"></i></span>
+                </form>
             </div>
-        </header>
-        <!-- categories section-->
-        <section class="section category">
-            <div class="centerCat">
-                <div class="cat">
-                    <img src="/projectWeb/imagine/cat3.jpeg">
-                    <div>
-                        <p>Women's wear</p>
-                    </div>
-                </div>
-                <div class="cat">
-                    <img src="/projectWeb/imagine/cat2.jpeg">
-                    <div>
-                        <p>Men's wear</p>
-                    </div>
-                </div>
-                <div class="cat">
-                    <img src="/projectWeb/imagine/cat1.jpeg">
-                    <div>
-                        <p>ACCESSORIES</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Products web-->
-        <section class="section newArrival">
-            <div class="title">
-                <h1>NEW ARRIVALS</h1>
-                <p>All from our store</p>
-            </div>
-            <div class="productCenter">
+
+            <div class="productCenter container">
                 <div class="productItem">
                     <div class="overlay">
                         <a href="#" class="productLink">
@@ -376,123 +324,16 @@
 
             </div>
         </section>
-        <!--Promo-->
-        <section class="section banner">
-            <div class="left">
-                <span class="trend">TREND DESIGN</span>
-                <h1>New collection for Spring 2023</h1>
-                <p>New Arrival <span class="color">Sale 50% OFF</span> Limited time offer</p>
-                <a href="#" class="btn btnFirst">Discover Now</a>
+        <section class="pagination">
+            <div class="container">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span><i class="bx bx-right-arrow-alt"></i></span>
             </div>
-            <div class="right">
-                <img src="/projectWeb/imagine/bannerr.jpeg" alt="banner">
-            </div>
-        </section>
-        <!--featured -->
-        <section class="section newArrival">
-            <div class="title">
-                <h1>FEATURED PRODUCTS</h1>
-                <p>All from our store</p>
-            </div>
-            <div class="productCenter">
-                <div class="productItem">
-                    <div class="overlay">
-                        <a href="#" class="productLink">
-                            <img src="/projectWeb/imagine/pro1.png" alt="img">
-                        </a>
-                        <span class="discount">50%</span>
-                    </div>
-                    <div class="prodInfo">
-                        <span>MENS'S CLOTHES</span>
-                        <a href="#">
-                            best ecommerce top wear
-                        </a>
-                        <h4>25$</h4>
-                    </div>
-                    <ul class="icons">
-                        <li><i class="bx bx-heart"></i></li>
-                        <li><i class="bx bx-search"></i></li>
-                        <li><i class="bx bx-cart"></i></li>
-                    </ul>
-                </div>
-                <div class="productItem">
-                    <div class="overlay">
-                        <a href="#" class="productLink">
-                            <img src="/projectWeb/imagine/pro5.png" alt="img">
-                        </a>
-                        <span class="discount">50%</span>
-                    </div>
-                    <div class="prodInfo">
-                        <span>MENS'S CLOTHES</span>
-                        <a href="#">
-                            best ecommerce top wear
-                        </a>
-                        <h4>35$</h4>
-                    </div>
-                    <ul class="icons">
-                        <li><i class="bx bx-heart"></i></li>
-                        <li><i class="bx bx-search"></i></li>
-                        <li><i class="bx bx-cart"></i></li>
-                    </ul>
-                </div>
-                <div class="productItem">
-                    <div class="overlay">
-                        <a href="#" class="productLink">
-                            <img src="/projectWeb/imagine/pro7.png" alt="img">
-                        </a>
-                    </div>
-                    <div class="prodInfo">
-                        <span>MENS'S CLOTHES</span>
-                        <a href="#">
-                            best ecommerce top wear
-                        </a>
-                        <h4>22$</h4>
-                    </div>
-                    <ul class="icons">
-                        <li><i class="bx bx-heart"></i></li>
-                        <li><i class="bx bx-search"></i></li>
-                        <li><i class="bx bx-cart"></i></li>
-                    </ul>
-                </div>
-                <div class="productItem">
-                    <div class="overlay">
-                        <a href="#" class="productLink">
-                            <img src="/projectWeb/imagine/pro10.png" alt="img">
-                        </a>
-                    </div>
-                    <div class="prodInfo">
-                        <span>MENS'S CLOTHES</span>
-                        <a href="#">
-                            best ecommerce top wear
-                        </a>
-                        <h4>45$</h4>
-                    </div>
-                    <ul class="icons">
-                        <li><i class="bx bx-heart"></i></li>
-                        <li><i class="bx bx-search"></i></li>
-                        <li><i class="bx bx-cart"></i></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- CONTACT-->
-        <section class="section contact">
-            <div class="row">
-                <div class="col">
-                    <h2>EXCELLENT SUPPORT</h2>
-                    <p>For any eventuality ... We are available for our customers</p>
-                    <a class="btn btnFirst">Contact</a>
-                </div>
-                <div class="col">
-                    <form action="">
-                        <div>
-                            <input type="email" placeholder="Email ...">
-                            <a href="">Send</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+        </section> 
+        
         <!--Footer-->
         <footer class="footer">
             <div class="row">
@@ -519,35 +360,7 @@
                 </div>
             </div>
         </footer>
-        <!--Popup-->
-        <div class="popup hidePopap">
-            <div class="popupContent">
-                <div class="popupClose">
-                    <i class="bx bx-x"></i>
-                </div>
-                <div class="popupLeft">
-                    <div class="popupImgContainer">
-                        <img class="popupImg" src="/projectWeb/imagine/popup2.jpeg">
-                    </div>
-                </div>
-                <div class="popupRight">
-                    <div class="contentRight">
-                        <h1>Get Discount<span>50%</span> 0ff</h1>
-                        <p>Sign up to our newsletter and save 30% for your next 
-                            purchase.No spam, we promise
-                        </p>
-                        <form actio="#">
-                            <input class="popupForm" type="email" placeholder="Enter your email...">
-                            <a href="">Subscribe</a>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
-        <script src="/projectWeb/slider.js" ></script>
-        <script src="/projectWeb/project.js"></script>
+    <script src="/projectWeb/project.js"></script>
         
     </body>
 </html>
