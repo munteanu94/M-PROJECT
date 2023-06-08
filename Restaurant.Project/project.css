@@ -99,6 +99,10 @@ p {
     background-color: rgb(245, 75, 75);
     border-radius: 50%;
 }
+.navBar .iconsSide div:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px grey;
+}
 .btn {
     display: inline-flex;
     background-color: rgb(245, 75, 75);
@@ -125,4 +129,61 @@ p {
     justify-content: center;
     cursor: pointer;
     display: none;
+}
+.navList .close {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .navBar .iconsSide{
+        display: none;
+    }
+    .navBar .navList {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 25rem;
+        height: 100%;
+        background-color: rgb(250, 250, 250);
+        z-index: 999;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 3rem 2rem;
+        transition: left 300ms linear;
+    }
+    .navBar > .row {
+        justify-content: space-between;
+    }
+    .menu {
+        display: block;
+    }
+    .navList a {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+    .navBar .navList .loginLink{
+        display: block;
+    }
+    .navBar .navList a:not(:last-child){
+        margin: 0;
+    }
+    .navList .close {
+        display: flex;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 3rem;
+        color: rgb(245, 75, 75);
+        cursor: pointer;
+        padding: 0.5rem 0.7rem;
+        justify-content: center;
+    }
+    .navList.show {
+        left: 0;
+    }
+    .navBar .logo img {
+        width: 12rem;
+    }
 }
