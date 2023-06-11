@@ -645,7 +645,8 @@ section .title h1::after {
     justify-content: space-between;
 }
 .productsContainer .filters div img{
-    width: 30px;
+    width: 5rem;
+    margin-right: 2rem;
 }
 .productsContainer .filters::after{
     content: "";
@@ -656,8 +657,89 @@ section .title h1::after {
     position: absolute;
     top: 0;
     right: -4rem;
+}
+.productsContainer .filters div{
+    width: 27rem;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+.productsContainer .filters div::after{
+    content: "";
+    height: 100%;
+    width: 1.5rem;
+    background-color: #ebeff1;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    right: -4rem;
+    z-index: 12;
+}
+.productsContainer .filters > div[class="active"]{
+    background-color: rgb(245, 75, 75);
+    color: #ebeff1;
+    font-weight: 500;
 
 }
+.productsContainer .filters > div[class="active"]::after{
+    background-color: rgb(245, 75, 75);
+    border: 1px solid grey;
+
+}
+.productsContainer .products{
+    width: 70%;
+    position: relative;
+}
+.productsContainer .products .button-disabled {
+    opacity: 0;
+    cursor: default;
+}
+.productsContainer .product {
+    height: 45rem;
+    position: relative;
+    
+}
+.productsContainer .products img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    border-bottom-right-radius: 5rem;
+}
+.productsContainer .product .overlay{
+    background-color: black;
+    border-radius: 0 3rem 0 1rem;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    width: 15rem;
+    transition: 0.3s;
+
+}
+.productsContainer .product .overlay h4 {
+    color: #fafeff;
+    font-weight: inherit;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.productsContainer .product .overlay .flex{
+   
+   
+   
+}
+.containerfirst
+.productsContainer .product .overlay .price {
+    font-weight: 500;
+    font-size: inherit;
+}
+.productsContainer .product .overlay .rating i{
+    color: #ffd25c;
+}
+
+
+
 
 
 
