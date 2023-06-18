@@ -6,10 +6,11 @@
         <meta name="<meta name="description" content="Project">
         <meta name="keywords" content="web,project">
         <meta name="author" content="Munteanu Vitalie">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+        
+        
         <link href="/Restaurant.Project/project.css" rel="stylesheet">
     </head>
     <body>
@@ -111,76 +112,87 @@
             </div>
         </header>
         <!--Kind of Dishes List-->
-        <section class="dishes">
-            <div class="row container">
+        <section class="section dishes">
                 <div class="title">
-                    <span>Andy's Life Style</span>
-                    <h1>Our Best Dishes<br>
-                        For Your Positive Energy
-                    </h1>
-                    <p>Remember why you set your goals in the first place.</p>
+                    <span>DESHES</span>
+                    <h2>Our the best Deshes</h2>
                 </div>
-                <div class="productsContainer">
-                    <div class="filters">
-                        <div data-filter="Burger">
-                            <img src="/Restaurant.Project/imagine/burger-icon.png">
-                            Burger</div>
-                        <div data-filter="Pizza">
-                            <img src="/Restaurant.Project/imagine/pizzaIcons.png">
-                            Pizza</div>
-                        <div data-filter="Omelette">
-                            <img src="/Restaurant.Project/imagine/iconsOmleta.png">
-                            Omelette</div>
-                        <div data-filter="Soup">
-                            <img src="/Restaurant.Project/imagine/soup.png">
-                            Soup</div>
-                        <div data-filter="Salad">
-                            <img src="/Restaurant.Project/imagine/saldicons.png">
-                            Salad</div>
-                    </div>
-                    <div class="products">
-                        <div class="container productsSlide">
-                            <div class="containerfirst flex" id="productsContainer">
-                                <div class="slide">
-                                    <div class="product">
-                                        <img src="/Restaurant.Project/imagine/burgher.jpeg">
-                                        <div class="overlay">
-                                            <h4>Burger</h4>
-                                            <div class="flex">
-                                                <span class="price">$5</span>
-                                                <span class="rating"><i class="bx bxs-star">5</i></span>
+                <div class="filters flex">
+                    <div data-filter="Burger">
+                        <img src="/Restaurant.Project/imagine/burger-icon.png">
+                        Burger</div>
+                    <div data-filter="Pizza">
+                        <img src="/Restaurant.Project/imagine/pizzaIcons.png">
+                        Pizza</div>
+                    <div data-filter="Omelette">
+                        <img src="/Restaurant.Project/imagine/iconsOmleta.png">
+                        Omelette</div>
+                    <div data-filter="Soup">
+                        <img src="/Restaurant.Project/imagine/soup.png">
+                        Soup</div>
+                    <div data-filter="Salad">
+                        <img src="/Restaurant.Project/imagine/saldicons.png">
+                        Salad</div>
+                </div>
+                <div class="products container">
+                    <div class="swiper mySwiper ">
+                        <div class="swiper-wraper" id="productsDeshes">
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="top flex">
+                                        <img src="/Restaurant.Project/imagine/burgher.jpeg" alt="img">
+                                        <div class="icon flex">
+                                            <i class='bx bxs-heart'></i>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <h4>Burger for family</h4>
+                                        <div class="flex">
+                                            <div class="price">$10</div>
+                                            <div class="rating">
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide">
-                                    <div class="product">
-                                        <img src="/Restaurant.Project/imagine/salad.jpeg">
-                                        <div class="overlay">
-                                            <h4>Burger</h4>
-                                            <div class="flex">
-                                                <span class="price">$5</span>
-                                                <span class="rating"><i class="bx bxs-star">5</i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="navigation flex">
-                            <div class="customBtn customPrev">
-                                <i class="bx bx-left-arrow-alt"></i>
-                            </div> 
-                            <div class="customBtn customNext">
-                                <i class="bx bx-right-arrow-alt"></i>
+                                <div class="product">
+                                    <div class="top flex">
+                                        <img src="/Restaurant.Project/imagine/burgher.jpeg" alt="img">
+                                        <div class="icon flex">
+                                            <i class='bx bxs-heart'></i>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <h4>Burger for family</h4>
+                                        <div class="flex">
+                                            <div class="price">$10</div>
+                                            <div class="rating">
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+
+                            
+                    </div>
+                    <div class="pagination">
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-            </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+        
         <script src="/Restaurant.Project/projects.js"></script>
         <script src="/Restaurant.Project/main.js"></script>
     </body>
