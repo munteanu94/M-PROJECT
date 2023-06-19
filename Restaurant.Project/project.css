@@ -630,7 +630,7 @@ p {
     width: 5rem;
 }
 .dishes .filters div:hover,
-.dishes .filters div:active {
+.dishes .filters div .active {
     background-color: rgb(245, 75, 75);
     color: white;
     box-shadow:10px 10px 10px silver;
@@ -670,8 +670,75 @@ p {
     visibility: hidden;
     transition: 0.3s;
 }
-.dishes .products .product .top:hover .icon {
+.dishes .products .product .top:hover .icon{
     opacity: 1;
     visibility: visible;
+}
+.dishes .products .product .bottom {
+    padding: 2.5rem 2rem;
+}
+.dishes .products .product .bottom h4 {
+    font-size: 2rem;
+    width: 85%;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+.dishes .products .product .bottom .flex {
+    justify-content: space-between;
+}
+.dishes .products .product .bottom .price {
+    color: white;
+    background-color: rgb(245, 75, 75);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+}
+.dishes .products .product .bottom .rating {
+    color: rgb(245, 75, 75);
+}
+.dishes .products .product .bottom .rating i:not(:last-child){
+    margin-right: 0.5rem;
+}
+.dishes .products .pagination {
+    text-align: center;
+    margin-top: 3rem;
+}
+.dishes .products .pagination .swiper-pagination-bullet {
+    background-color: rgb(245, 75, 75);
+    height: 1rem;
+    width: 1rem;
+}
+.dishes .products .pagination .swiper-pagination-bullet-active {
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+@media (max-width: 1600px){
+    .dishes .products .product .top{
+        height: 35rem;
+    }
+}
+@media (max-width: 800px) {
+    .dishes .filters {
+        margin-bottom: 7rem;
+    }
+    .dishes .filters div{
+        padding: 1.2rem 2.5rem;
+        font-size: 1.6rem;
+    }
+    .dishes .filters div:not(:last-child){
+        margin-right: 2rem;
+    }
+}
+@media (max-width: 567px) {
+    .dishes .filters {
+        flex-wrap: wrap;
+    }
+    .dishes .filters div{
+        padding: 0.7rem 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .dishes .filters div:not(:last-child) {
+        margin-right: 0.5rem;
+    }
 }
 
