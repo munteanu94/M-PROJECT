@@ -741,4 +741,104 @@ p {
         margin-right: 0.5rem;
     }
 }
+/* Step by step style*/
+.sectionSecond {
+    width: 100%;
+}
+.sectionSecond .center {
+    width: 1350px;
+    height: 500px;
+    margin: auto;
+}
+.sectionSecond .center .name h5{
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.sectionSecond .center .name h3 {
+    font-size: 3rem;
+}
+.sectionSecond .center .name span {
+    display: block;
+    width: 55px;
+    height: 5px;
+    background-color: rgb(245, 75, 75);
+}
+.sectionSecond .center .containerStep {
+    background-color: rgb(229, 224, 224);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sectionSecond .center .containerStep .item {
+   height: 100%;
+   width: 80%;
+   align-items: center;
+   justify-content: space-around;
+   column-gap: 10px;
+}
+.sectionSecond .center .containerStep .item .boxs{
+    height: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.sectionSecond .center .containerStep .item .boxs:hover {
+    background-color: rgb(245, 75, 75);
+    color: white;
+}
+.sectionSecond .center .containerStep .item .boxs div {
+    text-align: center;
+}
+.sectionSecond .center .containerStep .item .boxs div > i{
+    font-size: 5rem;
+    color: rgb(245, 75, 75);
+    background-color: white;
+    padding: 1rem;
+    border: 2px solid silver;
+    border-radius: 50%;
+}
+.sectionSecond .center .containerStep .item .boxs h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.sectionSecond .center .containerStep .item .boxs > span {
+    margin: 3rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.sectionSecond .center .containerStep .item .boxs .button {
+    font-size: 3rem;
+}
+.sectionSecond .center .containerStep .item .boxs .button span::after {
+    content: "➣";
+}
+@media (max-width: 1500px) {
+    .sectionSecond .center .containerStep {
+        margin: 1rem 4rem;
+    }
+    .sectionSecond .center .name {
+        margin: 1rem 4rem;
+    }
+}
+@media (max-width: 800px) {
+    .sectionSecond .center .containerStep .item {
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionSecond .center{
+        height: 100%;
+    }
+    .sectionSecond .center .containerStep {
+        margin: 1rem 4rem;
+    }
+    .sectionSecond .center .containerStep .item .boxs {
+        height: 300px;
+    }
+}
+
+
+
+
 
