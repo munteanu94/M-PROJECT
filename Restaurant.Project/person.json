@@ -1,0 +1,40 @@
+{
+    "person": [
+      {
+        "id": 1,
+        "name": "Helen Jecson",
+        "country": "Moldova Balti",
+        "url": "./imagine/person1.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "Ion Fast",
+        "country": "Moldova Cahul",
+        "url": "./imagine/person2.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "Vasile Lupei",
+        "country": "Moldova Nisporeni",
+        "url": "./imagine/person3.jpeg"
+      },
+      {
+        "id": 4,
+        "name": "Dodon Igor",
+        "country": "Moldova Molovata",
+        "url": "./imagine/person4.jpeg"
+      },
+      {
+        "id": 5,
+        "name": "Daniel Jecson",
+        "country": "Moldova Soroca",
+        "url": "./imagine/person5.jpeg"
+      },
+      {
+        "id": 6,
+        "name": "Helen Pricenton",
+        "country": "Moldova Cimislia",
+        "url": "./imagine/person6.jpeg"
+      }
+    ]
+  }
