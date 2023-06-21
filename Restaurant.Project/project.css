@@ -750,7 +750,6 @@ p {
     height: 500px;
     margin: auto;
 }
-
 .sectionSecond .center .name h5{
     font-size: 2rem;
     opacity: 0.7;
@@ -902,7 +901,6 @@ p {
     color: white;
     cursor: pointer;
 }
-
 .sectionFird .containerSlide .btnNext {
     background-color: rgb(245, 75, 75);
     border-radius: 50%;
@@ -915,6 +913,112 @@ p {
     width: 50px;
     height: 50px;
 }
+/* form style*/
+.messages {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(247, 241, 241);
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px grey;
+}
+.messages .container {
+    height: 90%;
+}
+.messages .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.messages .text h5 {
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.messages .text h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.messages .text span {
+    display: block;
+    width: 55px;
+    height: 5px;
+    background-color: rgb(245, 75, 75);
+}
+.messages .text div {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+.messages .form {
+    width: 50%;
+    height: 100%;
+}
+.messages .form form {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    height: 100%;
+}
+.messages .form form textarea {
+    width: 80%;
+    height: 150px;
+    border-radius: 5px;
+    text-indent: 20px;
+    font-size: 1.5rem;
+}
+.messages .form form div {
+    justify-content: space-between;
+    width: 100%;
+}
+.messages .form form label {
+    font-size: 2rem;
+}
+.messages .form form div input {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    text-indent: 30px;
+}
+.messages .form form div:nth-child(2) .massage {
+    height: 100%;
+}
+.messages .form form div:nth-child(3) input {
+    background-color: rgb(245, 75, 75);
+    cursor: pointer;
+    
+}
+.messages .form form div:nth-child(3) input:hover {
+    background-color: rgb(245, 75, 75);
+    opacity: 0.5;
+    color: white;
+}
+@media(max-width: 796px) {
+    .messages .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        row-gap: 50px;
+        width: 100%;
+    }
+    .messages {
+        height: 100%;
+        width: 100%;
+    }
+    .messages .text {
+        width: 100%;
+        text-align: center;
+    }
+    .messages .text span {
+        display: none;
+    }
+    .messages .form {
+        width: 100%;
+    }
+}
+
+
+
 
 
 
