@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="<meta name="description" content="Project">
+        <meta name="keywords" content="web,project">
+        <meta name="author" content="Munteanu Vitalie">
+        <link rel="stylesheet" href="/Restaurant.Project/swiper-bundle.min.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="/Restaurant.Project/project.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navBar">
+                <div class="row container flex">
+                    <a href="" class="logo">
+                        <img src="/Restaurant.Project/imagine/logo.png" alt="logo">
+                    </a>
+                    <ul class="navList flex">
+                        <a href="">Home</a>
+                        <a href="">Shop</a>
+                        <a href="">Pages</a>
+                        <a href="">About US</a>
+                        <a href="">Lookups</a>
+                        <a href="" class="loginLink">Login</a>
+                        <span class="close flex"><i class='bx bx-x'></i></span>
+                    </ul>
+                    <div class="iconsSide flex">
+                        <div class="searchIcon flex"><i class='bx bx-search'></i></div>
+                        <div class="cartIcon flex">
+                            <i class='bx bxs-shopping-bag-alt'></i>
+                            <span></span>
+                        </div>
+                        <a class="btn login">Log in</a>
+                    </div>
+                    <div class="menu flex">
+                        <i class='bx bx-menu' ></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="font">
+                <div class="row container flex">
+                    <div class="content">
+                        <span>We are the best</span>
+                        <h1>We are <span>Ready</span><br> deliver our food</h1>
+                        <p>
+                            When ordering online from the website: 
+                            the order is registered without confirmation. 
+                            Important: Enter your phone number correctly, 
+                            if the operator needs additional information 
+                            you will be contacted.</p>
+                        <div class="buttons flex">
+                            <button class="btn buyBtn">Buy Now</button>
+                            <button class="btn watchBtn flex">
+                                <img src="/Restaurant.Project/imagine/inconsvideo.png">
+                                <span>Watch Video</span>
+                            </button>
+                        </div>
+                    </div>
+                    <img class="person" src="/Restaurant.Project/imagine/fontPizza.jpeg" alt="img">
+                </div>
+            </div>
+            <div class="triangle"></div>
+            <div class="rectangle rectangle1"></div>
+            <div class="rectangle rectangle2"></div>
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <!--video-->
+            <div class="containerVideo flex">
+                <video class="video">
+                    <source src="/Restaurant.Project/imagine/Pizza Hut Commercial 2022 - (USA).mp4" type="video/mp4">
+                </video>
+                <div class="closeVideo">
+                    <i class="bx bx-x"></i>
+                </div>
+                <span class="controlVideo flex">
+                    <i class="bx bx-play"></i>
+                </span>
+            </div>
+            <!-- login form-->
+            <div class="formContainer">
+                <form action="" class="form">
+                    <h2>SING IN</h2>
+
+                    <div class="control">
+                        <label for="">Enter Email: </label>
+                        <input type="email" placeholder="Your Email...">
+                    </div>
+                    <div class="control">
+                        <label for="">Password: </label>
+                        <input type="password" placeholder="Password...">
+                    </div>
+                    <div class="checkbox flex">
+                        <input type="checkbox" >
+                        <span>Remember</span>
+                    </div> 
+                    <button class="btn">Sing In</button>
+                    <div class="links">
+                        <span>Forgot Password? <a href="">Click Here</a></span>
+                        <span>Don't have an account <a href="">Create new account</a></span>
+                    </div>
+                    <div class="closeForm">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <!--Kind of Dishes List-->
+        <section class="section dishes">
+                <div class="title">
+                    <span>DESHES</span>
+                    <h2>Our the best Deshes</h2>
+                </div>
+                <div class="filters flex">
+                    <div data-filter="Burger">
+                        <img src="/Restaurant.Project/imagine/burger-icon.png">
+                        Burger</div>
+                    <div data-filter="Pizza">
+                        <img src="/Restaurant.Project/imagine/pizzaIcons.png">
+                        Pizza</div>
+                    <div data-filter="Omelette">
+                        <img src="/Restaurant.Project/imagine/iconsOmleta.png">
+                        Omelette</div>
+                    <div data-filter="Soup">
+                        <img src="/Restaurant.Project/imagine/soup.png">
+                        Soup</div>
+                    <div data-filter="Salad">
+                        <img src="/Restaurant.Project/imagine/saldicons.png">
+                        Salad</div>
+                </div>
+                <div class="products container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="products">
+                           <!-- <div class="swiper-slide">
+                               <div class="product">
+                                    <div class="top flex">
+                                        <img src="/Restaurant.Project/imagine/burgher.jpeg" alt="img">
+                                        <div class="icon flex">
+                                            <i class='bx bxs-heart'></i>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <h4>Burger for family</h4>
+                                        <div class="flex">
+                                            <div class="price">$10</div>
+                                            <div class="rating">
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    <div class="pagination">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </section>
+        <section class="sectionSecond flex container">
+            <div class="center">
+                <div class="name">
+                    <h5>Step By Step</h5>
+                    <h3>How It Works</h3>
+                    <span></span>
+                </div>
+                    <div class="containerStep flex">
+                        <div class="item flex">
+                        <div class="boxs">
+                            <div><i class='bx bxs-grid-alt' ></i></div>
+                                <h2>Select Dishes</h2>
+                                <span>
+                                    You can select any product, 
+                                    Here it is explained how you can do it as easily as possible
+                                </span>
+                                <div class="button">
+                                    <span>Read More</span>
+                                </div>
+                            </div>
+                        <div class="boxs">
+                            <div><i class='bx bxs-grid-alt' ></i></div>
+                                <h2>Add Items</h2>
+                                <span>
+                                    You can select any product, 
+                                    Here it is explained how you can do it as easily as possible
+                                </span>
+                                <div class="button">
+                                    <span>Read More</span>
+                                </div>
+                            </div>
+                        <div class="boxs">
+                            <div><i class='bx bxs-grid-alt' ></i></div>
+                            <h2>Pay and Order</i></h2>
+                            <span>
+                                You can select any product, 
+                                Here it is explained how you can do it as easily as possible
+                            </span>
+                            <div class="button">
+                                <span>Read More</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sectionFird container">
+                <div class="name">
+                    <h5>What They Say About Us</h5>
+                    <h3>What Our Client Say's </h3>
+                    <span></span>
+                </div>
+                <div class="containerSlide">
+                    <div class="swiper Swiper">
+                        <div class="swiper-wrapper" id="person">
+                            <!--<div class="swiper-slide">
+                                <div class="person">
+                                    <div class="detail flex">
+                                        <div class="flex">
+                                            <img src="/Restaurant.Project/imagine/person1.jpeg" alt="slide">
+                                            <div class="personalDates">
+                                                <h3>Helen Jekson</h3>
+                                                <h5>Balti Moldova</h5>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="feedback">5</div>
+                                            <div class="level">
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                                <i class='bx bxs-star' ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span>Having good restaurant reviews is crucial these days. 
+                                        It is not just making our decision to pick one easier, 
+                                        it is also helping the restaurant be more successful.
+                                        You can quickly copy and paste these good restaurant review examples, 
+                                        publish them on Facebook
+                                    </span>
+                                </div>
+                            </div>-->
+                        </div>
+                        <div class="swiper-button-next btnNext"></div>
+                        <div class="swiper-button-prev btnPrev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </section>
+        <section class="messages">
+            <div class="container flex">
+                <div class="text">
+                    <h5>What They Say</h5>
+                    <h3>What Our Client Say's About Us</h3>
+                    <span></span>
+                    <div>You can says your opinion here.We will be very happy for that</div>
+                </div>
+                <div class="form">
+                    <form class="flex">
+                        <div class="flex">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="Enter Email...">
+                        </div>
+                        <div class="flex">
+                            <label for="text" class="massage">Message:</label>
+                            <textarea placeholder="Message... "></textarea>
+                        </div>
+                        <div class="flex">
+                            <label for="submit">Submit:</label>
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section containerTransy">
+            <div class="container">
+                <div class="name">
+                    <h5>What They Say About Us</h5>
+                    <h3>What Our Client Say's </h3>
+                    <span></span>
+                    <p>Those are the most order deshes this week.</p>
+                    <p>We are thankful for your choices.</p>
+                </div>
+                <div class="trandy">
+                    <div class="TrandyFirst">
+                        <img src="/Restaurant.Project/imagine/burger1.jpeg" alt="img">
+                        <h4>Double Burger</h4>
+                        <span>This is the best pizza</span>
+                        <h5>21 juny 2023</h5>
+                    </div>
+                    <div class="TrandyFirst">
+                        <img src="/Restaurant.Project/imagine/pizza.jpeg" alt="img">
+                        <h4>Pizza BBQ</h4>
+                        <span>This is the best pizza</span>
+                        <h5>21 juny 2023</h5>
+                    </div>
+                    <div class="TrandyFirst">
+                        <img src="/Restaurant.Project/imagine/soop.jpeg" alt="img">
+                        <h4>Soup beans</h4>
+                        <span>This is the best pizza</span>
+                        <h5>21 juny 2023</h5>
+                    </div>
+                    <div class="TrandySecond"></div>
+                    <div class="TrandyFird"></div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer flex">
+            <div class="contants container">
+                <div class="column">
+                    <img src="/Restaurant.Project/imagine/logo.png" alt="img">
+                    <div class="socialNetworks">
+                        <span><i class="bx bxl-facebook-square"></i></span>
+                        <span><i class="bx bxl-instagram-alt"></i></span>
+                        <span><i class="bx bxl-pinterest"></i></span>
+                        <span><i class='bx bxl-youtube' ></i></span>
+                        <span><i class='bx bxs-envelope'></i></span>
+                    </div>
+                    <p>Copyrights 2023</p>
+                    <p>Munteanu Vitalie Tudor</p>
+                </div>
+                <div class="column">
+                    <h3>Product</h3>
+                    <a href="">Dowloand</a>
+                    <a href="">Prices</a>
+                    <a href="">Locations</a>
+                </div>
+                <div class="column">
+                    <h3>Category</h3>
+                    <a href="">Men</a>
+                    <a href="">Women</a>
+                    <a href="">Kids</a>
+                </div>
+                <div class="column">
+                    <h3>My Account</h3>
+                    <a href="">My Account</a>
+                    <a href="">Discount</a>
+                    <a href="">Returns</a>
+                </div>
+                <div class="column">
+                    <h3>Contact Us</h3>
+                    <span><i class='bx bx-current-location'></i>Strada Arborilor 21, Chişinău 2025</span>
+                    <span><i class='bx bx-envelope' ></i>munteanu.vitalie.94@mail.ru</span>
+                    <span>+373 076732480</span>
+                </div>
+            </div>
+        </footer>
+        <script src="/Restaurant.Project/swiper-bundle.min.js"></script>
+        <script src="/Restaurant.Project/projects.js"></script>
+        <script src="/Restaurant.Project/main.js"></script>
+        <script src="/Restaurant.Project/slider.js"></script>
+    </body>
+</html>

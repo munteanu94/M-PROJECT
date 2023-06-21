@@ -1,0 +1,95 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Burger for children",
+        "price": "13.00",
+        "url": "./imagine/burgher.jpeg",
+        "category": "Burger"
+      },
+      {
+        "id": 2,
+        "title": "Omelette",
+        "price": "15.00",
+        "url": "./imagine/omleta.jpeg",
+        "category": "Omelette"
+      },
+      {
+        "id": 3,
+        "title": "Salad Grees",
+        "price": "12.00",
+        "url": "./imagine/salad.jpeg",
+        "category": "Salad"
+      },
+      {
+        "id": 4,
+        "title": "Burger double",
+        "price": "12.00",
+        "url": "./imagine/burger1.jpeg",
+        "category": "Burger"
+      },
+      {
+        "id": 5,
+        "title": "Burger chicken",
+        "price": "10.00",
+        "url": "./imagine/burgher2.jpeg",
+        "category": "Burger"
+      },
+      {
+        "id": 6,
+        "title": "Pizza Mediterranean",
+        "price": "16.00",
+        "url": "./imagine/pizza1.jpeg",
+        "category": "Pizza"
+      },
+      {
+        "id": 7,
+        "title": "Pizza Toscana",
+        "price": "9.00",
+        "url": "./imagine/pizza.jpeg",
+        "category": "Pizza"
+      },
+      {
+        "id": 8,
+        "title": "Salad chicken",
+        "price": "11.99",
+        "url": "./imagine/salad2.jpeg",
+        "category": "Salad"
+      },
+      {
+        "id": 9,
+        "title": "Soup",
+        "price": "7",
+        "url": "./imagine/soop.jpeg",
+        "category": "Soup"
+      },
+      {
+        "id": 10,
+        "title": "Soup",
+        "price": "7",
+        "url": "./imagine/soup3.jpeg",
+        "category": "Soup"
+      },
+      {
+        "id": 11,
+        "title": "Pizza BBq",
+        "price": "13.00",
+        "url": "./imagine/pizzaBBQ.jpeg",
+        "category": "Pizza"
+      },
+      {
+        "id": 12,
+        "title": "Pizza Napolitana",
+        "price": "13.00",
+        "url": "./imagine/pizzaN.jpeg",
+        "category": "Pizza"
+      },
+      {
+        "id": 13,
+        "title": "Pizza Ranchio",
+        "price": "13.00",
+        "url": "./imagine/pizzaR.jpeg",
+        "category": "Pizza"
+      }
+    ]
+  }
