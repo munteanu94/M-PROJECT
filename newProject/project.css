@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(181, 181, 248);
+    box-shadow: 0 3px 5px rgb(124, 124, 124);
+}
+nav .navbar {
+    max-width: 1400px;
+    height: 100%;
+    background-color:rgb(64, 160, 244);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+nav .navbar .navLinks .links {
+    display: flex;
+}
+nav .navbar .navLinks {
+    height: 100%;
+    line-height: 100px;
+}
+nav .navbar .navLinks .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    list-style: none;
+
+}
+nav .navbar .navLinks .links li a {
+    color: white;
+    white-space: nowrap;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+nav .navbar .logo a{
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+nav .navbar .navLinks .links li .aroow {
+    height: 100%;
+    width: 20px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    transition: all 0.5s ease;
+}
+.navbar .navLinks .links li:hover .firstAroow,
+.navbar .navLinks .links li:hover .secondAroow {
+    transform: rotate(180deg);
+}
+.navbar .navLinks .links .subMenu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background: rgb(64, 160, 244);
+    line-height: 50px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 5px rgb(124, 124, 124);
+    display: none;
+}
+.navbar .navLinks .links .subMenu li{
+    padding: 0 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.navbar .navLinks .links .subMenu li a{
+    font-size: 15px;
+    
+}
+.navbar .navLinks .links .subMenu li .moreAroow {
+    line-height: 50px;
+}
+.navbar .navLinks .links li:hover .firstSubMenu,
+.navbar .navLinks .links li:hover .secondSubMenu {
+    display: block;
+}
+.navbar .navLinks .links .subMenu .more .moreSubMenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 5px 5px 5px;
+    display: none;
+}
+.navbar .navLinks .links .subMenu .more:hover .moreSubMenu {
+    display: block;
+}
+.navbar .SearchContainer {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+.navbar .SearchContainer i{
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.navbar .SearchContainer .inputBox {
+    height: 90px;
+    width: 400px;
+    background-color: rgb(64, 160, 244);
+    position: absolute;
+    top: 110px;
+    right: calc(100% - 50px);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.navbar.showSearch .SearchContainer .inputBox{
+    top: 90px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.navbar .SearchContainer .inputBox::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(64, 160, 244);
+    right: 10px;
+    top: -10px;
+    transform: rotate(45deg);
+}
+.navbar .SearchContainer .inputBox input {
+    position: absolute;
+    height: 50px;
+    width: 380px;
+    z-index: 98;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 20px;
+}
+nav .navbar .navLinks .sideBar .logoName,
+    nav .navbar .navLinks .sideBar .bx-x,
+    .navbar .bx-menu{
+        display: none;
+    }
+@media (max-width: 1000px) {
+    nav .navbar {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+    nav .navbar .navLinks .links li{
+        padding: 0 10px;
+    }
+    nav .navbar .navLinks .links li a {
+        font-size: 0.8rem;
+    }
+    nav .navbar .logo a{
+        font-size: 1.5rem;
+       
+    }
+}
+@media (max-width: 750px) {
+    nav .navbar .navLinks {
+       display: block;
+       position: fixed;
+       background-color: rgb(64, 160, 244);
+       top: 0;
+       left: -100%;
+       max-width: 270px;
+       width: 100%;
+       padding: 20px;
+       line-height: 50px;
+       transition: all 0.5s ease;
+       z-index: 100;
+    }
+    nav .navbar .navLinks .sideBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav .navbar .navLinks .sideBar .logoName,
+    nav .navbar .navLinks .sideBar .bx-x,
+    .navbar .bx-menu{
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    nav .navbar .navLinks .sideBar .logoName,
+    nav .navbar .navLinks .sideBar .bx-x,
+    .navbar .bx-menu{
+        display: block;
+    }
+    nav .navbar .navLinks .links {
+        display: block;
+        margin-top: 20px;
+    }
+    .navbar .navLinks .links .subMenu {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+    .navbar .navLinks .links  {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+   
+    nav .navbar .navLinks .links li {
+        display: block;
+    }
+    .navbar .navLinks .links .subMenu li {
+        border-bottom: none;
+    }
+    .navbar .navLinks .links li:hover .firstSubMenu,
+    .navbar .navLinks .links li:hover .secondSubMenu {
+        display: none;
+    }
+    nav .navbar .navLinks .links li .aroow {
+        line-height: 50px;
+    }
+    .navbar .navLinks .links li:hover .firstAroow,
+    .navbar .navLinks .links li:hover .secondAroow {
+        transform: rotate(0deg);
+        cursor: pointer;
+    }
+    .navbar .navLinks .links .subMenu .more:hover .moreSubMenu {
+        display: none;
+    }
+    .navbar .navLinks.showFirst .links .subMenu.firstSubMenu {
+        display: block;
+        
+    }
+    .navbar .navLinks.showSecond .links .subMenu .more .moreSubMenu {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+       
+    }
+    .navbar .navLinks.showFird .links .subMenu.secondSubMenu {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar .navLinks.showFirst .links li .firstAroow,
+    .navbar .navLinks.showFird .links li .secondAroow {
+        transform: rotate(180deg);
+        
+    }
+    .navbar .navLinks.showSecond .subMenu .moreAroow{
+        transform: rotate(90deg);
+    }
+}
+@media (max-width: 400px) {
+    nav .navbar .navLinks {
+        max-width: 100%;
+    }
+}
+
