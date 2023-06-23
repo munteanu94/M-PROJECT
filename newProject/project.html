@@ -7,10 +7,12 @@
         <meta name="keywords" content="web,project">
         <meta name="author" content="Munteanu Vitalie">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/newProject/project.css">
         <title>web sait</title>
     </head>
     <body>
+        <header class="header" id="header">
         <nav>
             <div class="navbar">
                 <i class='bx bx-menu' ></i>
@@ -21,38 +23,38 @@
                         <i class='bx bx-x'></i>
                     </div>
                     <ul class="links">
-                        <li><a href="">HOME</a></li>
+                        <li><a href="#header">HOME</a></li>
                         <li>
-                            <a href="">HTML & CSS</a>
+                            <a href="#about">ABOUT US</a>
                             <i class='bx bxs-chevron-down aroow firstAroow'></i>
                             <ul class="firstSubMenu subMenu">
-                                <li><a href="">Web Desing</a></li>
-                                <li><a href="">Web Desing</a></li>
-                                <li><a href="">Web Desing</a></li>
+                                <li><a href="#">DISCOUNT</a></li>
+                                <li><a href="#">CERTIFICATION</a></li>
+                                <li><a href="#">PROFESSIONALS</a></li>
                                 <li class="more">
-                                    <a href="">More</a>
+                                    <a href="#">More</a>
                                     <i class='bx bxs-chevron-right aroow moreAroow'></i>
                                     <ul class="moreSubMenu subMenu">
-                                        <li><a href="">Web Desing</a></li>
-                                        <li><a href="">Web Desing</a></li>
-                                        <li><a href="">Web Desing</a></li>
-                                        <li><a href="">Web Desing</a></li>
+                                        <li><a href="#">TEAM</a></li>
+                                        <li><a href="#">PARTNER</a></li>
+                                        <li><a href="#">PROJECTS</a></li>
+                                        <li><a href="#">FEEDBACK</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="">JAVASCRIPT</a>
+                            <a href="#service">SERVICE</a>
                             <i class='bx bxs-chevron-down aroow secondAroow'></i>
                             <ul class="secondSubMenu subMenu">
-                                <li><a href="">Web Desing</a></li>
-                                <li><a href="">Web Desing</a></li>
-                                <li><a href="">Web Desing</a></li>
-                                <li><a href="">Web Desing</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#">TRAVELERS</a></li>
+                                <li><a href="#">INSURANCE</a></li>
+                                <li><a href="#">EXCURSIONS</a></li>
                             </ul>
                         </li>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="#trips">TRIPS</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class="SearchContainer">
@@ -63,6 +65,40 @@
                 </div>
             </div>
         </nav>
+        <!-- font hedear -->
+        <div class="swiper SwiperFirst">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/newProject/images/travel.jpeg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/newProject/images/travel2.jpeg">
+                </div>
+                <div class="swiper-slide">
+                    <video muted loop autoplay>
+                        <source src="/newProject/video/video1.mp4" type="video/mp4">
+                        <source src="/newProject/video/video1.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/newProject/images/dubai1.jpeg">
+                </div>
+                <div class="swiper-slide">
+                    <video muted loop autoplay>
+                        <source src="/newProject/video/dubai1.mp4" type="video/mp4">
+                        <source src="/newProject/video/dubai1.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/newProject/images/travel3.jpeg">
+                </div>
+
+            </div>
+        </div>
+        </header>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
         <script src="/newProject/projects.js"></script>
+        <script src="/newProject/slider.js"></script>
     </body>
 </html>
