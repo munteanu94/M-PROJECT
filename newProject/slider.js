@@ -5,7 +5,16 @@ const slideFirst = new Swiper(".SwiperFirst", {
     },
     loop: true,
     navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
+        nextEl: ".next",
+        prevEl: ".prev",
+    }
+})
+
+
+const slideSecond = new Swiper(".SwiperSecond", {
+    autoHeight: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     }
 })
