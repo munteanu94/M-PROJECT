@@ -444,14 +444,14 @@ nav .navbar .navLinks .sideBar .logoName,
     line-height: 2rem;
     margin-bottom: 2rem;
 }
-.about .firstContainer .column .title a {
+.btn {
     background-color: greenyellow;
     border: 2px solid silver;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 1.5rem;
 }
-.about .firstContainer .column .title a:hover {
+.btn:hover {
     opacity: 0.5;
     color: white;
     border: 2px solid rgb(52, 51, 51);
@@ -512,7 +512,140 @@ nav .navbar .navLinks .sideBar .logoName,
     .about .firstContainer .column {
         width: 100%;
     }
+    .about{
+        padding-top: 0;
+    }
 }
+
+/* style service */
+.service .secondContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+.service .column h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.service .column p{
+    color: rgb(67, 66, 66);
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+.service .secondContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service .column .box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.service .column .rating span {
+    color: greenyellow;
+}
+@media (max-width: 1000px) {
+    .service .column h1{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .service .column p{
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .service .column .box{
+        margin-bottom: 1rem;
+    }
+    .service .secondContainer {
+        gap: 1rem;
+    }
+}
+@media (max-width: 796px){
+    .service .secondContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .service {
+        padding-top: 0;
+    }
+}
+/* Discount box style*/
+.discount{
+    position: relative;
+    height: 60rem;
+}
+.discount .containerBox {
+    position: relative;
+    height: 100%;
+}
+.discount .containerBox::after{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(15, 15, 71);
+    opacity: 0.5;
+}
+.discount .video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.discount .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+.discount .content h1{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.discount .content span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+    font-size: 3rem;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+@media (max-width: 796px){
+    .discount {
+        padding-top: 0;
+        height: 50rem;
+    }
+    .discount .content {
+        width: 100%;
+    }
+    .discount .content h1{
+        font-size: 2rem;
+    }
+    .discount .content .btn{
+        font-size: 1rem;
+    }
+    .discount .content span {
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    }
+
+
 
 
 

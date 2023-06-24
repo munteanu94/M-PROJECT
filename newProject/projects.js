@@ -38,5 +38,22 @@ let secondAroow = document.querySelector(".secondAroow");
 secondAroow.addEventListener("click", ()=> {
     navLinks.classList.toggle("showFird");
 })
+
+// Media Discount
+const video = document.querySelector(".video");
+const buttonControl = document.querySelector(".videoControl");
+buttonControl.addEventListener("click", controlVideo)
+
+function controlVideo(){
+    if(video.paused){
+        buttonControl.innerHTML = "<i class='bx bx-pause'></i>" ;
+        video.play();
+    }else{
+        buttonControl.innerHTML = "<i class='bx bx-play'></i>" ;
+        video.pause();
+    }
+    
+}
+
     
 
