@@ -10,7 +10,7 @@ const slideFirst = new Swiper(".SwiperFirst", {
     }
 })
 
-
+//slider second
 const slideSecond = new Swiper(".SwiperSecond", {
     autoHeight: true,
     navigation: {
@@ -18,7 +18,7 @@ const slideSecond = new Swiper(".SwiperSecond", {
         prevEl: ".swiper-button-prev",
     }
 })
-
+//slider fird
 const slideFird = new Swiper(".SwiperFird", {
     effect: "coverflow",
     grabCursor: true,
