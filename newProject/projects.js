@@ -42,7 +42,7 @@ secondAroow.addEventListener("click", ()=> {
 const header = document.querySelector(".header");
 window.addEventListener("scroll", () =>{
     const scrollHeight = window.pageYOffset;
-    if(scrollHeight > 200){
+    if(scrollHeight > 100){
         navBar.classList.add("fexed")
         header.style.zIndex = "1000";
     }else{
