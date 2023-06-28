@@ -1,8 +1,8 @@
 let products = {
     data:[
     {
-        name: "bali",
-        category: "Bali",
+        name: "dubai",
+        category: "Dubai",
         price: "1000$",
         image: "./images/dubai1.jpeg",
     },
@@ -19,40 +19,137 @@ let products = {
         image: "./images/maldive.jpeg",
     },
     {
-        name: "spania",
-        category: "Spania",
-        price: "1700$",
+        name: "maldives",
+        category: "Maldives",
+        price: "5000$",
         image: "./images/poz1.jpeg",
     },
     {
-        name: "tenerifes",
-        category: "Tenerifes",
+        name: "bali",
+        category: "Bali",
         price: "3000$",
-        image: "./images/poz5.jpeg",
+        image: "./images/bali8.jpeg",
     },
     {
         name: "bali",
         category: "Bali",
         price: "1000$",
-        image: "./images/poz6.jpeg",
+        image: "./images/bali.jpeg",
     },
     {
-        name: "bali",
-        category: "Bali",
+        name: "tenerifes",
+        category: "Tenerifes",
         price: "1000$",
         image: "./images/travel3.jpeg",
     },
     {
         name: "bali",
         category: "Bali",
-        price: "1000$",
+        price: "2500$",
         image: "./images/travel2.jpeg",
     },
+    {
+        name: "bali",
+        category: "Bali",
+        price: "3499$",
+        image: "./images/balih1.jpeg",
+    },
+    {
+        name: "bali",
+        category: "Bali",
+        price: "3799$",
+        image: "./images/balih2.jpeg",
+    },
+    {
+        name: "bali",
+        category: "Bali",
+        price: "3999$",
+        image: "./images/balih3.jpeg",
+    },
+    {
+        name: "bali",
+        category: "Bali",
+        price: "4499$",
+        image: "./images/balih4.jpeg",
+    },
+    {
+        name: "dubai",
+        category: "Dubai",
+        price: "5500$",
+        image: "./images/dubaih1.jpeg",
+    },
+    {
+        name: "dubai",
+        category: "Dubai",
+        price: "4900$",
+        image: "./images/dubaih4.jpeg",
+    },
+    {
+        name: "dubai",
+        category: "Dubai",
+        price: "5900$",
+        image: "./images/dubaih3.jpeg",
+    },
+    {
+        name: "dubai",
+        category: "Dubai",
+        price: "6900$",
+        image: "./images/dubaih22.jpeg",
+    },
+    {
+        name: "maldives",
+        category: "Maldives",
+        price: "3000$",
+        image: "./images/maldivesh1.jpeg",
+    },
+    {
+        name: "maldives",
+        category: "Maldives",
+        price: "4200$",
+        image: "./images/maldivesh2.jpeg",
+    },
+    {
+        name: "maldives",
+        category: "Maldives",
+        price: "4800$",
+        image: "./images/maldivesh3.jpeg",
+    },
+    {
+        name: "maldives",
+        category: "Maldives",
+        price: "5800$",
+        image: "./images/maldivesh4.jpeg",
+    },
+    {
+        name: "tenerifes",
+        category: "Tenerifes",
+        price: "3399$",
+        image: "./images/tenerifah3.jpeg",
+    },
+    {
+        name: "tenerifes",
+        category: "Tenerifes",
+        price: "4399$",
+        image: "./images/tenerifeh1.jpeg",
+    },
+    {
+        name: "tenerifes",
+        category: "Tenerifes",
+        price: "6399$",
+        image: "./images/tenerifeh4.jpeg",
+    },
+    {
+        name: "tenerifes",
+        category: "Tenerifes",
+        price: "5999$",
+        image: "./images/tenerigeh2.jpeg",
+    },
+  
 ],
 }
 for(let i of products.data) {
     let card = document.createElement("div")
-    card.classList.add("card", i.category, "hidden")
+    card.classList.add("card", i.category, "hidden", "none")
     
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("imageContainer");
@@ -81,6 +178,7 @@ for(let i of products.data) {
     document.getElementById("products").appendChild(card);
 } 
 
+
 filterProduct = (value) =>{
     let buttons = document.querySelectorAll(".buttonValue");
     buttons.forEach( (btn) =>{
@@ -106,6 +204,7 @@ elements.forEach( (element) =>{
     }
 })
 }
+
 // search button click
 document.getElementById("searchBtn").addEventListener("click", ()=>{
     let searchInput = document.getElementById("searchInput").value;
@@ -125,3 +224,5 @@ document.getElementById("searchBtn").addEventListener("click", ()=>{
 window.onload = () =>{
     filterProduct('All');
 }
+
+
