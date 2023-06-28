@@ -8,10 +8,11 @@
         <meta name="author" content="Munteanu Vitalie">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="/newProject/project.css">
         <title>web sait</title>
     </head>
-    <body>
+    <body class="showChatbot">
         <!-- Preloader -->
         <div class="loader">
             <img src="./images/preloaderBear.gif" alt="preloader">
@@ -22,7 +23,6 @@
                 <div class="image">
                     <h2>BE FOCUSED OF<br> YOUR DREAMS</h2>
                     <img src="./images/bali9.jpeg">
-
                 </div>
                 <div class="form">
                     <i class='bx bx-x-circle' ></i>
@@ -43,6 +43,29 @@
                         <button type="button" class="LoginBtn">Log In</button>
                     </form>
                 </div>
+            </div>
+        </div>
+        <!-- buttons for chatbot -->
+        <butoon class="chatbotBtn">
+            <span id="send-btn" class="material-symbols-outlined">mode_comment</span>
+            <span id="send-btn" class="material-symbols-outlined">close</span>
+        </butoon>
+        <div class="chatbot">
+            <header>
+                <h2>Chatbot</h2>
+            </header>
+            <ul class="chatBox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Hi my friend 👋 <br> How can I help you? </p>
+                </li>
+                <li class="chat outgoing">
+                    <p>How do you feel?</p>
+                </li>
+            </ul>
+            <div class="chatInput">
+                <textarea placeholder="write a message..." required></textarea>
+                <span id="send-btn" class="material-symbols-outlined">send</span>
             </div>
         </div>
         <header class="header" id="header">
@@ -88,6 +111,7 @@
                         </li>
                         <li><a href="#trips" class="navLink">TRIPS</a></li>
                         <li><a href="#contact" class="navLink">CONTACT US</a></li>
+                        <li><a href="#" id="login">LOGIN</a></li>
                     </ul>
                 </div>
                 <div class="SearchContainer">

@@ -179,3 +179,31 @@ scroll.reveal(`.contact .location`,{
     interval: 250,
 });
 
+//Popap login
+
+const loginPopap = document.querySelector(".loginPopap");
+const close = document.querySelector(".bx-x-circle");
+const loginBtn = document.querySelector("#login");
+
+window.addEventListener("load", () =>{
+    showLoginPopap();
+})
+
+showLoginPopap = () =>{
+     const timeLimit = 5;
+     let i = 0;
+     const timer = setInterval(()=>{
+        i++;
+        if( i === timeLimit){
+            clearInterval(timer);
+            loginPopap.classList.add("show");
+        }
+    },1000)
+}
+
+close.addEventListener("click", () =>{
+    loginPopap.classList.remove("show");
+})
+loginBtn.addEventListener("click", () =>{
+    loginPopap.classList.add("show");
+})
