@@ -207,3 +207,90 @@ close.addEventListener("click", () =>{
 loginBtn.addEventListener("click", () =>{
     loginPopap.classList.add("show");
 })
+
+
+//Chatbot
+const chatInput = document.querySelector(".chatInput textarea");
+const sendMessage = document.querySelector('.chatInput span');
+const chatBox = document.querySelector('.chatBox');
+
+const chatbotBtn = document.querySelector(".chatbotBtn");
+
+chatbotBtn.addEventListener("click", () =>{
+    document.body.classList.toggle("showChatbot");
+      
+})
+
+let userMessage;
+let API_KEY = "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";
+const inputInitHeight = chatInput.scrollHeight;
+
+
+
+const createChatLi = (message, className) =>{
+    //create a chat <li> element with passed message and className
+    const chatLi = document.createElement("li");
+    chatLi.classList.add("chat", className);
+    let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+    chatLi.innerHTML = chatContent;
+    chatLi.querySelector("p").textContent = message;
+    return chatLi;
+}
+
+const generateAnswer = (incomingChatLi) =>{
+    const API_URL = "https://api.openai.com/v1/chat/completions";
+    const messageElement = incomingChatLi.querySelector("p");
+
+    const requestOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${API_KEY}`
+        },
+        body: JSON.stringify({
+            "model": "gpt-3.5-turbo",
+            "messages": [{role: "user", content: userMessage}]
+              
+        })
+    }
+        //Send POST request to API ,get response
+    fetch(API_URL, requestOptions).then(res => res.json()).then(data =>{
+        messageElement.textContent = data.choices[0].message.content;
+    }).catch((error) =>{
+        messageElement.classList.add("error")
+        messageElement.textContent = "Please try again";
+    }).finally(() => chatBox.scrollTo(0, chatBox.scrollHeight))
+}
+
+
+const handleChat = () =>{
+    userMessage = chatInput.value.trim();
+    if(!userMessage) return;
+    chatInput.value = "";
+    chatInput.style.height = `${inputInitHeight}px`
+    
+    //append the user's message th the chatbox
+    chatBox.appendChild(createChatLi(userMessage, "outgoing"));
+    chatBox.scrollTo(0, chatBox.scrollHeight);
+
+    setTimeout(() =>{
+
+        const incomingChatLi = createChatLi("Just a moment...", "incoming")
+        chatBox.appendChild(incomingChatLi);
+        generateAnswer(incomingChatLi);
+        chatBox.scrollTo(0, chatBox.scrollHeight);
+    }, 600);
+}
+
+chatInput.addEventListener("input", () =>{
+    chatInput.style.height = `${inputInitHeight}px`
+    chatInput.style.height = `${chatInput.scrollHeight}px`
+});
+
+chatInput.addEventListener("keydown", (e) =>{
+   if(e.key === "Enter" && !e.shifhKey && window.innerWidth > 800){
+    e.preventDefault();
+    handleChat();
+   }
+});
+sendMessage.addEventListener("click", handleChat)
