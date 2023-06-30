@@ -294,3 +294,11 @@ chatInput.addEventListener("keydown", (e) =>{
    }
 });
 sendMessage.addEventListener("click", handleChat)
+
+
+// Get dark the project: time of night by pressing the button
+const lightDarckbtn = document.querySelector(".lightDarckBtn");
+lightDarckbtn.addEventListener("click", () =>{
+    document.body.classList.toggle("showDark");
+      
+})

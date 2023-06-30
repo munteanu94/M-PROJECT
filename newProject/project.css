@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --fist-color: white;
+    --second-color: rgb(21, 21, 21);
+   
+   
+}
+
 a {
     text-decoration: none;
 }
@@ -348,7 +355,7 @@ nav .navbar .navLinks .sideBar .logoName,
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 0.7%;
     right: 0;
     z-index: 1000;
     background-color: white;
@@ -434,7 +441,6 @@ nav .navbar .navLinks .sideBar .logoName,
     margin-bottom: 2rem;
 }
 .about .firstContainer .column .title p{
-    color: rgb(67, 66, 66);
     line-height: 2rem;
     margin-bottom: 2rem;
 }
@@ -522,7 +528,6 @@ nav .navbar .navLinks .sideBar .logoName,
     margin-bottom: 2rem;
 }
 .service .column p{
-    color: rgb(67, 66, 66);
     line-height: 2rem;
     margin-bottom: 3rem;
 }
@@ -1234,3 +1239,32 @@ nav .navbar .navLinks .sideBar .logoName,
         height: 500px;
     }
 }
+/* get dark all project */
+.lightDarckBtn {
+    position: relative;
+    color: white;
+}
+.lightDarckBtn i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bx-sun {
+    position: absolute;
+}
+.showDark{
+    background-color: black;
+    color: white;
+}
+.showDark .lightDarckBtn i:first-child,
+.lightDarckBtn i:last-child{
+   opacity: 0;
+}
+.showDark .lightDarckBtn i:last-child {
+    opacity: 1;
+}
+
