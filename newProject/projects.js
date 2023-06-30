@@ -44,7 +44,7 @@ window.addEventListener("scroll", () =>{
     const scrollHeight = window.pageYOffset;
     if(scrollHeight > 100){
         navBar.classList.add("fexed")
-        header.style.zIndex = "1000";
+        header.style.zIndex = "100";
     }else{
         navBar.classList.remove("fexed")
     }

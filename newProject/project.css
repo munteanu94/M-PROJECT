@@ -5,13 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    --fist-color: white;
-    --second-color: rgb(21, 21, 21);
-   
-   
-}
-
 a {
     text-decoration: none;
 }
@@ -22,7 +15,7 @@ html {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    z-index: 0;
+    z-index: 100;
 }
 .container {
     max-width: 80%;
@@ -40,7 +33,7 @@ nav {
     top: 0;
     width: 100%;
     height: 100px;
-    z-index: 999;
+    z-index: 100;
 }
 nav .navbar {
     width: 100%;
@@ -55,6 +48,7 @@ nav .navbar.fexed {
     width: 100%;
     position: fixed;
     background-color: rgb(3, 3, 110);
+   z-index: 1000000;
 }
 nav .navbar .navLinks .links {
     display: flex;
@@ -1257,7 +1251,7 @@ nav .navbar .navLinks .sideBar .logoName,
     position: absolute;
 }
 .showDark{
-    background-color: black;
+    background-color: rgb(62, 61, 61);
     color: white;
 }
 .showDark .lightDarckBtn i:first-child,
@@ -1266,5 +1260,120 @@ nav .navbar .navLinks .sideBar .logoName,
 }
 .showDark .lightDarckBtn i:last-child {
     opacity: 1;
+}
+
+.showDark .containerExchange{
+    background-color: rgb(62, 61, 61);
+}
+.showDark .header .arrows {
+    background-color: rgb(62, 61, 61);
+}
+
+/* Style Exchange */
+
+.containerExchange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color:rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    border-radius: 10px;
+    z-index: 10;
+}
+.containerExchange header {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+.containerExchange form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerExchange .amount {
+    width: 90%;
+}
+.containerExchange .amount input {
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-indent: 20px;
+    border: 1px solid silver;
+}
+.containerExchange .amount input:focus{
+    background-color: rgb(180, 180, 248);
+    border: 2px solid rgb(70, 70, 244);
+}
+.containerExchange .list {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.containerExchange .list .select-box {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+.list .select-box img{
+    width: 30px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.list .select-box select {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline-offset: none;
+    border-radius: 5px;
+}
+.list .icon span {
+    height: 100%;
+    line-height: 85px;
+}
+.containerExchange .exchangeRate{
+    width: 90%;
+    margin-bottom: 1rem;
+}
+.containerExchange button {
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 1px solid silver;
+    border-radius: 5px;
+    background-color: rgb(57, 57, 248);
+    color: white;
+    font-size: 1.2rem;
+}
+@media(max-width: 1320px) {
+    .containerExchange{
+        border: 2px solid silver;
+        height: 340px;
+    }
+    .containerExchange header {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        
+    }
+}
+@media(max-width: 1320px) {
+    .containerExchange {
+        display: none;
+    }
 }
 

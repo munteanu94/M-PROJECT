@@ -166,6 +166,52 @@
                 <i class="bx bx-chevron-right icon"></i>
             </div>
         </div>
+
+        <!-- make exchange -->
+        <div class="containerExchange">
+            <header>Currency Converter</header>
+            <form action="#">
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" value="1">
+                </div>
+                <div class="list">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-box">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                            <select>
+                                <!-- <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="RUB">RUB</option>
+                                <option value="RON">RON</option>
+                                <option value="UAH">UHA</option>
+                                <option value="GBR">UK</option>  -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="icon"><span class="material-symbols-outlined">
+                        magic_exchange
+                        </span></div>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-box">
+                            <img src="https://flagsapi.com/MD/flat/64.png" alt="flag">
+                            <select>
+                                <!-- <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="RUB">RUB</option>
+                                <option value="RON">RON</option>
+                                <option value="UAH">UHA</option>
+                                <option value="GBR">UK</option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="exchangeRate">EXCHANGE...</div>
+                <button>Get Exchange</button>
+            </form>
+        </div>
         </header>
 
         <main>
@@ -436,5 +482,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
         <script src="/newProject/projects.js"></script>
         <script src="/newProject/slider.js"></script>
+        <script src="./exchange.js"></script>
     </body>
 </html>
