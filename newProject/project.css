@@ -33,7 +33,7 @@ nav {
     top: 0;
     width: 100%;
     height: 100px;
-    z-index: 100;
+    z-index: 1000;
 }
 nav .navbar {
     width: 100%;
@@ -48,7 +48,7 @@ nav .navbar.fexed {
     width: 100%;
     position: fixed;
     background-color: rgb(3, 3, 110);
-   z-index: 1000000;
+    z-index: 1000000;
 }
 nav .navbar .navLinks .links {
     display: flex;
@@ -351,7 +351,7 @@ nav .navbar .navLinks .sideBar .logoName,
     position: absolute;
     bottom: 0.7%;
     right: 0;
-    z-index: 1000;
+    z-index: 100;
     background-color: white;
     padding: 1rem;
     width: 15rem;
@@ -1359,6 +1359,17 @@ nav .navbar .navLinks .sideBar .logoName,
     background-color: rgb(57, 57, 248);
     color: white;
     font-size: 1.2rem;
+    cursor: pointer;
+}
+.containerExchange button:hover {
+    background-color: rgb(168, 168, 248);
+    color: rgb(23, 20, 20);
+}
+.btnExchange {
+    display: none;
+}
+.closeBtnExchange {
+    display: none;
 }
 @media(max-width: 1320px) {
     .containerExchange{
@@ -1368,12 +1379,60 @@ nav .navbar .navLinks .sideBar .logoName,
     .containerExchange header {
         font-size: 1.5rem;
         margin: 0.5rem 0;
-        
+        text-align: center;
     }
 }
-@media(max-width: 1320px) {
+@media(max-width: 780px) {
     .containerExchange {
         display: none;
     }
+    .showExchange{
+        display: block;
+        z-index: 100;
+    }
+    .btnExchange {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(128, 128, 251);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        z-index: 10;
+        bottom: 125px;
+        left: 40px;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    .btnExchange span {
+        font-size: 2.5rem;
+    }
+    .btnExchange:hover {
+        background-color: rgb(205, 205, 246);
+        color: rgb(23, 20, 20);
+        border: 2px solid rgb(128, 128, 251);
+    }
+    .closeBtnExchange {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border: 1px solid silver;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        background-color: rgb(57, 57, 248);
+        color: white;
+        cursor: pointer;
+    }
+    .closeBtnExchange:hover {
+        background-color: rgb(168, 168, 248);
+        color: rgb(23, 20, 20);
+    }
+    
 }
-

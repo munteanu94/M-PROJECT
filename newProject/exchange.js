@@ -79,3 +79,16 @@ getExchange = () =>{
     })
 
 }
+
+// icon open and close exchange
+const btnExchange = document.querySelector(".btnExchange .material-symbols-outlined");
+const containerExchange = document.querySelector(".containerExchange")
+const closeBtnExchange = document.querySelector(".closeBtnExchange .bx-x")
+
+btnExchange.addEventListener("click", () =>{
+    containerExchange.classList.add("showExchange");
+})
+
+closeBtnExchange.addEventListener("click", () =>{
+    containerExchange.classList.remove("showExchange");
+})
