@@ -1269,6 +1269,8 @@ nav .navbar .navLinks .sideBar .logoName,
     background-color: rgb(62, 61, 61);
 }
 
+
+
 /* Style Exchange */
 
 .containerExchange {
@@ -1434,5 +1436,144 @@ nav .navbar .navLinks .sideBar .logoName,
         background-color: rgb(168, 168, 248);
         color: rgb(23, 20, 20);
     }
-    
 }
+/* rate calculator */
+.showDark .calculator{ 
+    background-color: black;
+    color: black;
+}
+.calculator {
+    background-color: rgb(213, 212, 212);
+    padding-top: 80px;
+}
+.boxCalculator {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(167, 240, 112);
+    margin: 0 auto;
+}
+.boxCalculator > div{
+    background-color: white;
+    padding: 1.5rem 2.5rem;
+}
+.boxCalculator .contentCalc h2,
+.result h2 {
+   font-size: 1.4rem;
+   font-weight: 600;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   padding: 10px 0;
+   border-bottom: 2px solid silver;
+}
+.contentCalc .formCalc,
+.result .paymentInfo {
+    margin-top: 20px;
+}
+.contentCalc .formCalc .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+
+}
+ .formCalc .row .inputName span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+ }
+ .formCalc .row .inputName {
+    display: flex;
+    align-items: center;
+ }
+ .formCalc .row .inpuControl input{
+    font-size: 20px;
+    border: 2px solid silver;
+    padding: 5px 8px;
+    border-radius: 5px;
+ }
+ .formCalc .row .inpuControl input:focus{
+    outline: none;
+ }
+ .formCalc .row .inpuControl span {
+    margin-right: 20px;
+    font-weight: 400;
+    opacity: 0.7;
+ }
+ .formCalc .btns{
+    margin-top: 30px;
+ }
+ .formCalc .btns input {
+    background-color: rgb(121, 120, 120);
+    display: block;
+    border: none;
+    margin: 15px auto 0 auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    padding: 10px 0;
+    width: 150px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+ }
+ .formCalc .btns input:hover {
+    opacity: 0.7;
+ }
+ .result .paymentInfo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 15px;
+ }
+ .result .paymentInfo div {
+    padding: 15px 0;
+    background-color: rgb(121, 120, 120);
+    color: white;
+}
+.result .paymentInfo div h4{
+    font-weight: 500;
+    padding: 10px 0;
+
+}
+.result .paymentInfo div span{
+    font-size: 25px;
+    font-weight: 900;
+}
+@media (max-width: 1000px) {
+    .boxCalculator {
+        width: 100%;
+    }
+}
+@media (max-width: 796px) {
+    .boxCalculator {
+        width: 100%;
+    }
+    .boxCalc {
+        max-width: 100%;
+    }
+}
+@media (max-width: 650px) {
+    .contentCalc .formCalc .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .inputName {
+        margin-bottom: 10px;
+    }
+    .inpuControl span {
+        display: block;
+    }
+    .result .paymentInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
