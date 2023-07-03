@@ -414,6 +414,11 @@ nav .navbar .navLinks .sideBar .logoName,
         font-size: 2rem;
     }
 }
+.about {
+    position: relative;
+    margin-top: 0;
+    padding-top: 240px;
+}
 .about .firstContainer {
     width: 100%;
     height: 90vh;
@@ -1439,7 +1444,7 @@ nav .navbar .navLinks .sideBar .logoName,
 }
 /* rate calculator */
 .showDark .calculator{ 
-    background-color: black;
+    background-color: rgb(62, 61, 61);
     color: black;
 }
 .calculator {
@@ -1577,3 +1582,69 @@ nav .navbar .navLinks .sideBar .logoName,
     }
 }
  
+/* style date trips */
+
+.dateTrip .searchBox {
+    width: 60%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    border: 2px solid silver;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgb(110, 109, 109);
+}
+
+.dateTrip .searchBox .col {
+    height: 100%;
+    padding: 0 10px;
+}
+.dateTrip .searchBox .col h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.dateTrip .searchBox .col h4 i{
+    margin-left: 10px;
+    font-size: 15px;
+    transition: 0.3s linear;
+}
+.dateTrip .searchBox .col input {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+.dateTrip .searchBox .col input:focus {
+    border: 2px solid silver;
+}
+.dateTrip .searchBox .inputBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dateTrip .searchBox .inputBtn input{
+    background-color: greenyellow;
+    border: none;
+    outline: none;
+    border: 2px solid silver;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.dateTrip .searchBox .inputBtn input:hover {
+    opacity: 0.5;
+    color: white;
+    border: 2px solid rgb(52, 51, 51);
+    text-shadow: 2px 2px 5px black;
+}
+

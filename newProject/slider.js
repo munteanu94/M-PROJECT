@@ -87,3 +87,4 @@ function clearResult() {
         item.innerHTML = "&mdash;";
     });
 }
+

@@ -225,4 +225,3 @@ window.onload = () =>{
     filterProduct('All');
 }
 
-
