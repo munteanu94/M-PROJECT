@@ -224,4 +224,3 @@ document.getElementById("searchBtn").addEventListener("click", ()=>{
 window.onload = () =>{
     filterProduct('All');
 }
-
