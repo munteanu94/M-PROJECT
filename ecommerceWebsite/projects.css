@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
+*,::before,::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: white;
+}
+li {
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.material-symbols-outlined {
+    line-height: 40px;
+    margin: auto 0;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* header */
+header li > a{
+    display: flex;
+    position: relative;
+    line-height: inherit;
+    transition: color 0.3s;
+}
+header li > a:hover{
+    color: rgb(134, 134, 230);
+}
+.headearTop .box{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.headearTop .left ul,
+.headearTop .right ul{
+    display: flex;
+    gap: 25px;
+}
+.headearTop li {
+    position: relative;
+}
+.headearTop ul .flex{
+    position: absolute;
+    right: 5px;
+    line-height: 8px;
+    border: 1px solid silver;
+    padding-left: 0;
+    z-index: 1;
+    display: none;
+}
+.headearTop ul ul li a {
+    padding: 10px 12px;
+}
+.headearTop ul ul li.current a {
+    background-color: rgb(185, 183, 183);
+}
+.headearTop li:hover .flex {
+    display: block;
+}
+
+.mobileHide {
+    display: none;
+}
+.object-cover img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.products .media {
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.primaryButton {
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    transition: 0.3 color 0.3s;
+}
+.primaryButton {
+    color: white;
+    background-color: pink;
+
+}
+.primaryButton:hover {
+    background-color: palevioletred;
+}
+
+/* second nav */
+.headerNav {
+    padding: 10px 0;
+    border-bottom: 1px solid silver;
+}
+.headerNav .box {
+    display: flex;
+    justify-content: space-between;
+}
+.headerNav .box .secondLinks .left a{
+    font-size: 20px;
+    font-weight: 900;
+}
+.headerNav .box .left {
+    display: flex;
+    align-items: center;
+}
+.trigger .material-symbols-outlined{
+    font-size: 50px;
+    display: flex;
+    padding: 5px;
+    margin-right: 10px;
+} 
+.mobileHide .secondLinks {
+    display: flex;
+}
+.headerNav .left {
+    display: flex;
+}
+.headerNav .left .logo a{
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: 30px;
+    position: relative;
+    padding-left: 15px;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(109, 109, 243);
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    z-index: -1;
+    opacity: 0.8;
+}
+.headerNav nav > ul {
+    line-height: 70px;
+    gap: 20px;
+}
+.New {
+    position: absolute;
+    height: 15px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    line-height: 10px;
+}
+nav .New {
+    top: 27%;
+    right: -35px;
+    border-radius: 2px;
+}
+.iconLarge {
+   position: relative;
+}
+.headerNav .box .right .firdLinks{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.headerNav .box .right .firdLinks .iscard {
+    display: flex;
+    column-gap: 30px;
+}
+.iconFly {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+.iconFly .itemNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerNav .box .right .firdLinks .iscard .iconLarge{
+    display: flex;
+    margin: 0;
+}
+.headerNav .box .right .firdLinks .iscard .iconFly {
+    top: -8px;
+}
+.iconText .minText {
+    font-size: 10px;
+}
+.iconText .cartTotal {
+    font-size: 14px;
+}
+/* style more women */
+.mega .wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-right: 30px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+.moreBox {
+    width: 100%;
+}
+.mega .moreBox .row li a{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
+
+@media (min-width: 1000px){
+    .hidden {
+        display: none;
+    }
+    .mobileHide {
+        display: block;
+    }
+    .container {
+        padding: 0 35px;
+    }
+
+    /* style more women */
+    nav .mega {
+        position: absolute;
+        width: 100%;
+        background-color: aqua;
+        top: auto;
+        left: 0;
+        right: 0;
+        padding: 40px;
+        line-height: 30px;
+        box-shadow:0 30px 20px 10px rgb(0, 0, 0, 20%);
+        z-index: 100;
+    }
+    nav .mega .wrapper {
+        display: flex;
+        width: 100%;
+    }
+    nav .mega h4{
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    nav .mega .view-all{
+        margin-top: 30px;
+    }
+    nav .mega .products {
+        position: relative;
+        width: 100%;
+    }
+    nav .mega .products.row {
+        width: 100%;
+    }
+    nav .mega .products .row .media {
+        height: 400px;
+    }
+    nav .mega .products .textContent {
+        line-height: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+    }
+    nav .mega .products .textContent h4 {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 900;
+        color: white;
+    }
+   
+   
+    
+
+}
