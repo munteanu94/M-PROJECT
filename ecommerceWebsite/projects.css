@@ -5,7 +5,6 @@
 body {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.4;
     background-color: white;
 }
@@ -32,6 +31,10 @@ a {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.miniText {
+    font-size: 13px;
 }
 /* header */
 header li > a{
@@ -101,11 +104,19 @@ header li > a:hover{
 }
 .primaryButton {
     color: white;
-    background-color: pink;
+    background-color: rgb(247, 89, 115);
 
 }
 .primaryButton:hover {
-    background-color: palevioletred;
+    background-color: pink;
+}
+.view-all {
+    font-size: 18px;
+    display: flex;
+    cursor: pointer;
+}
+.view-all:hover {
+    color: white;
 }
 
 /* second nav */
@@ -170,7 +181,7 @@ header li > a:hover{
     line-height: 10px;
 }
 nav .New {
-    top: 27%;
+    top: 20%;
     right: -35px;
     border-radius: 2px;
 }
@@ -233,6 +244,107 @@ nav .New {
     font-weight: 400;
 }
 
+/* style headearMain */
+.headearMain .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.headearMain {
+    background-color: rgb(60, 60, 119);
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+.headearMain .dptCat {
+    position: relative;
+    z-index: 10;
+    
+}
+.headearMain .dptCat .dptHead {
+    position: relative;
+    width: 300px;
+    padding: 14px 24px;
+    background-color: rgb(247, 89, 115);
+    border-radius: 10px 10px 0 0;
+    color: white;
+    margin-bottom: -25px;
+}
+.headearMain .dptCat .dptHead .dptMenu {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    
+}
+.headearMain .dptCat .dptHead .dptMenu .material-symbols-outlined{
+    font-size: 40px;
+}
+
+.dptMennu > ul > li > a {
+    font-size: 15px;
+    height: 45px;
+    align-items: center;
+}
+.dptMennu > ul > li > a:hover {
+    color: rgb(134, 134, 230);
+}
+.iconSmoll {
+    margin-left: auto;
+}
+.iconLarge {
+    margin-right: 20px;
+}
+.dptMennu .hasItem:hover ul {
+    display: block;
+}
+.dptMennu .hasItem li a:hover {
+    text-decoration: underline;
+}
+
+
+/* style Search */
+.headearMain .right {
+    width: 100%;
+}
+.headearMain .right form {
+    position: relative;
+}
+.headearMain .right form.Search input {
+    line-height: 40px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 300;
+    text-indent: 60px;
+}
+.headearMain .right form.Search :where(span, button){
+    position: absolute;
+    bottom: 0;
+    padding: 8px 24px;
+    font-size: 20px;
+    color: rgb(247, 89, 115);
+    height: 100%;
+   
+}
+.headearMain .right form.Search span .material-symbols-outlined{
+    left: 0;
+    font-size: 25px;
+}
+.headearMain .right form.Search button {
+    right: 0;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(247, 89, 115);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.headearMain .right form.Search button:hover {
+    background-color: pink;
+}
+
 
 
 
@@ -260,6 +372,10 @@ nav .New {
         line-height: 30px;
         box-shadow:0 30px 20px 10px rgb(0, 0, 0, 20%);
         z-index: 100;
+        display: none;
+    }
+    nav li.megaWomen:hover .mega{
+        display: block;
     }
     nav .mega .wrapper {
         display: flex;
@@ -288,7 +404,7 @@ nav .New {
         flex-direction: column;
         align-items: center;
         position: absolute;
-        bottom: 25px;
+        bottom: 50px;
         width: 100%;
     }
     nav .mega .products .textContent h4 {
@@ -297,6 +413,68 @@ nav .New {
         font-weight: 900;
         color: white;
     }
+
+    /*style department menu */
+    .dptMennu {
+        position: absolute;
+        top: 100%;
+        width: 300px;
+        background-color: white;
+        border: 1px solid silver;
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .dptMennu > ul > li > a {
+        font-weight: 500;
+        padding: 0 25px;
+        border-bottom: 1px solid silver;
+    }
+
+
+    .dptMennu .hasItem > ul, .dptMennu .mega{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        padding: 25px;
+        font-size: 13px;
+        line-height: 30px;
+        border: 1px solid silver;
+        border-top: 0;
+        display: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .dptMennu .hasItem:hover > ul {
+        display: block;
+    }
+    .dptMennu .beauty ul {
+        background-image: url(./imagine/menu/beauty1.jpeg);
+    }
+    .dptMennu .electronic ul {
+        background-image: url(./imagine/menu/electronic.jpeg);
+    }
+    .dptMennu .fashion ul {
+        background-image: url(./imagine/menu/fashion.jpeg);
+    }
+    .dptMennu .homekit .mega {
+        background-image: url(./imagine/menu/house1.jpeg);
+    }
+    .dptMennu .hasItem:hover .mega{
+        display: block;
+        width: auto;
+        min-width: 100%;
+        display: flex;
+        gap: 100px;
+    }
+    .dptMennu .mega ul {
+        width: 100px;
+     }
+
+    
    
    
     

@@ -9,10 +9,22 @@
         <title>Ecommerce Website</title>
         <link rel="stylesheet" href="./projects.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
     </head>
     <body>
         <div class="site" id="page">
+            <aside class="siteOff desktopSide">
+                <div class="offConvas">
+                    <div class="canvasHead">
+                        <div class="logo"><a href="#"><span class="circle"></span>.Store</a></div>
+                        <a href="#" class="t- close flex"><i class="ri-close-line"></i></a>
+                    </div>
+                    <div class="departments"></div>
+                    <nav></nav>
+                    <div class="topNav"></div>
+                </div>
+            </aside>
             <header>
                 <div class="headearTop mobileHide">
                     <div class="container">
@@ -62,7 +74,7 @@
                                     <ul class="secondLinks">
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#">Shop</a></li>
-                                        <li><a href="#">Women <span class="material-symbols-outlined">expand_more</span></a>
+                                        <li class="megaWomen"><a href="#">Women <span class="material-symbols-outlined">expand_more</span></a>
                                             <div class="mega">
                                                 <div class="container">
                                                     <div class="wrapper">
@@ -126,7 +138,7 @@
                                                                     <li><a href="#">Chanel</a></li>
                                                                     <li><a href="#">Hurley</a></li>
                                                                 </ul>
-                                                                <a href="#" class="view-all">View all Brands</a>
+                                                                <a href="#" class="view-all">View all Brands <span class="material-symbols-outlined">arrow_forward</span></a>
                                                             </div>
                                                         </div>
                                                         <div class="moreBox products">
@@ -177,6 +189,192 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="headearMain mobileHide">
+                    <div class="container">
+                        <div class="box">
+                            <div class="left">
+                                <div class="dptCat">
+                                    <div class="dptHead">
+                                        <div class="mainText">All Departments</div>
+                                        <div class="miniText mobileHide">Total over 10000 Products</div>
+                                        <a href="#" class="dptMenu mobileHide"><span class="material-symbols-outlined">list</span></a>
+                                    </div>
+                                    <div class="dptMennu">
+                                        <ul class="SecondLinks">
+                                            <li class="hasItem beauty">
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-bear-smile-line"></i></div>
+                                                    Beauty
+                                                    <div class="iconSmoll"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="#">Makeup</a></li>
+                                                    <li><a href="#">Skin Care</a></li>
+                                                    <li><a href="#">Hair Care</a></li>
+                                                    <li><a href="#">Fragrance</a></li>
+                                                    <li><a href="#">Fooot & Hand Care</a></li>
+                                                    <li><a href="#">Tools & Accessories</a></li>
+                                                    <li><a href="#">Shave & Hair Removal</a></li>
+                                                    <li><a href="#">Personal Care</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="hasItem electronic">
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-bluetooth-connect-line"></i></div>
+                                                    Electronic
+                                                    <div class="iconSmoll"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="#">Camera</a></li>
+                                                    <li><a href="#">Cell Phones</a></li>
+                                                    <li><a href="#">Computers</a></li>
+                                                    <li><a href="#">GPS & Navigation</a></li>
+                                                    <li><a href="#">HeadPhones</a></li>
+                                                    <li><a href="#">Home Audio</a></li>
+                                                    <li><a href="#">Television</a></li>
+                                                    <li><a href="#">Video Projector</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="hasItem fashion">
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-t-shirt-air-line"></i></div>
+                                                    Women's Fashion
+                                                    <div class="iconSmoll"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="#">Clothing</a></li>
+                                                    <li><a href="#">Shoes</a></li>
+                                                    <li><a href="#">Jewelry</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Handbags</a></li>
+                                                    <li><a href="#">Accessories</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-shirt-line"></i></div>
+                                                    Men's Fashion
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-user-5-line"></i></div>
+                                                    Girl's Fashion
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-user-6-line"></i></div>
+                                                    Boy's Fashion
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-service-line"></i></div>
+                                                    Health & Household
+                                                </a>
+                                            </li>
+                                            <li class="hasItem homekit">
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-home-8-line"></i></i></div>
+                                                    Home & Kitchen
+                                                    <div class="iconSmoll"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <div class="mega">
+                                                    <div class="flex">
+                                                        <div class="row">
+                                                            <h4><a href="#">Kitchen & Dining</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Kitchen</a></li>
+                                                                <li><a href="#">Dining Room</a></li>
+                                                                <li><a href="#">Pantry</a></li>
+                                                                <li><a href="#">Great Room</a></li>
+                                                                <li><a href="#">Breakfast Nook</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Living</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Living Room</a></li>
+                                                                <li><a href="#">Family Room</a></li>
+                                                                <li><a href="#">Sunroom</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <div class="row">
+                                                            <h4><a href="#">Bed & Bath</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Bathroom</a></li>
+                                                                <li><a href="#">Powder Room</a></li>
+                                                                <li><a href="#">Bedroom</a></li>
+                                                                <li><a href="#">Storage & Closet</a></li>
+                                                                <li><a href="#">Baby & Kids</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Utility</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Laundry</a></li>
+                                                                <li><a href="#">Garage</a></li>
+                                                                <li><a href="#">Mudroom</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <div class="row">
+                                                            <h4><a href="#">Outdoor</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Landscape</a></li>
+                                                                <li><a href="#">Patrio</a></li>
+                                                                <li><a href="#">Deck</a></li>
+                                                                <li><a href="#">Pool</a></li>
+                                                                <li><a href="#">Backyard</a></li>
+                                                                <li><a href="#">Porch</a></li>
+                                                                <li><a href="#">Exterior</a></li>
+                                                                <li><a href="#">Outdoor Kitchen</a></li>
+                                                                <li><a href="#">Front Yard</a></li>
+                                                                <li><a href="#">Driveway</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-android-line"></i></div>
+                                                    Pet Food
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-basketball-fill"></i></div>
+                                                    Sports
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="iconLarge"><i class="ri-shield-star-line"></i></div>
+                                                    Best Seller
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="searchBox">
+                                    <form action="" class="Search">
+                                        <span class="iconLarge"><span class="material-symbols-outlined">search</span></span>
+                                        <input type="search" placeholder="Search...">
+                                        <button type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>    
                     </div>
                 </div>
             </header>
