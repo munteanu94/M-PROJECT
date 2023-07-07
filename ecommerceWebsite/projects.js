@@ -17,9 +17,24 @@ function copyMenu() {
 }
 copyMenu();
 
+//Show mobile menu
+const menuBtn = document.querySelector(".trigger");
+const closeBtn = document.querySelector(".t-close");
+const addClass = document.querySelector(".site");
+
+menuBtn.addEventListener("click", () =>{
+    addClass.classList.toggle("showMenu");
+})
+closeBtn.addEventListener("click", () =>{
+    addClass.classList.remove("showMenu");
+})
+
+
+
+
 // show sub menu 
 
-const subMenu = document.querySelectorAll(".hasItem .iconSmoll,");
+const subMenu = document.querySelectorAll(".hasItem .iconSmoll");
 subMenu.forEach((menu) =>menu.addEventListener("click",toggle));
 
 
@@ -29,3 +44,11 @@ function toggle(e) {
     if(this.closest(".hasItem").classList != "expand");
     this.closest(".hasItem").classList.toggle("expand");
 };
+
+// slider
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+});
