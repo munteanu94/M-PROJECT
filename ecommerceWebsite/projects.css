@@ -690,14 +690,152 @@ nav .New {
     z-index: 1;
     background-color: transparent;
 }
-.products .discount::before{
-    background-color: rgb(44, 44, 45);
-}
+
 .products .discount.circle {
     width: 35px;
     height: 35px;
     text-align: center;
     line-height: 35px;
+    background-color: rgb(123, 122, 122);
+}
+.products .discount span {
+    position: relative;
+    font-weight: 500;
+    color: white;
+}
+.products .content{
+    display: flex;
+    flex-direction: column;
+}
+.products:where(.big,.main, .one) .content{
+    gap: 15px;
+    margin-top: 20px;
+}
+.products .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.products .rating .stars {
+    width: 80px;
+    height: 20px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath d='M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z' fill='rgba(240,187,64,1)'%3E%3C/path%3E%3C/svg%3E");
+    background-position-y: top;
+    background-repeat-y: no-repeat;
+}
+/* set width of stars */
+.products .item:where(:nth-child(5),:nth-child(6),:nth-child(7)) .stars{
+    width: 64px;
+} 
+.products h3 {
+    font-family: 'Rubik';
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.products h3 a:hover {
+    text-decoration: underline;
+}
+.products .price .current {
+    font-size: calc(1rem + 1vw);
+    color: rgb(247, 89, 115);
+    margin-right: 5px;
+}
+.products .price .normal {
+    color: silver;
+    text-decoration: line-through;
+}
+.products .stock .qty {
+    display: flex;
+    justify-content: space-between;
+
+}
+.products .stock .bar {
+    height: 3px;
+    margin-top: 15px;
+    background-color: rgb(188, 186, 186);
+    overflow: hidden;
+
+}
+.products .stock .available {
+    background-color: blueviolet;
+    height: 100%;
+    width: 25%;
+}
+.products .item {
+    display: flex;
+    position: relative;
+}
+
+/* style mini products */
+.products.mini .item {
+    margin-bottom: 30px;
+}
+.products.mini .item .content .miniText p{
+    margin: 0;
+}
+.products.mini .media {
+    width: 130px;
+    height: 160px;
+    margin-right: 20px;
+}
+.products.mini .content{
+    margin: 0;
+    gap: 10px;
+}
+.products:where(.mini, .main) h3{
+    font-weight: 400;
+} 
+.flexwrap .row {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* style featured Produscts */
+
+.products.main .item .media {
+    height: 390px;
+}
+.products.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+}
+.products.main .item {
+    display: flex;
+    flex-direction: column;
+}
+.products.main .footer {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    padding: 0 15px 15px;
+    border-radius: 7px;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(206, 205, 205) 0%, white 70%);
+    opacity: 0;
+    visibility: hidden;
+    will-change: opacity;
+    transition: all 0.2s ease-in-out;
+}
+.products.main .item:hover .footer{
+    opacity: 1;
+    visibility: visible;
+}
+.products.main .footer ul{
+    list-style: disc;
+    padding: 20px 0 0 20px;
+    line-height: 30px;
+    border-top: 1px solid silver;
+    margin-top: 145px;
+}
+.products.main .item:hover .content > *:not(.footer) {
+    z-index: 3;
+
 }
 
 
@@ -706,10 +844,23 @@ nav .New {
 
 
 
+@media screen and (min-width: 482px) {
+    .products.main {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* .products.main .item{
+        flex: 0 0 50%;
+    } */
+}
 
-
-
-
+@media screen and (min-width: 768px) {
+    .products .price .current {
+        font-size: 20px;
+    }
+    .products.main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 
 
@@ -862,6 +1013,9 @@ nav .New {
     } 
     .products.big .media {
         max-height: 373px;
+    }
+    .products.main {
+        grid-template-columns: repeat(4, 1fr);
     }
    
     
