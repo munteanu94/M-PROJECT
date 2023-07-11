@@ -66,3 +66,11 @@ closeSearch.addEventListener("click", ()=>{
     showClass.classList.remove("showsearch");
 })
 
+//show dpt menu
+
+const dptButton = document.querySelector(".dptCat .dptMenu");
+const dptClass = document.querySelector(".site");
+
+dptButton.addEventListener("click", ()=>{
+    dptClass.classList.toggle("showdpt");
+})

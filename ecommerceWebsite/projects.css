@@ -275,7 +275,7 @@ nav .New {
     color: white;
     margin-bottom: -25px;
 }
-.headearMain .dptCat .dptHead .dptMenu {
+.dptCat .dptMenu {
     position: absolute;
     right: 5px;
     top: 0;
@@ -1039,7 +1039,78 @@ form.Search button:hover {
     background-color: rgb(160, 159, 159);
     color: black;
 }
+/* overlay */
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.4);
+    visibility: hidden;
+    opacity: 0;
+}
+.showMenu .overlay {
+    visibility: inherit;
+    opacity: 1;
+
+}
+
+/* style page single */
+.pageHome .dptCat .dptMenu,
+.dptMenu .ri-close-line,
+.showdpt .dptMenu .material-symbols-outlined{
+    display: none;
+}
+.showdpt .dptMenu .ri-close-line {
+    display: block;
+}
+
+/*style breadcrumb */
+.breadcrumb ul {
+    display: flex;
+   
+}
+.breadcrumb {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.breadcrumb li:not(:last-child)::after{
+    content: "/";
+    padding: 0 5px;
+}
+.breadcrumb li:last-child{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: silver;
+}
+
+.products.one .price .discount {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 60px;
+    height: 60px;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.products.one :where(.bigImage, .smollImage) {
+    overflow: hidden;
+}
+.products.one .bigImage {
+    position: relative;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -1097,6 +1168,14 @@ form.Search button:hover {
     .footerList .flexwrap {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+    .products.one .row {
+       background-color: bisque;
+       flex: 0 0 50%;
+       width: 50%;
+    }
+    .products.one .row img{
+        width: 100%;
     }
    
    
@@ -1271,6 +1350,14 @@ form.Search button:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    /* page single */
+    #page:not(.pageHome) .dptMennu {
+        display: none;
+    }
+    #page.showdpt .dptMennu {
+        display: block;
     }
     
    
