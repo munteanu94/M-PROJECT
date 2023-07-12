@@ -74,3 +74,28 @@ const dptClass = document.querySelector(".site");
 dptButton.addEventListener("click", ()=>{
     dptClass.classList.toggle("showdpt");
 })
+
+//product image slider
+const productThumb = new Swiper(".smollImage", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    watchSlidesProgress: true,
+    breakpoints: {
+        481: {
+            spaceBetween: 32,
+        }
+    }
+});
+
+const productBig = new Swiper(".bigImage", {
+    loop: true,
+    autoHeight: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: productThumb,
+    },
+})
