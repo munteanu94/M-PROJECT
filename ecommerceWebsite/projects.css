@@ -1283,8 +1283,53 @@ form.Search button:hover {
     font-weight: 700;
     margin: 15px 30px 15px 0;
 }
+.wishShare a:hover {
+    opacity: 0.6;
+}
 
-
+/* Style Product Review */
+.products .collapse .hasItem > a {
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-top: 1px solid silver;
+   display: block;
+}
+.products .collapse .hasItem > a::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+}
+.products .collapse .content {
+    margin: 0 0 20px 30px;
+}
+.products .collapse .content li span:first-child {
+    min-width: 100px;
+    display: inline-flex;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.products .collapse table {
+    line-height: 55px;
+}
+.products .collapse table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid gray;
+}
+.products .collapse table :where(th, td) {
+    border-bottom: 1px solid gray;
+    padding-left: 30px;
+}
+.products .collapse .content {
+    display: none;
+}
+.products .collapse .expand .content {
+    display: flex;
+} 
+.products .collapse .expand > a::before {
+    content: "-";
+} 
 
 
 
@@ -1351,11 +1396,14 @@ form.Search button:hover {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-    .products.one .row {
+    .products.one .row{
        flex: 0 0 50%;
        width: 50%;
        
     }
+    
+    
+    
    
     
    
