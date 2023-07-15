@@ -1176,6 +1176,9 @@ form.Search button:hover {
 .products.one .price .current {
     font-size: 40px;
 }
+.products.one h1{
+    margin: 0;
+}
 .products .variant form{
     display: flex;
     margin-top: 10px;
@@ -1294,7 +1297,9 @@ form.Search button:hover {
     text-transform: uppercase;
     padding: 15px 20px;
     border-top: 1px solid silver;
-   display: block;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
 }
 .products .collapse .hasItem > a::before {
     content: "+";
@@ -1330,6 +1335,144 @@ form.Search button:hover {
 .products .collapse .expand > a::before {
     content: "-";
 } 
+
+/* style review form */
+.products .reviews h4 {
+    font-size: 30px;
+    color: silver;
+    padding-top: 15px;
+    margin: 15px 0 8px;
+    border-top: 1px solid silver;
+}
+.products .reviewBlock {
+    color: initial;
+}
+.products .reviewBlock-head > a {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgb(29, 29, 67);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.products .reviewBlock-head .rateSum {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.products .reviewBlock-head .rateSum::before {
+    content: '';
+    width: 2px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    background-color: silver;
+    top: 5px;
+    right: 0;
+    transform: rotate(22deg);
+}
+.products .reviewBlock-head .items {
+    display: flex;
+    align-items: center;
+}
+.products .reviewBlock-body .item {
+    gap: 15px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+}
+.products .reviewBlock-body :where(.person, .reviewTitle) {
+    font-weight: 700;
+}
+.products .reviewBlock-body :where(.review-text, .view-all){
+    justify-content: end;
+}
+.products .reviewBlock-body p{
+    margin: 0;
+}
+.products .reviewBlock-body .item:not(:last-child) {
+    border-bottom: 1px solid silver;
+}
+
+/* style review form */
+.reviewForm .rating {
+    flex-wrap: wrap;
+}
+.reviewForm p{
+    font-size: 20px;
+    margin-right: 15px;
+}
+.reviewForm .rate-this input {
+    display: none;
+}
+.reviewForm .rate-this label {
+    float: right;
+    font-size: 30px;
+    color: rgb(62, 61, 61);
+}
+.rate-this > input:checked ~ label,
+.rate-this:not(:checked) > label:hover,
+.rate-this:not(:checked) > label:hover ~ label {
+    color: yellow;
+}
+.rate-this > input:checked + label:hover,
+.rate-this > input:checked ~ label:hover,
+.rate-this > label:hover ~ input:checked ~ label,
+.rate-this > input:checked ~ label:hover ~ label{
+    color: rgb(247, 247, 186);
+}
+.reviewForm form {
+    margin-top: 40px;
+}
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+form :where(input, textarea) {
+    line-height: 1;
+    padding: 15px;
+    border: 1px solid silver;
+    outline: 0;
+}
+form label {
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.products.one .flexwrap > .row:last-child > .item {
+    padding-left: 30px;
+}
+
+/* page single :special offer */
+.singleProduct .stock {
+    margin: 30px 0;
+}
+.singleProduct .stock .bar {
+    height: 10px;
+}
+.singleProduct .stock .bar .available {
+    background-color: black;
+}
+.relatedProducts .content {
+    height: 100%;
+    
+}
+.relatedProducts .offer {
+    margin: 0;
+}
+.relatedProducts .offer p {
+    margin: 0 15px 0 0;
+    text-transform: none;
+}
+.relatedProducts .content .stock {
+    margin-top: auto;
+}
+
+
 
 
 
@@ -1400,6 +1543,9 @@ form.Search button:hover {
        flex: 0 0 50%;
        width: 50%;
        
+    }
+    .products.one .isSticky {
+        position: sticky;
     }
     
     
@@ -1587,6 +1733,9 @@ form.Search button:hover {
     }
     #page.showdpt .dptMennu {
         display: block;
+    }
+    .products.one .flexwrap > .row:last-child > .item {
+        padding-left: 30px;
     }
     
    
