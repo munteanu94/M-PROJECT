@@ -29,14 +29,10 @@ closeBtn.addEventListener("click", () =>{
     addClass.classList.remove("showMenu");
 })
 
-
-
-
 // show sub menu 
 
 const subMenu = document.querySelectorAll(".hasItem .iconSmoll");
 subMenu.forEach((menu) =>menu.addEventListener("click",toggle));
-
 
 function toggle(e) {
     e.preventDefault();
