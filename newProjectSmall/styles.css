@@ -38,6 +38,7 @@ header .icon-cart span{
 }
 .listProduct .item img {
     width: 90%;
+    height: 40%;
     filter: drop-shadow(0 50px 20px #0009);
 }
 .listProduct {
@@ -114,6 +115,9 @@ body.showCart .container {
     text-align: center;
     align-items: center;
 }
+.listCart .quantity{
+    display: flex;
+}
 .listCart .quantity span{
     display: inline-block;
     width: 25px;
@@ -135,4 +139,14 @@ body.showCart .container {
 }
 .listCart::-webkit-scrollbar{
     width: 0;
+}
+@media screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 442px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
