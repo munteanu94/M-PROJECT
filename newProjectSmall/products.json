@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "SKY1 Ergonomic Chair",
+        "price": 500,
+        "image": "image/img1.png"
+    },
+    {
+        "id": 2,
+        "name": "SKY2 Ergonomic Chair",
+        "price": 400,
+        "image": "image/img2.png"
+    },
+    {
+        "id": 3,
+        "name": "SKY3 Ergonomic Chair",
+        "price": 600,
+        "image": "image/img3.png"
+    },
+    {
+        "id": 4,
+        "name": "SKY4 Ergonomic Chair",
+        "price": 505,
+        "image": "image/img4.png"
+    },
+    {
+        "id": 5,
+        "name": "SKY5 Ergonomic Chair",
+        "price": 550,
+        "image": "image/img5.png"
+    },
+    {
+        "id": 6,
+        "name": "SKY6 Ergonomic Chair",
+        "price": 320,
+        "image": "image/img6.png"
+    },
+    {
+        "id": 7,
+        "name": "SKY7 Ergonomic Chair",
+        "price": 430,
+        "image": "image/img7.png"
+    },
+    {
+        "id": 8,
+        "name": "SKY8 Ergonomic Chair",
+        "price": 540,
+        "image": "image/img8.png"
+    },
+    {
+        "id": 9,
+        "name": "SKY9 Ergonomic Chair",
+        "price": 620,
+        "image": "image/img9.png"
+    },
+    {
+        "id": 10,
+        "name": "SKY10 Ergonomic Chair",
+        "price": 180,
+        "image": "image/img10.png"
+    },
+    {
+        "id": 11,
+        "name": "SKY11 Ergonomic Chair",
+        "price": 250,
+        "image": "image/img11.png"
+    },
+    {
+        "id": 12,
+        "name": "SKY12 Ergonomic Chair",
+        "price": 280,
+        "image": "image/img12.png"
+    },
+    {
+        "id": 13,
+        "name": "SKY13 Ergonomic Chair",
+        "price": 470,
+        "image": "image/img13.png"
+    },
+    {
+        "id": 14,
+        "name": "SKY14 Ergonomic Chair",
+        "price": 425,
+        "image": "image/img14.png"
+    },
+    {
+        "id": 15,
+        "name": "SKY15 Ergonomic Chair",
+        "price": 800,
+        "image": "image/img15.png"
+    },
+    {
+        "id": 16,
+        "name": "SKY16 Ergonomic Chair",
+        "price": 670,
+        "image": "image/img16.png"
+    }
+]
