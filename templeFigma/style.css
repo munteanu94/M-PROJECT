@@ -1,0 +1,193 @@
+.containerPrincipal {
+    max-width: 1920px;
+}
+.header {
+    max-width: 1920px;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.header .top {
+    width: 100%;
+    height: 63px;
+    background-image: url('./img/Abstract\ Design.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header .top span {
+    font-size: 18px;
+}
+.header span{
+    margin-right: 10px;
+}
+.header a{
+    color: white;
+}
+.icon {
+    width: 18px;
+    height: 18px;
+    transform: rotate(180deg);
+    color: yellow;
+}
+.header .top .btn{
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(106, 104, 104);
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+/* style nav */
+.header .navContainer {
+    height: 99px;
+    margin: 0 162px;
+}
+.header .navContainer .nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .navContainer .nav .logo {
+    display: flex;
+    align-items: center;
+}
+.header .navContainer .nav .logo span{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.header .navContainer .nav .btnNav a{
+    font-size: 18px;
+    padding: 14px 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header .navContainer .nav .btnNav a.active {
+    background-color: #141414;
+    border-radius: 10px;
+}
+
+/* style containerFirst */
+.containerFirst {
+    height: 814px;
+    max-width: 1920px;
+    background-color: #141414;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+.containerFirst .topFirst{
+    padding-left: 162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 60px;
+}
+.containerFirst .topFirst h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.containerFirst .topFirst p{
+    color: #999999;
+    font-size: 18px;
+}
+.containerFirst .topFirst .btn a{
+    padding: 18px 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+.containerFirst .bottomFirst{
+    background: linear-gradient(238.21deg, #2A213F 8.76%, rgba(25, 25, 25, 0) 50.09%);
+    background-color: #2A213F;
+    background-image: url(./img/Abstract\ Des.png);
+}
+.containerFirst .bottomFirst img{
+    width: 100%;
+    height: 100%;
+}
+.containerFirst .topFirst .btn a{
+    font-size: 18px;
+    padding: 18px 24px;
+}
+.containerFirst .topFirst .btn a:nth-child(1){
+    border: 2px solid #262626;
+    margin-right: 20px;
+}
+.containerFirst .topFirst .btn a:nth-child(2){
+    background-color: #1A64FF;
+}
+.containerFirst .topFirst .subContainer{
+    display: flex;
+    column-gap: 20px;
+}
+.containerFirst .topFirst .subContainer div{
+    border: 1px solid #1A1A1A;
+    background-color: #262626;
+    border-radius: 12px;
+    padding: 16px 24px;
+}
+.containerFirst .topFirst .subContainer h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    line-height: 60px;
+    max-width: 191.33px;
+}
+.containerFirst .topFirst .subContainer p{
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+    font-weight: 500;
+    color: #999999;
+}
+
+/* style containerSecond */
+.containerSecond {
+    height: 252px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    padding: 20px;
+}
+.containerSecond div {
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containerSecond .inconCont {
+    width: 82px;
+    height: 82px;
+    padding: 14px;
+    border-radius: 100%;
+    padding: 10px;
+    background: linear-gradient(219.04deg, #A685FA -6.93%, rgba(166, 133, 250, 0) 52.6%),
+    linear-gradient(40.65deg, #A685FA 0.85%, rgba(166, 133, 250, 0) 34.8%);
+}
+.containerSecond .inconCont div {
+    width: 62px;
+    height: 62px;
+    border-radius: 100%;
+    padding: 14px; 
+    background: linear-gradient(305.31deg, #A685FA -20.93%, rgba(166, 133, 250, 0) 37.94%),
+    linear-gradient(130.5deg, #A685FA -3.27%, rgba(166, 133, 250, 0) 30.09%);;
+}
+.containerSecond .inconCont .icons{
+    width: 32px;
+    height: 32px;
+    color: #A685FA;
+    gap: 10px;
+}
