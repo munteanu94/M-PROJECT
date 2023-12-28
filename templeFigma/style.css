@@ -1,5 +1,7 @@
+
 .containerPrincipal {
     max-width: 1920px;
+    background-color:#141414;
 }
 .header {
     max-width: 1920px;
@@ -80,7 +82,8 @@
     background-color: #141414;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
+    column-gap: 80px;
+    position: relative;
 }
 .containerFirst .topFirst{
     padding-left: 162px;
@@ -94,6 +97,7 @@
     font-size: 60px;
     font-weight: 500;
     font-family:Arial, Helvetica, sans-serif;
+    line-height: 72px;
 }
 .containerFirst .topFirst p{
     color: #999999;
@@ -159,7 +163,7 @@
     gap: 20px;
     background-color: #1A1A1A;
     border: 1px solid #262626;
-    padding: 20px;
+    padding: 40px 20px;
 }
 .containerSecond div {
     background-color: #262626;
@@ -167,6 +171,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 10px;
+    position: relative;
+    border-radius: 12px;
+    
 }
 .containerSecond .inconCont {
     width: 82px;
@@ -190,4 +198,353 @@
     height: 32px;
     color: #A685FA;
     gap: 10px;
+}
+.containerSecond div p{
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+.containerSecond .arrow {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 6.38px;
+    right: 6.38px;
+    color: #4D4D4D;
+}
+/* style containerSign */
+.containerSign {
+    width: 175px;
+    height: 175px;
+    z-index: 111;
+    border-radius: 159.09px;
+    background-color: #141414;
+    border: 1.59px solid #262626;
+    padding: 47.7px;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translateX(60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.containerSign .circle{
+    background-color: #262626;
+    border-radius: 159.09px;
+    width: 143.76px;
+    height: 143.76px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerSign .circle .inconArrow {
+    background-color: #1A1A1A;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+.containerSign .circle .inconArrow .iconCenter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform: rotate(-45deg);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+}
+.containerSign ul {
+   position: fixed;
+   top: 30px;
+   left: 95px;
+}
+.containerSign ul li{
+    position: absolute;
+    top: -25px;
+    list-style: none;
+    transform-origin: 0 115px;
+    transform: rotate(calc(12deg * var(--i)));
+    color: white;
+    font-size: 18px;
+}
+
+/* style containerFird */
+.containerFird {
+    max-width: 1596px;
+    height: 1040px;
+    background-color: #141414;
+    margin: 80px auto;
+    position: relative;
+    margin-bottom: 80px;
+}
+.containerFird .containerTop{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    margin-bottom: 80px;
+}
+.containerFird .containerTop .text {
+    max-width: 1200px;
+    height: 140px;
+    position: relative;
+}
+.containerFird .containerTop .text h2{
+    font-size: 48px;
+    color: white;
+    margin: 0;
+    line-height: 72px;
+}
+.containerFird .containerTop .text p{
+    font-size: 18px;
+    color: #999999;
+    line-height: 27px;
+    margin-bottom: 0;
+}
+.containerFird .containerTop .text img{
+    width: 68.4px;
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    left: -15px;
+}
+.containerFird .containerTop .btnAll {
+    height: 140px;
+    width: 396px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: end;
+}
+.containerFird .containerTop .btnAll a{
+    display: block;
+    width: 196px;
+    height: 63px;
+    border-radius: 10px;
+    border: 1px solid #262626;
+    background-color: #141414;
+    text-align: center;
+    line-height: 63px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* style containerBottom */
+.containerBottom{
+    max-width: 1596px;
+    height: 820px;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.containerBottom .containerCarts{
+    max-height: 692px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    
+}
+.containerBottom .containerCarts .cart{
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 40px;
+    height: 612px;
+}
+.containerBottom .containerCarts img{
+    width: 100%;
+    height: 318px;
+    margin-bottom: 30px;
+}
+.containerBottom .containerCarts .containerDitail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.containerDitail .text h4{
+    font-size: 24px;
+    color: white;
+    line-height: 36px;
+}
+.containerDitail .text p{
+    color: #999999;
+    line-height: 27px;
+    font-size: 18px;
+}
+.containerDitail .text p a{
+    color: white;
+}
+.containerBottom .containerCarts .containerDitail .model img{
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+.containerBottom .containerCarts .containerDitail .model {
+    display: flex;
+    color: white;
+    height: 43px;
+    column-gap: 10px;
+}
+.containerBottom .containerCarts .containerDitail .model div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    border: 1px solid #262626;
+    background-color: #1A1A1A;
+    padding: 8px 14px;
+}
+ .cart .containerDitail .text p{
+    margin: 0;
+}
+.cart .containerDitail .text h4{
+    margin: 0;
+}
+.containerDitail .ContainerPrice{
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+}
+.containerDitail .ContainerPrice h4{
+    font-size: 18px;
+    color: #999999;
+    line-height: 27px;
+    margin: 0;
+}
+.containerDitail .ContainerPrice p{
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+}
+.containerDitail .ContainerPrice .button a{
+    display: block;
+    text-align: center;
+    background-color: #703BF7;
+    padding: 18px 0;
+    border-radius: 10px;
+    width: 279px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 27px;
+}
+.containerSub {
+    height: 78px;
+    display: flex;
+    border-top: 1px solid  #262626;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.containerSub .number{
+    font-size: 20px;
+    color: #999999;
+
+}
+.containerSub .toggle {
+    height: 100%;
+    display: flex;
+    column-gap: 10px;
+    align-items: end;
+}
+.containerSub button{
+    width: 58px;
+    height: 58px;
+    border-radius: 69px;
+    border: 1px solid #262626;
+    background-color: #1A1A1A;
+    justify-self: flex-end;
+    cursor: pointer;
+}
+.containerSub .btnArrow {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+/* style containerFourth */
+.containerFourth {
+    height: 763px;
+    max-width: 1596px;
+    
+}
+.containerClients .clint{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+.containerClients .clint .cart{
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.containerClients .clint .cart .textContainer p, h4{
+    color: white;
+    margin: 0;
+}
+.containerClients .clint .cart .textContainer h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+}
+.containerClients .clint .cart .textContainer p{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.containerClients .clint .cart .profile{
+    display: flex;
+    column-gap: 10px;
+}
+.containerClients .clint .cart .profile img{
+    width: 60px;
+    height: 60px;
+}
+.containerClients .clint .cart .profile p{
+    margin: 0;
+}
+.containerClients .clint .cart .profile p:nth-child(1){
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+.containerClients .clint .cart .profile p:nth-child(2){
+    font-size: 18px;
+    color: #999999;
+    line-height: 27px;
+}
+.containerClients .stars {
+    display: flex;
+    column-gap: 10px;
+}
+.containerClients .stars div{
+    width: 34px;
+    height: 34px;
+    color: yellow;
+    border: 1px solid #262626;
+    border-radius: 100px;
+    padding: 10px;
+}
+.containerFourth .containerTop{
+    height: 113px;
+    max-width: 1596px;
+}
+.containerFourth .containerTop .btnAll{
+    height: 100%;
+    width: 622px;
 }
