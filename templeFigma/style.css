@@ -1,4 +1,6 @@
-
+*,::before,::after {
+    box-sizing: border-box;
+}
 .containerPrincipal {
     max-width: 1920px;
     background-color:#141414;
@@ -225,9 +227,9 @@
     border: 1.59px solid #262626;
     padding: 47.7px;
     position: absolute;
-    top: 10%;
+    top: 22%;
     right: 50%;
-    transform: translateX(60%);
+    transform: translateX(70%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,9 +238,9 @@
 }
 .containerSign .circle{
     background-color: #262626;
-    border-radius: 159.09px;
-    width: 143.76px;
-    height: 143.76px;
+    border-radius: 89.09px;
+    width: 79.55px;
+    height: 79.55px;
     position: relative;
     display: flex;
     align-items: center;
@@ -263,14 +265,14 @@
 }
 .containerSign ul {
    position: fixed;
-   top: 30px;
-   left: 95px;
+   top: 14px;
+   left: 46px;
 }
 .containerSign ul li{
     position: absolute;
     top: -25px;
     list-style: none;
-    transform-origin: 0 115px;
+    transform-origin: 0 79.55px;
     transform: rotate(calc(12deg * var(--i)));
     color: white;
     font-size: 18px;
@@ -357,7 +359,7 @@
     border: 1px solid #262626;
     border-radius: 12px;
     padding: 40px;
-    height: 612px;
+    height: 692px;
 }
 .containerBottom .containerCarts img{
     width: 100%;
@@ -368,6 +370,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    height: 264px;
 }
 .containerDitail .text h4{
     font-size: 24px;
@@ -538,7 +541,14 @@
     color: yellow;
     border: 1px solid #262626;
     border-radius: 100px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.containerClients .stars div .w-6{
+    width: 24px;
+    height: 24px;
 }
 .containerFourth .containerTop{
     height: 113px;
@@ -547,4 +557,113 @@
 .containerFourth .containerTop .btnAll{
     height: 100%;
     width: 622px;
+}
+/* style ContainerQuestion */
+.ContainerQuestion{
+    max-width: 1596px;
+    height: 694px; 
+}
+.ContainerQuestion .Question{
+    height: 474px;
+}
+.ContainerQuestion .Question .ClientsQuestion{
+    height: 346px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+.ClientsQuestion .clientQ{
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 50px;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.ClientsQuestion .clientQ h4{
+    font-size: 24px;
+    line-height: 36px;
+    height: 72px;
+
+}
+.ClientsQuestion .clientQ p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.6%;
+    color: #999999;
+    font-weight: 500;
+}
+.ClientsQuestion .clientQ .btnRead{
+    width: 134px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ClientsQuestion .clientQ .btnRead a{
+    color: white;
+    text-decoration: none;
+}
+
+/* style ContainerLast */
+
+.ContainerLast{
+    max-width: 1920px;
+    height: 925px;
+    position: relative;
+}
+.ContainerLast .containerExplore{
+    height: 367px;
+    border: 1px 0px 1px 0px solid #262626;
+    /* padding: 100px 162px; */
+   
+
+}
+.ContainerLast .containerExplore .img{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+   
+}
+.ContainerLast .containerExplore .containerText{
+    position: absolute;
+    top: 100px;
+    left: 167px;
+    max-width: 1154px;
+}
+.ContainerLast .containerExplore .containerText h4{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+}
+.ContainerLast .containerExplore .containerText p{
+    font-size: 18px;
+    margin: 0;
+    color: #999999;
+    font-weight: 500;
+    line-height: 27px;
+}
+.ContainerLast .containerExplore .btnExplore{
+    width: 192px;
+    height: 63px;
+    padding: 18px 24px;
+    background-color: #703BF7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    right: 160px;
+}
+.ContainerLast .containerExplore .btnExplore a{
+    color: white;
+    text-decoration: none;
+
 }
