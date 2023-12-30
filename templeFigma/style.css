@@ -4,9 +4,10 @@
 .containerPrincipal {
     max-width: 1920px;
     background-color:#141414;
+    display: flex;
+    flex-direction: column;
 }
 .header {
-    max-width: 1920px;
     background-color: #1A1A1A;
     display: flex;
     flex-direction: column;
@@ -76,11 +77,9 @@
     background-color: #141414;
     border-radius: 10px;
 }
-
 /* style containerFirst */
 .containerFirst {
     height: 814px;
-    max-width: 1920px;
     background-color: #141414;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -176,7 +175,6 @@
     row-gap: 10px;
     position: relative;
     border-radius: 12px;
-    
 }
 .containerSecond .inconCont {
     width: 82px;
@@ -233,8 +231,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
-    
 }
 .containerSign .circle{
     background-color: #262626;
@@ -288,7 +284,6 @@
     margin-bottom: 80px;
 }
 .containerFird .containerTop{
-    width: 100%;
     height: 140px;
     display: flex;
     margin-bottom: 80px;
@@ -609,9 +604,7 @@
     color: white;
     text-decoration: none;
 }
-
 /* style ContainerLast */
-
 .ContainerLast{
     max-width: 1920px;
     height: 925px;
@@ -620,16 +613,13 @@
 .ContainerLast .containerExplore{
     height: 367px;
     border: 1px 0px 1px 0px solid #262626;
-    /* padding: 100px 162px; */
-   
-
 }
 .ContainerLast .containerExplore .img{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     height: 100%;
-   
+    max-width: 1920px;
 }
 .ContainerLast .containerExplore .containerText{
     position: absolute;
@@ -721,16 +711,13 @@
     color: #999999;
 }
 .ContainerFooter .footerTop .containerLink{
-    max-width: 978px;
+    width: 978px;
     display: flex;
     justify-content: space-around;
-}
-.containerLink .column {
-    width: 978px;
-}
 
+}
 .containerLink .column p{
-    margin: 0px 30px 0px 0px;
+    margin: 0px 0px 30px 0px;
     color: #999999;
     font-size: 20px;
     line-height: 24px;
@@ -740,12 +727,59 @@
 .containerLink .column ul{
     padding: 0;
 }
-.containerLink .column li{
-    color: white;
+.containerLink .column li {
     list-style-type:none;
-    font-size: 18px;
     margin-bottom: 20px;
     letter-spacing: -0.6%;
     cursor: pointer;
-    width: 100%;
 }
+.containerLink .column li a{
+    color: white;
+    letter-spacing: -0.6%;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+
+}
+/* style footer bottom */
+.footerBottom{
+    display: flex;
+    height: 104px;
+    justify-content: space-between;
+    background-color: #1A1A1A;
+    align-items: center;
+}
+.footerBottom .subLinks{
+    display: flex;
+    column-gap: 38px;
+    margin-left: 162px;
+}
+.footerBottom .subLinks a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: -0.6%;
+    line-height: 24px;
+}
+.footerBottom .socialMedia{
+   margin-right: 162px;
+   padding: 10px 0;
+   display: flex;
+   column-gap: 10px;
+}
+.footerBottom .socialMedia a{
+    background-color: #141414;
+    width: 52px;
+    height: 52px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 58px;
+}
+.footerBottom .socialMedia a i {
+    color: white;
+}
+
+
