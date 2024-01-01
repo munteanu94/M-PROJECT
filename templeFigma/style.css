@@ -162,7 +162,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    background-color: #1A1A1A;
+    background-color: #141414;
     border: 1px solid #262626;
     padding: 40px 20px;
 }
@@ -612,20 +612,21 @@
 }
 .ContainerLast .containerExplore{
     height: 367px;
-    border: 1px 0px 1px 0px solid #262626;
-}
-.ContainerLast .containerExplore .img{
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    background-image: url(./img/Abstract\ Design11.png), url(./img/Abstract\ Design\ \(12\).png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, bottom right;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 100%;
-    max-width: 1920px;
+    align-items: center;
 }
 .ContainerLast .containerExplore .containerText{
-    position: absolute;
-    top: 100px;
-    left: 167px;
-    max-width: 1154px;
+    max-width: 1596px;
+    display: flex;
+     align-items: center;
+    column-gap: 250px; 
+    margin: 0px 162px;
+    
 }
 .ContainerLast .containerExplore .containerText h4{
     font-size: 48px;
@@ -648,13 +649,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 150px;
-    right: 160px;
 }
 .ContainerLast .containerExplore .btnExplore a{
     color: white;
     text-decoration: none;
+    width: 192px;
+    text-align: center;
 }
 .ContainerFooter{
     max-width: 1920px;
@@ -780,6 +780,622 @@
 }
 .footerBottom .socialMedia a i {
     color: white;
+}
+@media (max-width: 1440px){
+    .containerPrincipal {
+        max-width: 1440px;
+        background-color:#141414;
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        background-color: #1A1A1A;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .header .top {
+        height: 49px;
+    }
+    .header .top span,a {
+        font-size: 14px;
+    }
+    .header span{
+        margin-right: 6px;
+    }
+    .header a{
+        color: white;
+    }
+    .icon {
+        width: 14px;
+        height: 14px;
+    }
+    .header .top .btn{
+        width: 26px;
+        height: 26px;
+        bottom: 10px;
+    }
+    /* style nav */
+    .header .navContainer {
+        height: 77px;
+        margin: 0 80px;
+    }
+    .header .navContainer .nav .logo span{
+        font-size: 18px;
+    }
+    .header .navContainer .nav .btnNav a{
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+    /* style containerFirst */
+    .containerFirst {
+        height: 802px;
+        column-gap: 60px;
+    }
+    .containerFirst .topFirst{
+        padding-left: 80px;
+        row-gap: 50px;
+    }
+    .containerFirst .topFirst h1{
+        font-size: 46px;
+        line-height: 55.2px;
+    }
+    .containerFirst .topFirst p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .containerFirst .topFirst .btn a{
+        padding: 14px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    .containerFirst .bottomFirst{
+        background: linear-gradient(238.21deg, #2A213F 8.76%, rgba(25, 25, 25, 0) 50.09%);
+        background-color: #2A213F;
+        background-image: url(./img/Abstract\ Des.png);
+    }
+    .containerFirst .bottomFirst img{
+        width: 100%;
+        height: 100%;
+    }
+    .containerFirst .topFirst .btn a:nth-child(1){
+        margin-right: 16px;
+    }
+    .containerFirst .topFirst .subContainer{
+        column-gap: 16px;
+    }
+    .containerFirst .topFirst .subContainer div{
+        border-radius: 10px;
+        padding: 14px 20px;
+    }
+    .containerFirst .topFirst .subContainer h2{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .containerFirst .topFirst .subContainer p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    /* style containerSecond */
+    .containerSecond {
+        height: 180px;
+        gap: 16px;
+        padding: 30px 16px;
+    }
+    .containerSecond div {
+        border-radius: 10px;
+    }
+    .containerSecond .inconCont {
+        width: 60px;
+        height: 60px;
+        padding: 8px 10px;
+    }
+    .containerSecond .inconCont div {
+        width: 44px;
+        height: 44px;
+        border-radius: 100%;
+        padding: 10px;
+    }
+    .containerSecond .inconCont .icons{
+        width: 24px;
+        height: 24px;
+    }
+    .containerSecond div p{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .containerSecond .arrow {
+        width: 26px;
+        height: 26px;
+    }
+    /* style containerSign */
+    .containerSign {
+        width: 129px;
+        height: 129px;
+        border-radius: 117.27px;
+        border: 1.17px solid #262626;
+        padding: 30.7px;
+    }
+    .containerSign .circle{
+        background-color: #262626;
+        border-radius: 65.67px;
+        width: 58.64px;
+        height: 58.64px;
+    }
+    .containerSign ul {
+        left: 25px;
+     }
+    .containerSign .circle .inconArrow {
+        background-color: #262626;
+        width: 24px;
+        height: 24px;
+    }
+    .containerSign ul li{
+        transform-origin: 0 58.64px;
+        font-size: 13px;
+    }
+    
+    /* style containerFird */
+    .containerFird {
+        max-width: 1280px;
+        height: 824px;
+        margin: 60px auto;
+        margin-bottom: 80px;
+    }
+    .containerFird .containerTop{
+        height: 115px;
+        margin-bottom: 60px;
+    }
+    .containerFird .containerTop .text {
+        max-width: 975px;
+        height: 115px;
+    }
+    .containerFird .containerTop .text h2{
+        font-size: 38px;
+        line-height: 72px;
+    }
+    .containerFird .containerTop .text p{
+        font-size: 16px;
+    }
+    .containerFird .containerTop .text img{
+        width: 54.72px;
+        height: 24px;
+    }
+    .containerFird .containerTop .btnAll {
+        height: 140px;
+        width: 396px;
+        display: flex;
+        align-items:flex-end;
+        justify-content: end;
+    }
+    .containerFird .containerTop .btnAll a{
+        display: block;
+        width: 155px;
+        height: 49px;
+        border-radius: 8px;
+        line-height: 49px;
+        font-size: 14px;
+    }
+    /* style containerBottom */
+    .containerBottom{
+        max-width: 1280px;
+        height: 649px;
+        row-gap: 40px;
+    }
+    .containerBottom .containerCarts{
+        max-height: 549px;
+        width: 100%;
+        column-gap: 20px;
+        
+    }
+    .containerBottom .containerCarts .cart{
+        border: 1px solid #262626;
+        border-radius: 12px;
+        padding: 30px;
+        height: 549px;
+    }
+    .containerBottom .containerCarts img{
+        width: 100%;
+        height: 255px;
+        margin-bottom: 20px;
+    }
+    .containerBottom .containerCarts .containerDitail {
+        row-gap: 24px;
+        height: 214px;
+    }
+    .containerDitail .text h4{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .containerDitail .text p{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .containerBottom .containerCarts .containerDitail .model img{
+        width: 20px;
+        height: 20px;
+    }
+    .containerBottom .containerCarts .containerDitail .model {
+        height: 33px;
+        column-gap: 6px;
+    }
+    .containerBottom .containerCarts .containerDitail .model div{
+        padding: 4px 14px;
+    }
+    .containerDitail .ContainerPrice{
+        display: flex;
+        height: 51px;
+        justify-content: space-between;
+    }
+    .containerDitail .ContainerPrice h4{
+        font-size: 18px;
+        color: #999999;
+        line-height: 27px;
+        margin: 0;
+    }
+    .containerDitail .ContainerPrice p{
+        margin: 0;
+        color: white;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+    }
+    .containerDitail .ContainerPrice .button a{
+        display: block;
+        text-align: center;
+        background-color: #703BF7;
+        padding: 18px 0;
+        border-radius: 10px;
+        width: 279px;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        line-height: 27px;
+    }
+    .containerSub {
+        height: 78px;
+        display: flex;
+        border-top: 1px solid  #262626;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .containerSub .number{
+        font-size: 20px;
+        color: #999999;
+    
+    }
+    .containerSub .toggle {
+        height: 100%;
+        display: flex;
+        column-gap: 10px;
+        align-items: end;
+    }
+    .containerSub button{
+        width: 58px;
+        height: 58px;
+        border-radius: 69px;
+        border: 1px solid #262626;
+        background-color: #1A1A1A;
+        justify-self: flex-end;
+        cursor: pointer;
+    }
+    .containerSub .btnArrow {
+        width: 30px;
+        height: 30px;
+        color: white;
+    }
+    
+    /* style containerFourth */
+    .containerFourth {
+        height: 763px;
+        max-width: 1596px;
+        
+    }
+    .containerClients .clint{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-bottom: 50px;
+    }
+    .containerClients .clint .cart{
+        border: 1px solid #262626;
+        border-radius: 12px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .containerClients .clint .cart .textContainer p, h4{
+        color: white;
+        margin: 0;
+    }
+    .containerClients .clint .cart .textContainer h4{
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+    }
+    .containerClients .clint .cart .textContainer p{
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+    }
+    .containerClients .clint .cart .profile{
+        display: flex;
+        column-gap: 10px;
+    }
+    .containerClients .clint .cart .profile img{
+        width: 60px;
+        height: 60px;
+    }
+    .containerClients .clint .cart .profile p{
+        margin: 0;
+    }
+    .containerClients .clint .cart .profile p:nth-child(1){
+        color: white;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .containerClients .clint .cart .profile p:nth-child(2){
+        font-size: 18px;
+        color: #999999;
+        line-height: 27px;
+    }
+    .containerClients .stars {
+        display: flex;
+        column-gap: 10px;
+    }
+    .containerClients .stars div{
+        width: 34px;
+        height: 34px;
+        color: yellow;
+        border: 1px solid #262626;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .containerClients .stars div .w-6{
+        width: 24px;
+        height: 24px;
+    }
+    .containerFourth .containerTop{
+        height: 113px;
+        max-width: 1596px;
+    }
+    .containerFourth .containerTop .btnAll{
+        height: 100%;
+        width: 622px;
+    }
+    /* style ContainerQuestion */
+    .ContainerQuestion{
+        max-width: 1596px;
+        height: 694px; 
+    }
+    .ContainerQuestion .Question{
+        height: 474px;
+    }
+    .ContainerQuestion .Question .ClientsQuestion{
+        height: 346px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-bottom: 50px;
+    }
+    .ClientsQuestion .clientQ{
+        border: 1px solid #262626;
+        border-radius: 12px;
+        padding: 50px;
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .ClientsQuestion .clientQ h4{
+        font-size: 24px;
+        line-height: 36px;
+        height: 72px;
+    
+    }
+    .ClientsQuestion .clientQ p{
+        margin: 0;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.6%;
+        color: #999999;
+        font-weight: 500;
+    }
+    .ClientsQuestion .clientQ .btnRead{
+        width: 134px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #262626;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ClientsQuestion .clientQ .btnRead a{
+        color: white;
+        text-decoration: none;
+    }
+    /* style ContainerLast */
+    .ContainerLast{
+        max-width: 1920px;
+        height: 925px;
+        position: relative;
+    }
+    .ContainerLast .containerExplore{
+        height: 367px;
+        border-top: 1px solid #262626;
+        border-bottom: 1px solid #262626;
+        background-image: url(./img/Abstract\ Design11.png), url(./img/Abstract\ Design\ \(12\).png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom left, bottom right;
+        display: flex;
+        align-items: center;
+    }
+    .ContainerLast .containerExplore .containerText{
+        max-width: 1596px;
+        display: flex;
+         align-items: center;
+        column-gap: 250px; 
+        margin: 0px 162px;
+        
+    }
+    .ContainerLast .containerExplore .containerText h4{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 72px;
+    }
+    .ContainerLast .containerExplore .containerText p{
+        font-size: 18px;
+        margin: 0;
+        color: #999999;
+        font-weight: 500;
+        line-height: 27px;
+    }
+    .ContainerLast .containerExplore .btnExplore{
+        width: 192px;
+        height: 63px;
+        padding: 18px 24px;
+        background-color:#703BF7;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ContainerLast .containerExplore .btnExplore a{
+        color: white;
+        text-decoration: none;
+        width: 192px;
+        text-align: center;
+    }
+    .ContainerFooter{
+        max-width: 1920px;
+    }
+    
+    .ContainerFooter .footerTop {
+        width: 100%;
+        height: 454px;
+        background-color:#141414;
+        padding:100px 162px;
+        display: flex;
+        column-gap: 80px;
+    }
+    .ContainerFooter .footerTop .containerInput{
+       width: 538px;
+       height: 144px;
+       background-color: #141414;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    
+    }
+    .containerInput .logo{
+       display: flex;
+       align-items: center;
+       column-gap: 10px;
+    }
+    .containerInput .logo img{
+       width: 48px;
+       height: 48px;
+    }
+    .containerInput .input{
+        width: 423px;
+        height: 66px;
+        padding: 18px 28px;
+        border: 1px solid #262626;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        border-radius: 12px;
+    }
+    .containerInput .input input{
+        width: 301px;
+        background: transparent;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+    }
+    .containerInput .input .material-symbols-outlined{
+        color: #999999;
+    }
+    .ContainerFooter .footerTop .containerLink{
+        width: 978px;
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    .containerLink .column p{
+        margin: 0px 0px 30px 0px;
+        color: #999999;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.6%;
+        cursor: pointer;
+    }
+    .containerLink .column ul{
+        padding: 0;
+    }
+    .containerLink .column li {
+        list-style-type:none;
+        margin-bottom: 20px;
+        letter-spacing: -0.6%;
+        cursor: pointer;
+    }
+    .containerLink .column li a{
+        color: white;
+        letter-spacing: -0.6%;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+    
+    }
+    /* style footer bottom */
+    .footerBottom{
+        display: flex;
+        height: 104px;
+        justify-content: space-between;
+        background-color: #1A1A1A;
+        align-items: center;
+    }
+    .footerBottom .subLinks{
+        display: flex;
+        column-gap: 38px;
+        margin-left: 162px;
+    }
+    .footerBottom .subLinks a{
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        letter-spacing: -0.6%;
+        line-height: 24px;
+    }
+    .footerBottom .socialMedia{
+       margin-right: 162px;
+       padding: 10px 0;
+       display: flex;
+       column-gap: 10px;
+    }
+    .footerBottom .socialMedia a{
+        background-color: #141414;
+        width: 52px;
+        height: 52px;
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 58px;
+    }
+    .footerBottom .socialMedia a i {
+        color: white;
+    }
 }
 
 
