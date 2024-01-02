@@ -1017,7 +1017,7 @@
     }
     .containerBottom .containerCarts .containerDitail .model {
         height: 33px;
-        column-gap: 6px;
+        column-gap: 4px;
     }
     .containerBottom .containerCarts .containerDitail .model div{
         padding: 4px 14px;
@@ -1028,141 +1028,95 @@
         justify-content: space-between;
     }
     .containerDitail .ContainerPrice h4{
-        font-size: 18px;
-        color: #999999;
-        line-height: 27px;
-        margin: 0;
+        font-size: 14px;
+        line-height: 21px;
     }
     .containerDitail .ContainerPrice p{
-        margin: 0;
-        color: white;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 20px;
+        line-height: 30px;
         font-weight: 600;
     }
     .containerDitail .ContainerPrice .button a{
-        display: block;
-        text-align: center;
-        background-color: #703BF7;
-        padding: 18px 0;
-        border-radius: 10px;
-        width: 279px;
-        color: white;
-        font-size: 18px;
-        text-decoration: none;
+        padding: 14px 0px;
+        max-width: 200px;
+        font-size: 14px;
         line-height: 27px;
     }
     .containerSub {
-        height: 78px;
-        display: flex;
-        border-top: 1px solid  #262626;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
+        height: 60px;
     }
     .containerSub .number{
-        font-size: 20px;
-        color: #999999;
+        font-size: 16px;
     
     }
-    .containerSub .toggle {
-        height: 100%;
-        display: flex;
-        column-gap: 10px;
-        align-items: end;
-    }
     .containerSub button{
-        width: 58px;
-        height: 58px;
-        border-radius: 69px;
-        border: 1px solid #262626;
-        background-color: #1A1A1A;
-        justify-self: flex-end;
-        cursor: pointer;
+        width: 44px;
+        height: 44px;
     }
     .containerSub .btnArrow {
-        width: 30px;
-        height: 30px;
-        color: white;
+        width: 24px;
+        height: 24px;
     }
     
     /* style containerFourth */
     .containerFourth {
-        height: 763px;
-        max-width: 1596px;
+        height: 614px;
+        max-width: 1280px;
         
     }
     .containerClients .clint{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-        margin-bottom: 50px;
+        column-gap: 20px;
+        margin-bottom: 40px;
     }
     .containerClients .clint .cart{
-        border: 1px solid #262626;
-        border-radius: 12px;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 40px;
+        border-radius: 10px;
+        padding: 40px;
+        row-gap: 30px;
     }
     .containerClients .clint .cart .textContainer p, h4{
         color: white;
         margin: 0;
     }
     .containerClients .clint .cart .textContainer h4{
-        font-size: 24px;
-        line-height: 36px;
-        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
     }
     .containerClients .clint .cart .textContainer p{
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
     }
     .containerClients .clint .cart .profile{
         display: flex;
         column-gap: 10px;
     }
     .containerClients .clint .cart .profile img{
-        width: 60px;
-        height: 60px;
-    }
-    .containerClients .clint .cart .profile p{
-        margin: 0;
+        width: 50px;
+        height: 50px;
     }
     .containerClients .clint .cart .profile p:nth-child(1){
-        color: white;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .containerClients .clint .cart .profile p:nth-child(2){
         font-size: 18px;
-        color: #999999;
         line-height: 27px;
     }
+    .containerClients .clint .cart .profile p:nth-child(2){
+        font-size: 16px;
+        line-height: 24px;
+    }
     .containerClients .stars {
-        display: flex;
-        column-gap: 10px;
+        column-gap: 8px;
     }
     .containerClients .stars div{
-        width: 34px;
-        height: 34px;
-        color: yellow;
-        border: 1px solid #262626;
-        border-radius: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 38px;
+        height: 36px;
         
     }
     .containerClients .stars div .w-6{
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
     }
     .containerFourth .containerTop{
-        height: 113px;
-        max-width: 1596px;
+        height: 91px;
     }
     .containerFourth .containerTop .btnAll{
         height: 100%;
