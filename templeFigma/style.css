@@ -15,7 +15,7 @@
 }
 .header .top {
     width: 100%;
-    height: 63px;
+    min-height: 63px;
     background-image: url('./img/Abstract\ Design.png');
     display: flex;
     justify-content: center;
@@ -76,6 +76,10 @@
 .header .navContainer .nav .btnNav a.active {
     background-color: #141414;
     border-radius: 10px;
+}
+.hiddenIcon {
+    font-size: 40px;
+    display: none !important;
 }
 /* style containerFirst */
 .containerFirst {
@@ -343,7 +347,7 @@
     row-gap: 50px;
 }
 .containerBottom .containerCarts{
-    max-height: 692px;
+    height: 692px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -473,7 +477,7 @@
 
 /* style containerFourth */
 .containerFourth {
-    height: 763px;
+    min-height: 763px;
     max-width: 1596px;
     
 }
@@ -1973,7 +1977,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .containerSecond {
-        height: 450px;
+        min-height: 450px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2,1fr);
@@ -1989,7 +1993,7 @@
         margin-bottom: 50px;
     }
     .ContainerQuestion .Question .ClientsQuestion{
-        height: 346px;
+        min-height: 346px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
@@ -2014,7 +2018,7 @@
        column-gap: 10px;
     }
     .ContainerFooter .footerTop .containerLink{
-        /* max-width: 978px; */
+        max-width: 978px;
         height: 904px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2025,9 +2029,6 @@
         height: 1375px;
         position: relative;
     }
-    /* .ContainerLast li{
-        text-align: center;
-    } */
     .ContainerLast .column{
         border-bottom: 2px solid #262626;
     }
@@ -2042,15 +2043,210 @@
         bottom: 0;
         width: 100%;
     }
-    
-}  
-@media (max-width: 820px){
+    .containerFirst .topFirst p {
+        margin: 0px 20px;
+    }
+    .ContainerQuestion .Question .ClientsQuestion  {
+        min-height: 375px;
+    }
+}
+@media (max-width: 855px){
     .containerClients .clint{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         column-gap: 30px;
         margin-bottom: 50px;
     }
+    .containerFird .containerTop .text h2 {
+        font-size: 30px;
+    }
+    .containerFirst .topFirst h1  {
+        font-size: 45px;
+    }
+    .ContainerQuestion .Question .ClientsQuestion{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .containerClients .clint .cart {
+        height: 360px;
+    }
+    .ClientsQuestion .clientQ {
+        height: 375px;
+    }
+    .ContainerLast .containerExplore .containerText h4  {
+        font-size: 30px;
+    }
+    .ContainerLast .containerExplore .containerText{
+        column-gap: 50px;
+    }
+    
+}
+@media(max-width: 800px){
+    .btnNav a{
+        display: none;
+    }
+    .hiddenIcon{
+        display: block !important;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .header .navContainer {
+        margin: 0px 30px;
+    }
+    .header .top{
+        margin-left: 30px;
+        justify-content: start;
+    }
+    .header .top .btn {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .containerFirst {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'second'
+        'first';
+        margin: 0 20px;
+        height: auto;
+        
+    }
+    .containerFirst .topFirst {
+        grid-area: first;
+    }
+    .containerFirst .bottomFirst {
+        grid-area: second;
+        border-radius: 20px;
+    }
+    .containerFirst .bottomFirst img {
+        border-radius: 20px;
+    }
+    .containerSign {
+        display: block;
+        z-index: 111;
+        position: absolute;
+        top: 450px;
+        left: -90px;
+    }
+    .containerSign .circle{
+        width: 100%;
+        height: 100%;
+    }
+    .containerSign .circle .inconArrow{
+        width: 50%;
+        height: 50%;
+        font-size: 20px;
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .containerFirst .topFirst .btn a:nth-child(1){
+        margin: 0;
+    }
+    .containerFirst .topFirst .subContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+    .containerFirst .topFirst .subContainer div:nth-child(3){
+        grid-area: 2 / 1 / span 1 / span 2;
+        text-align: center;
+    }
+    .containerFirst .topFirst .subContainer h2{
+        max-width: 100%;
+        text-align: center;
+    }
+    .containerSecond {
+        margin-top: 0;
+        border: 1px solid #262626;
+        margin: 20px 20px;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px  5px 5px #262626;
+        gap: 10px;
+    }
+    .containerFird {
+        position: relative;
+        height: 1040px;
+    }
+    .containerFird .containerTop  {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .containerFird .containerTop .btnAll {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       height: auto;
+       margin-top: 60px;
+    }
+    .containerFird .containerTop .btnAll a{
+        width: 100%;
+        
+    }
+    .containerSub .toggle {
+        margin-top: 10px;
+    }
+    .containerFourth{
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .ClientsQuestion .clientQ .btnRead {
+        width: 100%;
+    }
+    .ContainerQuestion {
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .ContainerLast .containerExplore {
+        height: auto;
+    }
+    .ContainerLast .containerExplore .containerText{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 40px 0px;
+    }
+    .ContainerLast .containerExplore .containerText h4 {
+        line-height: 40px;
+    }
+    .ContainerLast .containerExplore .btnExplore{
+        width: 100%;
+    }
+    
+    .ContainerLast{
+        height: auto;
+    }
+    .ContainerFooter{
+        height: auto;
+    }
+    .ContainerFooter .footerTop .containerLink{
+        margin-bottom: 110px;
+    }
+    .footerBottom {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .footerBottom .subLinks {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        text-align: center;
+        row-gap: 10px;
+    }
+    .ContainerFooter .footerTop{
+        height: auto;
+    }
+    
 }
 
 
