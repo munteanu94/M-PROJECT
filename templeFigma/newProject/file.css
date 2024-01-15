@@ -20,7 +20,7 @@ a:hover {
     color: blue;
 }
 .containerMain {
-    max-width: 100wh;
+    max-width: 100%;
     background-color: silvers;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@ a:hover {
 }
 /* menu side */
 .MenuSide{
-    max-width: 300px;
+    width: 300px;
     height: 100vh;
     background-color: aliceblue;
     position: absolute;
@@ -85,11 +85,15 @@ a:hover {
     row-gap: 50px;
 }
 .MenuSide ul li{
-    max-width: 100%;
+    width: 100%;
     height: 50px;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
+    background-color: white;
+}
+.MenuSide ul li:hover {
+    background-color: blue;
 }
 .MenuSide ul li a{
     display: block;
@@ -115,7 +119,7 @@ a:hover {
 .containerFirst{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 200px;
+    grid-template-rows: auto ;
     grid-template-areas: 
     'first second'
     'fird fird';
@@ -658,48 +662,174 @@ footer .column li:hover{
 .containerSubscribe button:hover{
     opacity: 0.6;
 }
-@media (max-width: 1100px){
 
+@media screen and (max-width: 1080px){
     .containerBox {
-        max-width: 100%;
-        min-height: 100%;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
+        row-gap: 50px;
     }
-    .containerBox > div{
-        width: 300px;
+    .containerBox .active  {
+        grid-column: span 2;
+        margin: 0px 150px;
     }
     .containerFirst .containerText h3 {
-        font-size: 40px;
+       font-size: 40px;
     }
-    .containerFirst .containerText h3 span{
-        font-size: 45px;
+    .containerFirst .containerText h3 span {
+        font-size: 50px;
     }
-
+    .containerSubscribe {
+        padding: 0px 20px;
+    }
+    footer {
+        padding: 150px 20px 100px;
+    }
+}
+@media screen and (max-width: 900px){
+    .containerNav div:nth-child(2) ul{
+        display: none;
+    }
+    .item1 {
+        width: 20px;
+        height: 20px;
+    }
+    .item1 div{
+        width: 10px;
+        height: 10px;
+    }
+    .item2{
+        width: 14px;
+        height: 14px;
+    }
+    .item2 div{
+        width: 6px;
+        height: 6px;
+    }
+    .item3{
+        width: 10px;
+        height: 10px;
+    }
+    .item3 div{
+        width: 4px;
+        height: 4px;
+    }
+    .bxHide {
+        display: block !important;
+    }
+    .containerSubscribe button {
+        padding: 15px 40px;
+    }
     
 }
-@media (max-width: 988px){
+@media screen and (max-width: 800px) {
     .containerFirst {
         display: flex;
         flex-direction: column;
     }
     .containerText {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
-    .containerImg img {
-        width: 70%;
-    }
-}
-@media (max-width: 1010px){
-    .containerNav div:nth-child(2) ul{
-        display: none;
-    }
-    .bx {
-        display: block !important;
-    }
-    .containerBox {
+    .containerSecond {
         grid-template-columns: repeat(1, 1fr);
     }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+        grid-template-areas: 
+        'aa bb cc'
+        'last last last'
+        ;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .column1 {
+        grid-area: last;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .column1 p:nth-child(2){
+        display: none;
+    }
+    footer   .column:nth-child(2){
+        grid-area: aa;
+    }
+    footer   .column:nth-child(3){
+        grid-area: bb;
+    }
+    footer   .column:nth-child(4){
+        grid-area: cc;
+    }
+    .containerSubscribe {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 770px){
+    .containerBox {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 50px;
+    }
+    .containerBox .active {
+        margin: 0px;
+    }
+    .containerNav div:nth-child(3) ul li{
+        display: none;
+    }
+    .containerUsers {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        padding: 0;
+    }
+    .containerUsers div{
+        justify-content: flex-start;
+        width: 50%;
+    
+    }
+    .containerUsers > div:nth-child(1),
+     .containerUsers > div:nth-child(2) {
+        border-right: none;
+        border-bottom: 2px solid silver;
+    }
+    footer .column1 p {
+        display: none;
+    }
+    .column1 {
+        grid-area: last;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 560px){
+    .containerBox {
+        margin: 0px;
+    }
+    .brand {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .containerNav,.containerFirst,
+    .containerSecond,.containerFird{
+        margin: 0PX;
+    }
+    .containerSecond .containerText2 {
+        margin: 0px;
+    }
+    .containerFird{
+        padding: 0px;
+    }
+   
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+        grid-template-areas: 
+        'aa bb cc'
+        'last . last'
+        ;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
 }
