@@ -13,6 +13,9 @@
     flex-direction: column;
     color: white;
 }
+a {
+    text-decoration: none;
+}
 .header .top {
     width: 100%;
     min-height: 63px;
@@ -49,6 +52,24 @@
     bottom: 15px;
 }
 /* style nav */
+.menuHide{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 50px;
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.menuHide a{
+    background-color: #1A64FF;
+    padding: 10px 20px;
+    border-radius: 12px;
+
+}
+.show{
+    display: block;
+}
 .header .navContainer {
     height: 99px;
     margin: 0 162px;
@@ -1862,7 +1883,7 @@
        height: 48px;
     }
     .containerInput .input{
-        width: 423px;
+        max-width: 423px;
         height: 66px;
         padding: 18px 28px;
         border: 1px solid #262626;
@@ -2246,7 +2267,9 @@
     .ContainerFooter .footerTop{
         height: auto;
     }
-    
+    .ContainerFooter .footerTop .containerInput{
+        width: 100%;
+    }
 }
 
 
